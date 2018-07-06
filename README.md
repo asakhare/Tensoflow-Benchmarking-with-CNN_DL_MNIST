@@ -46,14 +46,14 @@ The performance reporting is done on the basis of the following parameters:
 
 	Mean Time: Average training time per step. This parameter gives an idea about the average training time required for the model with the given batch size.
 
-	Mean Speed (Images/Sec): Mean speed is the training speed of the convolutional deep learning model in images/sec. 
+	Mean Speed (Images/Sec): Mean speed is the average training speed of the convolutional deep learning model in images/sec across training steps.
 	Formula: Batch Size / Mean Time
 
-	Speed Uncertainty: +/- Variation in Mean Speed
+	Speed Uncertainty: +/- Variation in Mean Speed (Standard Error on Speed )
 	Formula: Standard Deviation of Speed For distribution across steps / √Number of steps
 
 	Speed Jitter: This parameter gives an idea about the spread of the speeds across multiple steps.
-	1.4 * Median [ k=0nSpeed k – MeadianSpeed ]	
+	Formula: speed_jitter = 1.4826 * Median of (speeds - Median of(speeds))
 
 #### gpuJob.slurm
 
