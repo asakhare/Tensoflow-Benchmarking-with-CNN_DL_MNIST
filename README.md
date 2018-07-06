@@ -33,16 +33,17 @@ This is the file which stores the python code for training a convolutional neura
 replaced with tf.nn.softmax_cross_entropy_with_logits_v2(...). Along with that, some header code to print local devices from TensorFlow (line 13-15), code to record training time, and to calculate the training speed is also added.
 
 The performance reporting is done on the basis of the following parameters:
+
 	Mean Time: Average training time per step. This parameter gives an idea about the average training time required for the model with the given batch size.
 
 	Mean Speed (Images/Sec): Mean speed is the training speed of the convolutional deep learning model in images/sec. 
-   Formula: Batch Size / Mean Time
+	Formula: Batch Size / Mean Time
 
 	Speed Uncertainty: +/- Variation in Mean Speed
-  Formula: Standard Deviation of Speed For distribution across steps / √Number of steps
+	Formula: Standard Deviation of Speed For distribution across steps / √Number of steps
 
 	Speed Jitter: This parameter gives an idea about the spread of the speeds across multiple steps.
-	* Median [ k=0nSpeed k – MeadianSpeed ]	
+	1.4 * Median [ k=0nSpeed k – MeadianSpeed ]	
 
 #### gpuJob.slurm
 
