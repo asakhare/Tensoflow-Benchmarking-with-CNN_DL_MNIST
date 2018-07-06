@@ -93,8 +93,8 @@ $ python tf_benchmarking_file_creation.py
 
 Note-Benchmarking Graphs With Various Deployment Architectures are in the Results Directory.
 
-Authored By,
-/nAnand Sakhare
-/nPittsburgh Supercomputing Center | Carnegie Mellon University
-/nEmail ID: asakhare@andrew.cmu.edu
+Authored By,  
+Anand Sakhare  
+Pittsburgh Supercomputing Center | Carnegie Mellon University  
+Email ID: asakhare@andrew.cmu.edu
 
