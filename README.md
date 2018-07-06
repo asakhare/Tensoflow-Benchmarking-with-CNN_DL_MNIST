@@ -5,7 +5,6 @@
 ### Project Description
 Execution of DL experiments on TensorFlow with different deployment architectures to understand relation between DL training speed and hardware. The first phase includes execution of below given experiments (Experiment ID – 0 to 9). 
 
-		TensorFlow		TensorFlow	Slurm		
     
 | ExpID | GPUType | #GPUs | CPU Type | #CPUs | #Cores |	Quiet? | Staged from? |
 |-------|---------|-------|----------|-------|--------|--------|--------------|
