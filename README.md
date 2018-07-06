@@ -28,6 +28,16 @@ Execution of DL experiments on TensorFlow with different deployment architecture
 
 ### Scripts:
 
+#### run_benchmarks.sh
+This is the main file which needs to be run for executing the TensorFlow Deep MNIST benchmarking experiments. Brief flow of the shell script.
+
+This file stores the output files for each of the outputs of the model execution of each deployment architecture, in ‘results’ directory which should be a sub directory of the current directory.  
+First it moves any older files from results directory to archived directory which is a subdirectory of the results directory.
+Then it enters a nested loop and submits the required jobs to the job queue (Exp ID 0 to 9).
+All the output files are stored in the result directory and follow the following filename format. YYYY-MM-DD-<gpu type>:<number of gpus>:<staged from directory>
+e.g. An experiment run on 4th Jun 2018 on a k80 GPU from local directory will have an output file name as ‘2018-06-04-k80:1:local’. 
+Command to run this file is : ‘ . run_benchmarks.sh’ 
+
 #### CNN_MNIST.py
 This is the file which stores the python code for training a convolutional neural network (CNN) on the MNIST dataset. It is primarily taken from the TensorFlow tutorial with small modifications. In particular, the deprecated tf.nn.softmax_cross_entropy_with_logits(...) is 
 replaced with tf.nn.softmax_cross_entropy_with_logits_v2(...). Along with that, some header code to print local devices from TensorFlow (line 13-15), code to record training time, and to calculate the training speed is also added.
@@ -55,16 +65,6 @@ To run the file separately use sbatch command. (please refer: https://www.psc.ed
 This is a batch file which holds the code to run the CNN_MNIST.py file in $LOCAL directory. This file takes care of setting up the tensorflow environment, activating the environment, logging information to the output file, and running the CNN_MNIST.py script.
 
 To run the file separately use sbatch command. (please refer: https://www.psc.edu/bridges/user-guide/running-jobs)
-
-#### run_benchmarks.sh
-This is the main file which needs to be run for executing the TensorFlow Deep MNIST benchmarking experiments. Brief flow of the shell script.
-
-This file stores the output files for each of the outputs of the model execution of each deployment architecture, in ‘results’ directory which should be a sub directory of the current directory.  
-First it moves any older files from results directory to archived directory which is a subdirectory of the results directory.
-Then it enters a nested loop and submits the required jobs to the job queue (Exp ID 0 to 9).
-All the output files are stored in the result directory and follow the following filename format. YYYY-MM-DD-<gpu type>:<number of gpus>:<staged from directory>
-e.g. An experiment run on 4th Jun 2018 on a k80 GPU from local directory will have an output file name as ‘2018-06-04-k80:1:local’. 
-Command to run this file is : ‘ . run_benchmarks.sh’ 
 
 #### tf_benchmarking_file_creation.py
 This script scans all the output files and stores the important outputs metrices in a comma delimited csv file. A sample file created by this script is as given below.
