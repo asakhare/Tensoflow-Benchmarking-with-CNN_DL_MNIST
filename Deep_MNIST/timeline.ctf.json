@@ -1,0 +1,1668 @@
+{
+    "traceEvents": [
+        {
+            "ph": "M",
+            "args": {
+                "name": "Allocators"
+            },
+            "pid": 0,
+            "name": "process_name"
+        },
+        {
+            "ph": "M",
+            "args": {
+                "name": "/job:localhost/replica:0/task:0/device:CPU:0 Compute"
+            },
+            "pid": 1,
+            "name": "process_name"
+        },
+        {
+            "ph": "M",
+            "args": {
+                "name": "/job:localhost/replica:0/task:0/device:CPU:0 Tensors"
+            },
+            "pid": 2,
+            "name": "process_name"
+        },
+        {
+            "name": "NoOp",
+            "args": {
+                "name": "_SOURCE",
+                "op": "NoOp"
+            },
+            "pid": 1,
+            "ts": 1530890986753683,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 278
+        },
+        {
+            "name": "VariableV2",
+            "args": {
+                "name": "conv1/Variable_1",
+                "op": "VariableV2"
+            },
+            "pid": 1,
+            "ts": 1530890986754068,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 44
+        },
+        {
+            "name": "VariableV2",
+            "args": {
+                "name": "beta1_power",
+                "op": "VariableV2"
+            },
+            "pid": 1,
+            "ts": 1530890986754076,
+            "cat": "Op",
+            "tid": 1,
+            "ph": "X",
+            "dur": 38
+        },
+        {
+            "name": "VariableV2",
+            "args": {
+                "name": "conv1/Variable/Adam_1",
+                "op": "VariableV2"
+            },
+            "pid": 1,
+            "ts": 1530890986754103,
+            "cat": "Op",
+            "tid": 2,
+            "ph": "X",
+            "dur": 24
+        },
+        {
+            "name": "VariableV2",
+            "args": {
+                "name": "dense1/Variable",
+                "op": "VariableV2"
+            },
+            "pid": 1,
+            "ts": 1530890986754068,
+            "cat": "Op",
+            "tid": 3,
+            "ph": "X",
+            "dur": 61
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "conv1/truncated_normal/shape",
+                "op": "Const"
+            },
+            "pid": 1,
+            "ts": 1530890986754121,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 19
+        },
+        {
+            "name": "VariableV2",
+            "args": {
+                "name": "conv1/Variable_1/Adam_1",
+                "op": "VariableV2"
+            },
+            "pid": 1,
+            "ts": 1530890986754115,
+            "cat": "Op",
+            "tid": 1,
+            "ph": "X",
+            "dur": 31
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "conv1/truncated_normal/mean",
+                "op": "Const"
+            },
+            "pid": 1,
+            "ts": 1530890986754146,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "conv1/truncated_normal/stddev",
+                "op": "Const"
+            },
+            "pid": 1,
+            "ts": 1530890986754151,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "conv1/Const",
+                "op": "Const"
+            },
+            "pid": 1,
+            "ts": 1530890986754155,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "conv2/truncated_normal/shape",
+                "op": "Const"
+            },
+            "pid": 1,
+            "ts": 1530890986754165,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "conv2/Const",
+                "op": "Const"
+            },
+            "pid": 1,
+            "ts": 1530890986754172,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2
+        },
+        {
+            "name": "VariableV2",
+            "args": {
+                "name": "conv2/Variable",
+                "op": "VariableV2"
+            },
+            "pid": 1,
+            "ts": 1530890986754058,
+            "cat": "Op",
+            "tid": 4,
+            "ph": "X",
+            "dur": 121
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "dense1/truncated_normal/shape",
+                "op": "Const"
+            },
+            "pid": 1,
+            "ts": 1530890986754176,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5
+        },
+        {
+            "name": "VariableV2",
+            "args": {
+                "name": "dense1/Variable/Adam",
+                "op": "VariableV2"
+            },
+            "pid": 1,
+            "ts": 1530890986754124,
+            "cat": "Op",
+            "tid": 5,
+            "ph": "X",
+            "dur": 59
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "dense1/Const",
+                "op": "Const"
+            },
+            "pid": 1,
+            "ts": 1530890986754186,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3
+        },
+        {
+            "name": "VariableV2",
+            "args": {
+                "name": "conv2/Variable/Adam",
+                "op": "VariableV2"
+            },
+            "pid": 1,
+            "ts": 1530890986754118,
+            "cat": "Op",
+            "tid": 6,
+            "ph": "X",
+            "dur": 73
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "dense2/truncated_normal/shape",
+                "op": "Const"
+            },
+            "pid": 1,
+            "ts": 1530890986754190,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 7
+        },
+        {
+            "name": "VariableV2",
+            "args": {
+                "name": "dense2/Variable",
+                "op": "VariableV2"
+            },
+            "pid": 1,
+            "ts": 1530890986754072,
+            "cat": "Op",
+            "tid": 7,
+            "ph": "X",
+            "dur": 125
+        },
+        {
+            "name": "Assign",
+            "args": {
+                "input0": "conv1/Variable_1",
+                "input1": "conv1/Const",
+                "name": "conv1/Variable_1/Assign",
+                "op": "Assign"
+            },
+            "pid": 1,
+            "ts": 1530890986754167,
+            "cat": "Op",
+            "tid": 1,
+            "ph": "X",
+            "dur": 33
+        },
+        {
+            "name": "conv1/Const",
+            "pid": 1,
+            "ts": 1530890986754158,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "s",
+            "id": 0
+        },
+        {
+            "name": "conv1/Const",
+            "pid": 1,
+            "ts": 1530890986754167,
+            "cat": "DataFlow",
+            "tid": 1,
+            "ph": "t",
+            "id": 0
+        },
+        {
+            "name": "VariableV2",
+            "args": {
+                "name": "dense1/Variable_1/Adam",
+                "op": "VariableV2"
+            },
+            "pid": 1,
+            "ts": 1530890986754125,
+            "cat": "Op",
+            "tid": 8,
+            "ph": "X",
+            "dur": 76
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "dense2/Const",
+                "op": "Const"
+            },
+            "pid": 1,
+            "ts": 1530890986754201,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5
+        },
+        {
+            "name": "VariableV2",
+            "args": {
+                "name": "dense2/Variable/Adam",
+                "op": "VariableV2"
+            },
+            "pid": 1,
+            "ts": 1530890986754132,
+            "cat": "Op",
+            "tid": 2,
+            "ph": "X",
+            "dur": 75
+        },
+        {
+            "name": "VariableV2",
+            "args": {
+                "name": "dense1/Variable_1/Adam_1",
+                "op": "VariableV2"
+            },
+            "pid": 1,
+            "ts": 1530890986754128,
+            "cat": "Op",
+            "tid": 9,
+            "ph": "X",
+            "dur": 83
+        },
+        {
+            "name": "VariableV2",
+            "args": {
+                "name": "dense1/Variable_1",
+                "op": "VariableV2"
+            },
+            "pid": 1,
+            "ts": 1530890986754069,
+            "cat": "Op",
+            "tid": 10,
+            "ph": "X",
+            "dur": 155
+        },
+        {
+            "name": "TruncatedNormal",
+            "args": {
+                "input0": "conv1/truncated_normal/shape",
+                "name": "conv1/truncated_normal/TruncatedNormal",
+                "op": "TruncatedNormal"
+            },
+            "pid": 1,
+            "ts": 1530890986754148,
+            "cat": "Op",
+            "tid": 3,
+            "ph": "X",
+            "dur": 82
+        },
+        {
+            "name": "conv1/truncated_normal/shape",
+            "pid": 1,
+            "ts": 1530890986754140,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "s",
+            "id": 1
+        },
+        {
+            "name": "conv1/truncated_normal/shape",
+            "pid": 1,
+            "ts": 1530890986754148,
+            "cat": "DataFlow",
+            "tid": 3,
+            "ph": "t",
+            "id": 1
+        },
+        {
+            "name": "Assign",
+            "args": {
+                "input0": "dense1/Variable_1",
+                "input1": "dense1/Const",
+                "name": "dense1/Variable_1/Assign",
+                "op": "Assign"
+            },
+            "pid": 1,
+            "ts": 1530890986754226,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 10
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "beta1_power/initial_value",
+                "op": "Const"
+            },
+            "pid": 1,
+            "ts": 1530890986754207,
+            "cat": "Op",
+            "tid": 1,
+            "ph": "X",
+            "dur": 32
+        },
+        {
+            "name": "Assign",
+            "args": {
+                "input0": "beta1_power",
+                "input1": "beta1_power/initial_value",
+                "name": "beta1_power/Assign",
+                "op": "Assign"
+            },
+            "pid": 1,
+            "ts": 1530890986754242,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4
+        },
+        {
+            "name": "beta1_power/initial_value",
+            "pid": 1,
+            "ts": 1530890986754239,
+            "cat": "DataFlow",
+            "tid": 1,
+            "ph": "s",
+            "id": 2
+        },
+        {
+            "name": "beta1_power/initial_value",
+            "pid": 1,
+            "ts": 1530890986754242,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "t",
+            "id": 2
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "beta2_power/initial_value",
+                "op": "Const"
+            },
+            "pid": 1,
+            "ts": 1530890986754245,
+            "cat": "Op",
+            "tid": 1,
+            "ph": "X",
+            "dur": 3
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "dense1/Variable/Adam/Initializer/zeros/shape_as_tensor",
+                "op": "Const"
+            },
+            "pid": 1,
+            "ts": 1530890986754249,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "dense1/Variable/Adam/Initializer/zeros/Const",
+                "op": "Const"
+            },
+            "pid": 1,
+            "ts": 1530890986754253,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "conv1/Variable/Adam/Initializer/zeros/_0__cf__0",
+                "op": "Const"
+            },
+            "pid": 1,
+            "ts": 1530890986754262,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4
+        },
+        {
+            "name": "Mul",
+            "args": {
+                "input0": "conv1/truncated_normal/TruncatedNormal",
+                "input1": "conv1/truncated_normal/stddev",
+                "name": "conv1/truncated_normal/mul",
+                "op": "Mul"
+            },
+            "pid": 1,
+            "ts": 1530890986754237,
+            "cat": "Op",
+            "tid": 2,
+            "ph": "X",
+            "dur": 33
+        },
+        {
+            "name": "conv1/truncated_normal/TruncatedNormal",
+            "pid": 1,
+            "ts": 1530890986754230,
+            "cat": "DataFlow",
+            "tid": 3,
+            "ph": "s",
+            "id": 3
+        },
+        {
+            "name": "conv1/truncated_normal/TruncatedNormal",
+            "pid": 1,
+            "ts": 1530890986754237,
+            "cat": "DataFlow",
+            "tid": 2,
+            "ph": "t",
+            "id": 3
+        },
+        {
+            "name": "conv1/truncated_normal/stddev",
+            "pid": 1,
+            "ts": 1530890986754154,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "s",
+            "id": 4
+        },
+        {
+            "name": "conv1/truncated_normal/stddev",
+            "pid": 1,
+            "ts": 1530890986754237,
+            "cat": "DataFlow",
+            "tid": 2,
+            "ph": "t",
+            "id": 4
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "conv1/Variable_1/Adam/Initializer/zeros/_2__cf__2",
+                "op": "Const"
+            },
+            "pid": 1,
+            "ts": 1530890986754272,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 14
+        },
+        {
+            "name": "Add",
+            "args": {
+                "input0": "conv1/truncated_normal/mul",
+                "input1": "conv1/truncated_normal/mean",
+                "name": "conv1/truncated_normal",
+                "op": "Add"
+            },
+            "pid": 1,
+            "ts": 1530890986754273,
+            "cat": "Op",
+            "tid": 1,
+            "ph": "X",
+            "dur": 24
+        },
+        {
+            "name": "conv1/truncated_normal/mul",
+            "pid": 1,
+            "ts": 1530890986754270,
+            "cat": "DataFlow",
+            "tid": 2,
+            "ph": "s",
+            "id": 5
+        },
+        {
+            "name": "conv1/truncated_normal/mul",
+            "pid": 1,
+            "ts": 1530890986754273,
+            "cat": "DataFlow",
+            "tid": 1,
+            "ph": "t",
+            "id": 5
+        },
+        {
+            "name": "conv1/truncated_normal/mean",
+            "pid": 1,
+            "ts": 1530890986754149,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "s",
+            "id": 6
+        },
+        {
+            "name": "conv1/truncated_normal/mean",
+            "pid": 1,
+            "ts": 1530890986754273,
+            "cat": "DataFlow",
+            "tid": 1,
+            "ph": "t",
+            "id": 6
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "conv2/Variable/Adam/Initializer/zeros/_4__cf__4",
+                "op": "Const"
+            },
+            "pid": 1,
+            "ts": 1530890986754293,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5
+        },
+        {
+            "name": "Assign",
+            "args": {
+                "input0": "conv1/Variable/Adam_1",
+                "input1": "conv1/Variable/Adam_1/Initializer/zeros",
+                "name": "conv1/Variable/Adam_1/Assign",
+                "op": "Assign"
+            },
+            "pid": 1,
+            "ts": 1530890986754300,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 35
+        },
+        {
+            "name": "Assign",
+            "args": {
+                "input0": "conv1/Variable_1/Adam_1",
+                "input1": "conv1/Variable_1/Adam_1/Initializer/zeros",
+                "name": "conv1/Variable_1/Adam_1/Assign",
+                "op": "Assign"
+            },
+            "pid": 1,
+            "ts": 1530890986754338,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4
+        },
+        {
+            "name": "Assign",
+            "args": {
+                "input0": "conv2/Variable/Adam",
+                "input1": "conv2/Variable/Adam/Initializer/zeros",
+                "name": "conv2/Variable/Adam/Assign",
+                "op": "Assign"
+            },
+            "pid": 1,
+            "ts": 1530890986754344,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 51
+        },
+        {
+            "name": "TruncatedNormal",
+            "args": {
+                "input0": "dense2/truncated_normal/shape",
+                "name": "dense2/truncated_normal/TruncatedNormal",
+                "op": "TruncatedNormal"
+            },
+            "pid": 1,
+            "ts": 1530890986754200,
+            "cat": "Op",
+            "tid": 4,
+            "ph": "X",
+            "dur": 273
+        },
+        {
+            "name": "dense2/truncated_normal/shape",
+            "pid": 1,
+            "ts": 1530890986754197,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "s",
+            "id": 7
+        },
+        {
+            "name": "dense2/truncated_normal/shape",
+            "pid": 1,
+            "ts": 1530890986754200,
+            "cat": "DataFlow",
+            "tid": 4,
+            "ph": "t",
+            "id": 7
+        },
+        {
+            "name": "Mul",
+            "args": {
+                "input0": "dense2/truncated_normal/TruncatedNormal",
+                "input1": "dense2/truncated_normal/stddev",
+                "name": "dense2/truncated_normal/mul",
+                "op": "Mul"
+            },
+            "pid": 1,
+            "ts": 1530890986754476,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 19
+        },
+        {
+            "name": "dense2/truncated_normal/TruncatedNormal",
+            "pid": 1,
+            "ts": 1530890986754473,
+            "cat": "DataFlow",
+            "tid": 4,
+            "ph": "s",
+            "id": 8
+        },
+        {
+            "name": "dense2/truncated_normal/TruncatedNormal",
+            "pid": 1,
+            "ts": 1530890986754476,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "t",
+            "id": 8
+        },
+        {
+            "name": "Add",
+            "args": {
+                "input0": "dense2/truncated_normal/mul",
+                "input1": "dense2/truncated_normal/mean",
+                "name": "dense2/truncated_normal",
+                "op": "Add"
+            },
+            "pid": 1,
+            "ts": 1530890986754512,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5
+        },
+        {
+            "name": "Assign",
+            "args": {
+                "input0": "dense2/Variable",
+                "input1": "dense2/truncated_normal",
+                "name": "dense2/Variable/Assign",
+                "op": "Assign"
+            },
+            "pid": 1,
+            "ts": 1530890986754519,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 11
+        },
+        {
+            "name": "VariableV2",
+            "args": {
+                "name": "conv1/Variable",
+                "op": "VariableV2"
+            },
+            "pid": 1,
+            "ts": 1530890986754055,
+            "cat": "Op",
+            "tid": 11,
+            "ph": "X",
+            "dur": 3891
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "conv2/Variable_1/Adam/Initializer/zeros/_6__cf__6",
+                "op": "Const"
+            },
+            "pid": 1,
+            "ts": 1530890986754303,
+            "cat": "Op",
+            "tid": 1,
+            "ph": "X",
+            "dur": 3645
+        },
+        {
+            "name": "VariableV2",
+            "args": {
+                "name": "conv2/Variable_1",
+                "op": "VariableV2"
+            },
+            "pid": 1,
+            "ts": 1530890986754067,
+            "cat": "Op",
+            "tid": 12,
+            "ph": "X",
+            "dur": 3885
+        },
+        {
+            "name": "Fill",
+            "args": {
+                "input0": "dense1/Variable/Adam/Initializer/zeros/shape_as_tensor",
+                "input1": "dense1/Variable/Adam/Initializer/zeros/Const",
+                "name": "dense1/Variable/Adam/Initializer/zeros",
+                "op": "Fill"
+            },
+            "pid": 1,
+            "ts": 1530890986754260,
+            "cat": "Op",
+            "tid": 3,
+            "ph": "X",
+            "dur": 3682
+        },
+        {
+            "name": "dense1/Variable/Adam/Initializer/zeros/shape_as_tensor",
+            "pid": 1,
+            "ts": 1530890986754252,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "s",
+            "id": 9
+        },
+        {
+            "name": "dense1/Variable/Adam/Initializer/zeros/shape_as_tensor",
+            "pid": 1,
+            "ts": 1530890986754260,
+            "cat": "DataFlow",
+            "tid": 3,
+            "ph": "t",
+            "id": 9
+        },
+        {
+            "name": "dense1/Variable/Adam/Initializer/zeros/Const",
+            "pid": 1,
+            "ts": 1530890986754258,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "s",
+            "id": 10
+        },
+        {
+            "name": "dense1/Variable/Adam/Initializer/zeros/Const",
+            "pid": 1,
+            "ts": 1530890986754260,
+            "cat": "DataFlow",
+            "tid": 3,
+            "ph": "t",
+            "id": 10
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "dense1/Variable_1/Adam/Initializer/zeros/_8__cf__8",
+                "op": "Const"
+            },
+            "pid": 1,
+            "ts": 1530890986757950,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 12
+        },
+        {
+            "name": "Assign",
+            "args": {
+                "input0": "conv1/Variable",
+                "input1": "conv1/truncated_normal",
+                "name": "conv1/Variable/Assign",
+                "op": "Assign"
+            },
+            "pid": 1,
+            "ts": 1530890986757950,
+            "cat": "Op",
+            "tid": 1,
+            "ph": "X",
+            "dur": 13
+        },
+        {
+            "name": "Assign",
+            "args": {
+                "input0": "conv2/Variable_1",
+                "input1": "conv2/Const",
+                "name": "conv2/Variable_1/Assign",
+                "op": "Assign"
+            },
+            "pid": 1,
+            "ts": 1530890986757954,
+            "cat": "Op",
+            "tid": 2,
+            "ph": "X",
+            "dur": 12
+        },
+        {
+            "name": "conv2/Const",
+            "pid": 1,
+            "ts": 1530890986754174,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "s",
+            "id": 11
+        },
+        {
+            "name": "conv2/Const",
+            "pid": 1,
+            "ts": 1530890986757954,
+            "cat": "DataFlow",
+            "tid": 2,
+            "ph": "t",
+            "id": 11
+        },
+        {
+            "name": "TruncatedNormal",
+            "args": {
+                "input0": "conv2/truncated_normal/shape",
+                "name": "conv2/truncated_normal/TruncatedNormal",
+                "op": "TruncatedNormal"
+            },
+            "pid": 1,
+            "ts": 1530890986754173,
+            "cat": "Op",
+            "tid": 13,
+            "ph": "X",
+            "dur": 3782
+        },
+        {
+            "name": "conv2/truncated_normal/shape",
+            "pid": 1,
+            "ts": 1530890986754168,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "s",
+            "id": 12
+        },
+        {
+            "name": "conv2/truncated_normal/shape",
+            "pid": 1,
+            "ts": 1530890986754173,
+            "cat": "DataFlow",
+            "tid": 13,
+            "ph": "t",
+            "id": 12
+        },
+        {
+            "name": "Assign",
+            "args": {
+                "input0": "dense1/Variable_1/Adam",
+                "input1": "dense1/Variable_1/Adam/Initializer/zeros",
+                "name": "dense1/Variable_1/Adam/Assign",
+                "op": "Assign"
+            },
+            "pid": 1,
+            "ts": 1530890986757967,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5
+        },
+        {
+            "name": "VariableV2",
+            "args": {
+                "name": "conv2/Variable_1/Adam_1",
+                "op": "VariableV2"
+            },
+            "pid": 1,
+            "ts": 1530890986754122,
+            "cat": "Op",
+            "tid": 14,
+            "ph": "X",
+            "dur": 3853
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "dense2/Variable/Adam/Initializer/zeros/_10__cf__10",
+                "op": "Const"
+            },
+            "pid": 1,
+            "ts": 1530890986757976,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4
+        },
+        {
+            "name": "Assign",
+            "args": {
+                "input0": "dense1/Variable_1/Adam_1",
+                "input1": "dense1/Variable_1/Adam_1/Initializer/zeros",
+                "name": "dense1/Variable_1/Adam_1/Assign",
+                "op": "Assign"
+            },
+            "pid": 1,
+            "ts": 1530890986757976,
+            "cat": "Op",
+            "tid": 1,
+            "ph": "X",
+            "dur": 5
+        },
+        {
+            "name": "TruncatedNormal",
+            "args": {
+                "input0": "dense1/truncated_normal/shape",
+                "name": "dense1/truncated_normal/TruncatedNormal",
+                "op": "TruncatedNormal"
+            },
+            "pid": 1,
+            "ts": 1530890986754188,
+            "cat": "Op",
+            "tid": 5,
+            "ph": "X",
+            "dur": 3782
+        },
+        {
+            "name": "dense1/truncated_normal/shape",
+            "pid": 1,
+            "ts": 1530890986754181,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "s",
+            "id": 13
+        },
+        {
+            "name": "dense1/truncated_normal/shape",
+            "pid": 1,
+            "ts": 1530890986754188,
+            "cat": "DataFlow",
+            "tid": 5,
+            "ph": "t",
+            "id": 13
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "dense2/Variable_1/Adam/Initializer/zeros/_12__cf__12",
+                "op": "Const"
+            },
+            "pid": 1,
+            "ts": 1530890986757986,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3
+        },
+        {
+            "name": "Assign",
+            "args": {
+                "input0": "conv2/Variable_1/Adam_1",
+                "input1": "conv2/Variable_1/Adam_1/Initializer/zeros",
+                "name": "conv2/Variable_1/Adam_1/Assign",
+                "op": "Assign"
+            },
+            "pid": 1,
+            "ts": 1530890986757978,
+            "cat": "Op",
+            "tid": 2,
+            "ph": "X",
+            "dur": 14
+        },
+        {
+            "name": "Mul",
+            "args": {
+                "input0": "conv2/truncated_normal/TruncatedNormal",
+                "input1": "conv2/truncated_normal/stddev",
+                "name": "conv2/truncated_normal/mul",
+                "op": "Mul"
+            },
+            "pid": 1,
+            "ts": 1530890986757969,
+            "cat": "Op",
+            "tid": 3,
+            "ph": "X",
+            "dur": 43
+        },
+        {
+            "name": "conv2/truncated_normal/TruncatedNormal",
+            "pid": 1,
+            "ts": 1530890986757955,
+            "cat": "DataFlow",
+            "tid": 13,
+            "ph": "s",
+            "id": 14
+        },
+        {
+            "name": "conv2/truncated_normal/TruncatedNormal",
+            "pid": 1,
+            "ts": 1530890986757969,
+            "cat": "DataFlow",
+            "tid": 3,
+            "ph": "t",
+            "id": 14
+        },
+        {
+            "name": "Assign",
+            "args": {
+                "input0": "dense2/Variable/Adam",
+                "input1": "dense2/Variable/Adam/Initializer/zeros",
+                "name": "dense2/Variable/Adam/Assign",
+                "op": "Assign"
+            },
+            "pid": 1,
+            "ts": 1530890986757985,
+            "cat": "Op",
+            "tid": 1,
+            "ph": "X",
+            "dur": 32
+        },
+        {
+            "name": "Add",
+            "args": {
+                "input0": "conv2/truncated_normal/mul",
+                "input1": "conv2/truncated_normal/mean",
+                "name": "conv2/truncated_normal",
+                "op": "Add"
+            },
+            "pid": 1,
+            "ts": 1530890986758014,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 27
+        },
+        {
+            "name": "conv2/truncated_normal/mul",
+            "pid": 1,
+            "ts": 1530890986758012,
+            "cat": "DataFlow",
+            "tid": 3,
+            "ph": "s",
+            "id": 15
+        },
+        {
+            "name": "conv2/truncated_normal/mul",
+            "pid": 1,
+            "ts": 1530890986758014,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "t",
+            "id": 15
+        },
+        {
+            "name": "VariableV2",
+            "args": {
+                "name": "beta2_power",
+                "op": "VariableV2"
+            },
+            "pid": 1,
+            "ts": 1530890986754094,
+            "cat": "Op",
+            "tid": 15,
+            "ph": "X",
+            "dur": 4026
+        },
+        {
+            "name": "Assign",
+            "args": {
+                "input0": "beta2_power",
+                "input1": "beta2_power/initial_value",
+                "name": "beta2_power/Assign",
+                "op": "Assign"
+            },
+            "pid": 1,
+            "ts": 1530890986758123,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 14
+        },
+        {
+            "name": "beta2_power/initial_value",
+            "pid": 1,
+            "ts": 1530890986754248,
+            "cat": "DataFlow",
+            "tid": 1,
+            "ph": "s",
+            "id": 16
+        },
+        {
+            "name": "beta2_power/initial_value",
+            "pid": 1,
+            "ts": 1530890986758123,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "t",
+            "id": 16
+        },
+        {
+            "name": "Assign",
+            "args": {
+                "input0": "conv2/Variable",
+                "input1": "conv2/truncated_normal",
+                "name": "conv2/Variable/Assign",
+                "op": "Assign"
+            },
+            "pid": 1,
+            "ts": 1530890986758060,
+            "cat": "Op",
+            "tid": 1,
+            "ph": "X",
+            "dur": 82
+        },
+        {
+            "name": "conv2/truncated_normal",
+            "pid": 1,
+            "ts": 1530890986758041,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "s",
+            "id": 17
+        },
+        {
+            "name": "conv2/truncated_normal",
+            "pid": 1,
+            "ts": 1530890986758060,
+            "cat": "DataFlow",
+            "tid": 1,
+            "ph": "t",
+            "id": 17
+        },
+        {
+            "name": "VariableV2",
+            "args": {
+                "name": "dense2/Variable_1/Adam_1",
+                "op": "VariableV2"
+            },
+            "pid": 1,
+            "ts": 1530890986754138,
+            "cat": "Op",
+            "tid": 16,
+            "ph": "X",
+            "dur": 4048
+        },
+        {
+            "name": "VariableV2",
+            "args": {
+                "name": "dense2/Variable_1",
+                "op": "VariableV2"
+            },
+            "pid": 1,
+            "ts": 1530890986754087,
+            "cat": "Op",
+            "tid": 17,
+            "ph": "X",
+            "dur": 4113
+        },
+        {
+            "name": "Assign",
+            "args": {
+                "input0": "dense2/Variable_1/Adam_1",
+                "input1": "dense2/Variable_1/Adam_1/Initializer/zeros",
+                "name": "dense2/Variable_1/Adam_1/Assign",
+                "op": "Assign"
+            },
+            "pid": 1,
+            "ts": 1530890986758190,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 11
+        },
+        {
+            "name": "Assign",
+            "args": {
+                "input0": "dense2/Variable_1",
+                "input1": "dense2/Const",
+                "name": "dense2/Variable_1/Assign",
+                "op": "Assign"
+            },
+            "pid": 1,
+            "ts": 1530890986758204,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 9
+        },
+        {
+            "name": "VariableV2",
+            "args": {
+                "name": "conv2/Variable_1/Adam",
+                "op": "VariableV2"
+            },
+            "pid": 1,
+            "ts": 1530890986754116,
+            "cat": "Op",
+            "tid": 18,
+            "ph": "X",
+            "dur": 4111
+        },
+        {
+            "name": "Mul",
+            "args": {
+                "input0": "dense1/truncated_normal/TruncatedNormal",
+                "input1": "dense1/truncated_normal/stddev",
+                "name": "dense1/truncated_normal/mul",
+                "op": "Mul"
+            },
+            "pid": 1,
+            "ts": 1530890986757985,
+            "cat": "Op",
+            "tid": 4,
+            "ph": "X",
+            "dur": 254
+        },
+        {
+            "name": "dense1/truncated_normal/TruncatedNormal",
+            "pid": 1,
+            "ts": 1530890986757970,
+            "cat": "DataFlow",
+            "tid": 5,
+            "ph": "s",
+            "id": 18
+        },
+        {
+            "name": "dense1/truncated_normal/TruncatedNormal",
+            "pid": 1,
+            "ts": 1530890986757985,
+            "cat": "DataFlow",
+            "tid": 4,
+            "ph": "t",
+            "id": 18
+        },
+        {
+            "name": "VariableV2",
+            "args": {
+                "name": "conv1/Variable/Adam",
+                "op": "VariableV2"
+            },
+            "pid": 1,
+            "ts": 1530890986754099,
+            "cat": "Op",
+            "tid": 19,
+            "ph": "X",
+            "dur": 4150
+        },
+        {
+            "name": "Assign",
+            "args": {
+                "input0": "conv2/Variable_1/Adam",
+                "input1": "conv2/Variable_1/Adam/Initializer/zeros",
+                "name": "conv2/Variable_1/Adam/Assign",
+                "op": "Assign"
+            },
+            "pid": 1,
+            "ts": 1530890986758231,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 23
+        },
+        {
+            "name": "VariableV2",
+            "args": {
+                "name": "conv2/Variable/Adam_1",
+                "op": "VariableV2"
+            },
+            "pid": 1,
+            "ts": 1530890986754116,
+            "cat": "Op",
+            "tid": 20,
+            "ph": "X",
+            "dur": 4141
+        },
+        {
+            "name": "VariableV2",
+            "args": {
+                "name": "conv1/Variable_1/Adam",
+                "op": "VariableV2"
+            },
+            "pid": 1,
+            "ts": 1530890986754107,
+            "cat": "Op",
+            "tid": 21,
+            "ph": "X",
+            "dur": 4143
+        },
+        {
+            "name": "VariableV2",
+            "args": {
+                "name": "dense2/Variable/Adam_1",
+                "op": "VariableV2"
+            },
+            "pid": 1,
+            "ts": 1530890986754131,
+            "cat": "Op",
+            "tid": 22,
+            "ph": "X",
+            "dur": 4149
+        },
+        {
+            "name": "VariableV2",
+            "args": {
+                "name": "dense2/Variable_1/Adam",
+                "op": "VariableV2"
+            },
+            "pid": 1,
+            "ts": 1530890986754134,
+            "cat": "Op",
+            "tid": 23,
+            "ph": "X",
+            "dur": 4149
+        },
+        {
+            "name": "Assign",
+            "args": {
+                "input0": "conv1/Variable/Adam",
+                "input1": "conv1/Variable/Adam/Initializer/zeros",
+                "name": "conv1/Variable/Adam/Assign",
+                "op": "Assign"
+            },
+            "pid": 1,
+            "ts": 1530890986758259,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 40
+        },
+        {
+            "name": "Assign",
+            "args": {
+                "input0": "dense2/Variable/Adam_1",
+                "input1": "dense2/Variable/Adam_1/Initializer/zeros",
+                "name": "dense2/Variable/Adam_1/Assign",
+                "op": "Assign"
+            },
+            "pid": 1,
+            "ts": 1530890986758282,
+            "cat": "Op",
+            "tid": 1,
+            "ph": "X",
+            "dur": 45
+        },
+        {
+            "name": "Assign",
+            "args": {
+                "input0": "conv2/Variable/Adam_1",
+                "input1": "conv2/Variable/Adam_1/Initializer/zeros",
+                "name": "conv2/Variable/Adam_1/Assign",
+                "op": "Assign"
+            },
+            "pid": 1,
+            "ts": 1530890986758259,
+            "cat": "Op",
+            "tid": 2,
+            "ph": "X",
+            "dur": 121
+        },
+        {
+            "name": "VariableV2",
+            "args": {
+                "name": "dense1/Variable/Adam_1",
+                "op": "VariableV2"
+            },
+            "pid": 1,
+            "ts": 1530890986754124,
+            "cat": "Op",
+            "tid": 24,
+            "ph": "X",
+            "dur": 4313
+        },
+        {
+            "name": "Assign",
+            "args": {
+                "input0": "conv1/Variable_1/Adam",
+                "input1": "conv1/Variable_1/Adam/Initializer/zeros",
+                "name": "conv1/Variable_1/Adam/Assign",
+                "op": "Assign"
+            },
+            "pid": 1,
+            "ts": 1530890986758262,
+            "cat": "Op",
+            "tid": 3,
+            "ph": "X",
+            "dur": 184
+        },
+        {
+            "name": "Assign",
+            "args": {
+                "input0": "dense2/Variable_1/Adam",
+                "input1": "dense2/Variable_1/Adam/Initializer/zeros",
+                "name": "dense2/Variable_1/Adam/Assign",
+                "op": "Assign"
+            },
+            "pid": 1,
+            "ts": 1530890986758285,
+            "cat": "Op",
+            "tid": 4,
+            "ph": "X",
+            "dur": 169
+        },
+        {
+            "name": "Add",
+            "args": {
+                "input0": "dense1/truncated_normal/mul",
+                "input1": "dense1/truncated_normal/mean",
+                "name": "dense1/truncated_normal",
+                "op": "Add"
+            },
+            "pid": 1,
+            "ts": 1530890986758244,
+            "cat": "Op",
+            "tid": 5,
+            "ph": "X",
+            "dur": 207
+        },
+        {
+            "name": "dense1/truncated_normal/mul",
+            "pid": 1,
+            "ts": 1530890986758239,
+            "cat": "DataFlow",
+            "tid": 4,
+            "ph": "s",
+            "id": 19
+        },
+        {
+            "name": "dense1/truncated_normal/mul",
+            "pid": 1,
+            "ts": 1530890986758244,
+            "cat": "DataFlow",
+            "tid": 5,
+            "ph": "t",
+            "id": 19
+        },
+        {
+            "name": "Assign",
+            "args": {
+                "input0": "dense1/Variable/Adam",
+                "input1": "dense1/Variable/Adam/Initializer/zeros",
+                "name": "dense1/Variable/Adam/Assign",
+                "op": "Assign"
+            },
+            "pid": 1,
+            "ts": 1530890986757957,
+            "cat": "Op",
+            "tid": 6,
+            "ph": "X",
+            "dur": 1286
+        },
+        {
+            "name": "dense1/Variable/Adam/Initializer/zeros",
+            "pid": 1,
+            "ts": 1530890986757942,
+            "cat": "DataFlow",
+            "tid": 3,
+            "ph": "s",
+            "id": 20
+        },
+        {
+            "name": "dense1/Variable/Adam/Initializer/zeros",
+            "pid": 1,
+            "ts": 1530890986757957,
+            "cat": "DataFlow",
+            "tid": 6,
+            "ph": "t",
+            "id": 20
+        },
+        {
+            "name": "Assign",
+            "args": {
+                "input0": "dense1/Variable/Adam_1",
+                "input1": "dense1/Variable/Adam_1/Initializer/zeros",
+                "name": "dense1/Variable/Adam_1/Assign",
+                "op": "Assign"
+            },
+            "pid": 1,
+            "ts": 1530890986758439,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 1425
+        },
+        {
+            "name": "Assign",
+            "args": {
+                "input0": "dense1/Variable",
+                "input1": "dense1/truncated_normal",
+                "name": "dense1/Variable/Assign",
+                "op": "Assign"
+            },
+            "pid": 1,
+            "ts": 1530890986758457,
+            "cat": "Op",
+            "tid": 1,
+            "ph": "X",
+            "dur": 4477
+        },
+        {
+            "name": "dense1/truncated_normal",
+            "pid": 1,
+            "ts": 1530890986758451,
+            "cat": "DataFlow",
+            "tid": 5,
+            "ph": "s",
+            "id": 21
+        },
+        {
+            "name": "dense1/truncated_normal",
+            "pid": 1,
+            "ts": 1530890986758457,
+            "cat": "DataFlow",
+            "tid": 1,
+            "ph": "t",
+            "id": 21
+        },
+        {
+            "name": "NoOp",
+            "args": {
+                "input2": "^conv2/Variable/Assign",
+                "input3": "^conv2/Variable_1/Assign",
+                "input0": "^conv1/Variable/Assign",
+                "input1": "^conv1/Variable_1/Assign",
+                "input6": "^dense2/Variable/Assign",
+                "input7": "^dense2/Variable_1/Assign",
+                "input4": "^dense1/Variable/Assign",
+                "input5": "^dense1/Variable_1/Assign",
+                "input8": "^beta1_power/Assign",
+                "input9": "^beta2_power/Assign",
+                "input25": "^dense2/Variable_1/Adam_1/Assign",
+                "input24": "^dense2/Variable_1/Adam/Assign",
+                "input21": "^dense1/Variable_1/Adam_1/Assign",
+                "input20": "^dense1/Variable_1/Adam/Assign",
+                "input23": "^dense2/Variable/Adam_1/Assign",
+                "input22": "^dense2/Variable/Adam/Assign",
+                "op": "NoOp",
+                "name": "init",
+                "input18": "^dense1/Variable/Adam/Assign",
+                "input19": "^dense1/Variable/Adam_1/Assign",
+                "input10": "^conv1/Variable/Adam/Assign",
+                "input11": "^conv1/Variable/Adam_1/Assign",
+                "input12": "^conv1/Variable_1/Adam/Assign",
+                "input13": "^conv1/Variable_1/Adam_1/Assign",
+                "input14": "^conv2/Variable/Adam/Assign",
+                "input15": "^conv2/Variable/Adam_1/Assign",
+                "input16": "^conv2/Variable_1/Adam/Assign",
+                "input17": "^conv2/Variable_1/Adam_1/Assign"
+            },
+            "pid": 1,
+            "ts": 1530890986762939,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4
+        }
+    ]
+}

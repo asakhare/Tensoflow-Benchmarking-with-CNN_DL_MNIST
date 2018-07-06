@@ -1,0 +1,1064 @@
++ date
+Thu Jun 14 11:11:28 EDT 2018
++ echo 'Set up environment'
+Set up environment
++ set +x
++ source activate
+++ deactivate nondestructive
+++ unset -f pydoc
+++ '[' -z '' ']'
+++ '[' -z '' ']'
+++ '[' -n /bin/bash ']'
+++ hash -r
+++ '[' -z '' ']'
+++ unset VIRTUAL_ENV
+++ '[' '!' nondestructive = nondestructive ']'
+++ VIRTUAL_ENV=/opt/packages/TensorFlow/tf1.5_gpu
+++ export VIRTUAL_ENV
+++ _OLD_VIRTUAL_PATH=/opt/packages/TensorFlow/tf1.5_gpu/bin:/opt/packages/gcc/5.3.0/bin:/opt/packages/python/2_7_14_gcc5_np1_13/bin:/opt/packages/hdf5/gnu/1.10.1/hdf5/bin:/opt/packages/cuda/8.0/bin:/home/anirban/bin:/usr/lib64/qt-3.3/bin:/opt/intel/advisor_2017.1.3.510716/bin64:/opt/intel/vtune_amplifier_xe_2017.3.0.510739/bin64:/opt/intel/inspector_2017.1.3.510645/bin64:/opt/intel/itac/2017.3.030/intel64/bin:/opt/intel//itac/2017.3.030/intel64/bin:/opt/intel//clck/2017.2.019/bin/intel64:/opt/intel/compilers_and_libraries_2017.4.196/linux/bin/intel64:/opt/intel/compilers_and_libraries_2017.4.196/linux/mpi/intel64/bin:/opt/intel/debugger_2017/gdb/intel64_mic/bin:/opt/packages/slurm/default/bin:/opt/packages/allocations:/opt/packages/interact/bin:/usr/lib64/ccache:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/local/slash2/psc/sbin:/usr/local/slash2/psc/bin:/opt/puppetlabs/puppet/bin:/opt/packages/slash2/psc/sbin:/opt/intel/parallel_studio_xe_2017.4.056/bin:/opt/puppetlabs/bin:/home/asakhare/.local/bin:/home/asakhare/bin
+++ PATH=/opt/packages/TensorFlow/tf1.5_gpu/bin:/opt/packages/TensorFlow/tf1.5_gpu/bin:/opt/packages/gcc/5.3.0/bin:/opt/packages/python/2_7_14_gcc5_np1_13/bin:/opt/packages/hdf5/gnu/1.10.1/hdf5/bin:/opt/packages/cuda/8.0/bin:/home/anirban/bin:/usr/lib64/qt-3.3/bin:/opt/intel/advisor_2017.1.3.510716/bin64:/opt/intel/vtune_amplifier_xe_2017.3.0.510739/bin64:/opt/intel/inspector_2017.1.3.510645/bin64:/opt/intel/itac/2017.3.030/intel64/bin:/opt/intel//itac/2017.3.030/intel64/bin:/opt/intel//clck/2017.2.019/bin/intel64:/opt/intel/compilers_and_libraries_2017.4.196/linux/bin/intel64:/opt/intel/compilers_and_libraries_2017.4.196/linux/mpi/intel64/bin:/opt/intel/debugger_2017/gdb/intel64_mic/bin:/opt/packages/slurm/default/bin:/opt/packages/allocations:/opt/packages/interact/bin:/usr/lib64/ccache:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/local/slash2/psc/sbin:/usr/local/slash2/psc/bin:/opt/puppetlabs/puppet/bin:/opt/packages/slash2/psc/sbin:/opt/intel/parallel_studio_xe_2017.4.056/bin:/opt/puppetlabs/bin:/home/asakhare/.local/bin:/home/asakhare/bin
+++ export PATH
+++ '[' -z '' ']'
+++ '[' -z '' ']'
+++ _OLD_VIRTUAL_PS1=
+++ '[' x '!=' x ']'
++++ basename /opt/packages/TensorFlow/tf1.5_gpu
+++ PS1='(tf1.5_gpu) '
+++ export PS1
+++ alias pydoc
+++ '[' -n /bin/bash ']'
+++ hash -r
++ echo 'Log some information'
+Log some information
++ set +x
+Currently Loaded Modulefiles:
+  1) psc_path/1.1                5) hdf5/1.10.1_gnu
+  2) slurm/default               6) python/2.7.14_gcc5_np1.13
+  3) intel/17.4                  7) gcc/5.3.0
+  4) cuda/8.0                    8) tensorflow/1.5_gpu
++ scontrol show jobid=3116210
+JobId=3116210 JobName=tf_CNN_MNIST
+   UserId=asakhare(64487) GroupId=cc5fp8p(23114) MCS_label=N/A
+   Priority=3679 Nice=0 Account=cc5fp8p QOS=maxgpu
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:00:04 TimeLimit=00:15:00 TimeMin=N/A
+   SubmitTime=2018-06-14T10:49:50 EligibleTime=2018-06-14T10:49:50
+   StartTime=2018-06-14T11:11:25 EndTime=2018-06-14T11:26:27 Deadline=N/A
+   PreemptTime=None SuspendTime=None SecsPreSuspend=0
+   Partition=GPU-shared AllocNode:Sid=br006:26765
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=gpu018
+   BatchHost=gpu018
+   NumNodes=1 NumCPUs=16 NumTasks=16 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   TRES=cpu=16,mem=61600M,node=1,gres/gpu=1,gres/gpu:p100=1
+   Socks/Node=* NtasksPerN:B:S:C=16:0:*:* CoreSpec=*
+   MinCPUsNode=16 MinMemoryNode=61600M MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   Gres=gpu:p100:1 Reservation=(null)
+   OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null)
+   Command=/pylon5/cc5fp8p/asakhare/tf_benchmarks/Deep_MNIST/gpuJob.slurm
+   WorkDir=/pylon5/cc5fp8p/asakhare/tf_benchmarks/Deep_MNIST
+   StdErr=/pylon5/cc5fp8p/asakhare/tf_benchmarks/Deep_MNIST/./results/2018-06-14-GPU-p100:1:scratch
+   StdIn=/dev/null
+   StdOut=/pylon5/cc5fp8p/asakhare/tf_benchmarks/Deep_MNIST/./results/2018-06-14-GPU-p100:1:scratch
+   Power=
+
++ env
+SLURM_CHECKPOINT_IMAGE_DIR=/var/slurm/checkpoint
+SLURM_NODELIST=gpu018
+AUTOJUMP_ERROR_PATH=/home/asakhare/.local/share/autojump/errors.log
+CPLUS_INCLUDE_PATH=/opt/intel//clck/2017.2.019/include
+MKLROOT=/opt/intel/compilers_and_libraries_2017.4.196/linux/mkl
+SLURM_JOB_NAME=tf_CNN_MNIST
+MANPATH=/opt/packages/gcc/5.3.0/share/man:/opt/intel//itac/2017.3.030/man:/opt/intel/man/common:/opt/intel/compilers_and_libraries_2017.4.196/linux/mpi/man:/opt/intel/documentation_2017/en/debugger//gdb-ia/man/:/opt/intel/documentation_2017/en/debugger//gdb-mic/man/:/opt/intel/documentation_2017/en/debugger//gdb-igfx/man/:/opt/packages/slurm/default/share/man:/usr/local/man:/usr/share/man:/opt/packages/slash2/psc/man:
+MPS_INTEL_LIBITTNOTIFY64=libmps.so
+MPS_STAT_DIR_POSTFIX=_%D-%T
+XDG_SESSION_ID=143650
+HDF5_DIR=/opt/packages/hdf5/gnu/1.10.1/hdf5
+SLURMD_NODENAME=gpu018
+SLURM_TOPOLOGY_ADDR=OPAF[1-6].OPAL11.gpu018
+HOSTNAME=gpu018
+VT_MPI=impi4
+SLURM_PRIO_PROCESS=0
+SLURM_NODE_ALIASES=(null)
+AUTOJUMP_SOURCED=1
+INTEL_LICENSE_FILE=/opt/intel/licenses:/opt/intel/licenses:/root/intel/licenses:/opt/intel/licenses:/opt/intel/compilers_and_libraries_2017.4.196/linux/licenses:/opt/intel/licenses:/opt/intel//clck/2017.2.019/licenses:/opt/intel/licenses:/Users/Shared/Library/Application Support/Intel/Licenses
+IPPROOT=/opt/intel/compilers_and_libraries_2017.4.196/linux/ipp
+SHELL=/usr/psc/shells/bash
+TERM=xterm
+CLCK_ROOT=/opt/intel//clck/2017.2.019
+MKL_THREADING_LAYER=GNU
+SLURM_JOB_QOS=maxgpu
+HISTSIZE=1000
+MPS_LD_PRELOAD=libmps.so
+PROJECT=/pylon2/cc5fp8p/asakhare
+TMPDIR=/tmp
+SLURM_TOPOLOGY_ADDR_PATTERN=switch.switch.node
+SSH_CLIENT=128.237.196.50 56044 22
+GLOBUS_LOCATION=/usr
+GDBSERVER_MIC=/opt/intel/debugger_2017/gdb/targets/mic/bin/gdbserver
+LIBRARY_PATH=/opt/packages/hdf5/gnu/1.10.1/hdf5/lib:/opt/intel//clck/2017.2.019/lib/intel64:/opt/intel/compilers_and_libraries_2017.4.196/linux/ipp/lib/intel64:/opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64_lin:/opt/intel/compilers_and_libraries_2017.4.196/linux/mkl/lib/intel64_lin:/opt/intel/compilers_and_libraries_2017.4.196/linux/tbb/lib/intel64/gcc4.7:/opt/intel/compilers_and_libraries_2017.4.196/linux/daal/lib/intel64_lin:/opt/intel/compilers_and_libraries_2017.4.196/linux/daal/../tbb/lib/intel64_lin/gcc4.4
+QTDIR=/usr/lib64/qt-3.3
+SLURM_JOB_GPUS=0
+ADVISOR_2017_DIR=/opt/intel/advisor_2017.1.3.510716
+QTINC=/usr/lib64/qt-3.3/include
+SSH_TTY=/dev/pts/45
+MIC_LD_LIBRARY_PATH=/opt/intel/compilers_and_libraries_2017.4.196/linux/mpi/mic/lib:/opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/mic:/opt/intel/compilers_and_libraries_2017.4.196/linux/ipp/lib/mic:/opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64_lin_mic:/opt/intel/compilers_and_libraries_2017.4.196/linux/mkl/lib/intel64_lin_mic:/opt/intel/compilers_and_libraries_2017.4.196/linux/tbb/lib/mic
+VTUNE_AMPLIFIER_XE_2017_DIR=/opt/intel/vtune_amplifier_xe_2017.3.0.510739
+QT_GRAPHICSSYSTEM_CHECKED=1
+SLURM_NNODES=1
+USER=asakhare
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:
+LD_LIBRARY_PATH=/opt/packages/mkl-dnn/external/mklml_lnx_2018.0.1.20171227/lib:/opt/packages/gcc/5.3.0/lib64:/opt/packages/gcc/5.3.0/lib:/opt/packages/python/2_7_14_gcc5_np1_13/lib:/opt/packages/hdf5/gnu/1.10.1/hdf5/lib:/opt/packages/cuda/8.0/lib64:/opt/intel/itac/2017.3.030/mic/slib:/opt/intel/itac/2017.3.030/intel64/slib:/opt/intel//itac/2017.3.030/mic/slib:/opt/intel//itac/2017.3.030/intel64/slib:/opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64:/opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64_lin:/opt/intel/compilers_and_libraries_2017.4.196/linux/mpi/intel64/lib:/opt/intel/compilers_and_libraries_2017.4.196/linux/mpi/mic/lib:/opt/intel/compilers_and_libraries_2017.4.196/linux/ipp/lib/intel64:/opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64_lin:/opt/intel/compilers_and_libraries_2017.4.196/linux/mkl/lib/intel64_lin:/opt/intel/compilers_and_libraries_2017.4.196/linux/tbb/lib/intel64/gcc4.7:/opt/intel/debugger_2017/iga/lib:/opt/intel/debugger_2017/libipt/intel64/lib:/opt/intel/compilers_and_libraries_2017.4.196/linux/daal/lib/intel64_lin:/opt/intel/compilers_and_libraries_2017.4.196/linux/daal/../tbb/lib/intel64_lin/gcc4.4
+SUDO_PROMPT=Password for %u@PSC.EDU 
+MPS_STAT_ENABLE_IDLE_VAL=1
+MIC_LIBRARY_PATH=/opt/intel/compilers_and_libraries_2017.4.196/linux/mpi/mic/lib:/opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/mic:/opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64_lin_mic:/opt/intel/compilers_and_libraries_2017.4.196/linux/mkl/lib/intel64_lin_mic:/opt/intel/compilers_and_libraries_2017.4.196/linux/tbb/lib/mic
+SLURM_JOBID=3116210
+CPATH=/opt/packages/hdf5/gnu/1.10.1/hdf5/include:/opt/intel/compilers_and_libraries_2017.4.196/linux/ipp/include:/opt/intel/compilers_and_libraries_2017.4.196/linux/mkl/include:/opt/intel/compilers_and_libraries_2017.4.196/linux/tbb/include:/opt/intel/compilers_and_libraries_2017.4.196/linux/daal/include
+TMOUT=604800
+SLURM_NTASKS=16
+VIRTUAL_ENV=/opt/packages/TensorFlow/tf1.5_gpu
+LOCAL=/local/3116210
+MPS_STAT_LEVEL=5
+NLSPATH=/opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/locale/%l_%t/%N:/opt/intel/compilers_and_libraries_2017.4.196/linux/mkl/lib/intel64_lin/locale/%l_%t/%N:/opt/intel/debugger_2017/gdb/intel64_mic/share/locale/%l_%t/%N:/opt/intel/debugger_2017/gdb/intel64/share/locale/%l_%t/%N
+SLURM_TASKS_PER_NODE=16
+PATH=/opt/packages/TensorFlow/tf1.5_gpu/bin:/opt/packages/TensorFlow/tf1.5_gpu/bin:/opt/packages/gcc/5.3.0/bin:/opt/packages/python/2_7_14_gcc5_np1_13/bin:/opt/packages/hdf5/gnu/1.10.1/hdf5/bin:/opt/packages/cuda/8.0/bin:/home/anirban/bin:/usr/lib64/qt-3.3/bin:/opt/intel/advisor_2017.1.3.510716/bin64:/opt/intel/vtune_amplifier_xe_2017.3.0.510739/bin64:/opt/intel/inspector_2017.1.3.510645/bin64:/opt/intel/itac/2017.3.030/intel64/bin:/opt/intel//itac/2017.3.030/intel64/bin:/opt/intel//clck/2017.2.019/bin/intel64:/opt/intel/compilers_and_libraries_2017.4.196/linux/bin/intel64:/opt/intel/compilers_and_libraries_2017.4.196/linux/mpi/intel64/bin:/opt/intel/debugger_2017/gdb/intel64_mic/bin:/opt/packages/slurm/default/bin:/opt/packages/allocations:/opt/packages/interact/bin:/usr/lib64/ccache:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/local/slash2/psc/sbin:/usr/local/slash2/psc/bin:/opt/puppetlabs/puppet/bin:/opt/packages/slash2/psc/sbin:/opt/intel/parallel_studio_xe_2017.4.056/bin:/opt/puppetlabs/bin:/home/asakhare/.local/bin:/home/asakhare/bin
+MAIL=/var/spool/mail/asakhare
+VT_ADD_LIBS=-ldwarf -lelf -lvtunwind -lm -lpthread
+SLURM_JOB_ID=3116210
+MPS_KMP_FORKJOIN_FRAMES_MODE=3
+TBBROOT=/opt/intel/compilers_and_libraries_2017.4.196/linux/tbb
+SLURM_JOB_USER=asakhare
+PWD=/pylon5/cc5fp8p/asakhare/tf_benchmarks/Deep_MNIST
+TF_ENV=/opt/packages/TensorFlow/tf1.5_gpu
+HDF5_ROOT=/opt/packages/hdf5/gnu/1.10.1/hdf5
+CUDA_VISIBLE_DEVICES=0
+MYPROXY_SERVER_PORT=7512
+_LMFILES_=/opt/modulefiles/psc_path/1.1:/opt/modulefiles/slurm/default:/opt/modulefiles/intel/17.4:/opt/modulefiles/cuda/8.0:/opt/modulefiles/hdf5/1.10.1_gnu:/opt/modulefiles/python/2.7.14_gcc5_np1.13:/opt/modulefiles/gcc/5.3.0:/opt/modulefiles/tensorflow/1.5_gpu
+LANG=en_US.UTF-8
+GDB_CROSS=/opt/intel/debugger_2017/gdb/intel64_mic/bin/gdb-mic
+MODULEPATH=:/opt/modulefiles
+SLURM_JOB_UID=64487
+LOADEDMODULES=psc_path/1.1:slurm/default:intel/17.4:cuda/8.0:hdf5/1.10.1_gnu:python/2.7.14_gcc5_np1.13:gcc/5.3.0:tensorflow/1.5_gpu
+VT_LIB_DIR=/opt/intel//itac/2017.3.030/intel64/lib
+RAMDISK=/dev/shm/3116210
+SLURM_NODEID=0
+PS1=(tf1.5_gpu) 
+SLURM_SUBMIT_DIR=/pylon5/cc5fp8p/asakhare/tf_benchmarks/Deep_MNIST
+MYPROXY_SERVER=myproxy.xsede.org,myproxy.psc.xsede.org
+MPS_STAT_ENABLE_IDLE=I_MPI_PVAR_IDLE
+SLURM_TASK_PID=29827
+SLURM_NPROCS=16
+VT_ROOT=/opt/intel//itac/2017.3.030
+HDF5_VERSION=1.10.1
+SLURM_CPUS_ON_NODE=16
+DAALROOT=/opt/intel/compilers_and_libraries_2017.4.196/linux/daal
+MPS_TOOL_ROOT=/opt/intel/itac/2017.3.030
+SLURM_PROCID=0
+ENVIRONMENT=BATCH
+KRB5CCNAME=FILE:/tmp/krb5cc_64487_OqUnDrehuO
+HISTCONTROL=ignoredups
+MPM_LAUNCHER=/opt/intel/debugger_2017/mpm/mic/bin/start_mpm.sh
+SLURM_JOB_NODELIST=gpu018
+INTEL_PYTHONHOME=/opt/intel/debugger_2017/python/intel64/
+HOME=/home/asakhare
+SHLVL=2
+SLURM_LOCALID=0
+GLOBUS_TCP_PORT_RANGE=50000,51000
+SLURM_JOB_GID=23114
+SLURM_JOB_CPUS_PER_NODE=16
+SLURM_CLUSTER_NAME=bridges
+PYTHON_ROOT=/opt/packages/python/2_7_14_gcc5_np1_13
+SLURM_GTIDS=0
+SLURM_SUBMIT_HOST=br006.pvt.bridges.psc.edu
+VT_ARCH=intel64
+VT_SLIB_DIR=/opt/intel//itac/2017.3.030/intel64/slib
+SLURM_JOB_PARTITION=GPU-shared
+LOGNAME=asakhare
+PYTHONPATH=/opt/intel/advisor_2017.1.3.510716/pythonapi
+CVS_RSH=ssh
+GLOBUS_TCP_SOURCE_RANGE=50000,51000
+QTLIB=/usr/lib64/qt-3.3/lib
+GPU_DEVICE_ORDINAL=0
+SLURM_JOB_ACCOUNT=cc5fp8p
+SSH_CONNECTION=128.237.196.50 56044 128.182.108.57 22
+CLASSPATH=/opt/intel/compilers_and_libraries_2017.4.196/linux/mpi/intel64/lib/mpi.jar:/opt/intel/compilers_and_libraries_2017.4.196/linux/daal/lib/daal.jar
+SLURM_JOB_NUM_NODES=1
+MODULESHOME=/usr/share/Modules
+MPS_STAT_MESSAGES=1
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+INSPECTOR_2017_DIR=/opt/intel/inspector_2017.1.3.510645
+INFOPATH=/opt/intel/documentation_2017/en/debugger//gdb-ia/info/:/opt/intel/documentation_2017/en/debugger//gdb-mic/info/:/opt/intel/documentation_2017/en/debugger//gdb-igfx/info/
+XDG_RUNTIME_DIR=/run/user/64487
+SLURM_MEM_PER_NODE=61600
+SCRATCH=/pylon5/cc5fp8p/asakhare
+HDF5_HOME=/opt/packages/hdf5/gnu/1.10.1/hdf5
+I_MPI_ROOT=/opt/intel/compilers_and_libraries_2017.4.196/linux/mpi
+BASH_FUNC_module()=() {  eval `/usr/bin/modulecmd bash $*`
+}
+_=/usr/bin/env
++ which python
+/opt/packages/TensorFlow/tf1.5_gpu/bin/python
++ echo Run
+Run
++ date
+Thu Jun 14 11:11:29 EDT 2018
++ python CNN_MNIST.py
+2018-06-14 11:11:34.852370: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: Tesla P100-PCIE-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.3285
+pciBusID: 0000:81:00.0
+totalMemory: 15.89GiB freeMemory: 15.60GiB
+2018-06-14 11:11:34.852557: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla P100-PCIE-16GB, pci bus id: 0000:81:00.0, compute capability: 6.0)
+2018-06-14 11:11:37.389463: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla P100-PCIE-16GB, pci bus id: 0000:81:00.0, compute capability: 6.0)
+2018-06-14 11:11:37.392448: I tensorflow/core/common_runtime/direct_session.cc:297] Device mapping:
+/job:localhost/replica:0/task:0/device:GPU:0 -> device: 0, name: Tesla P100-PCIE-16GB, pci bus id: 0000:81:00.0, compute capability: 6.0
+
+2018-06-14 11:11:37.656084: I tensorflow/core/common_runtime/placer.cc:874] Variable_7/Adam_1: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.656151: I tensorflow/core/common_runtime/placer.cc:874] Variable_7/Adam_1/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.656178: I tensorflow/core/common_runtime/placer.cc:874] Variable_7/Adam: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.656199: I tensorflow/core/common_runtime/placer.cc:874] Variable_7/Adam/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.656220: I tensorflow/core/common_runtime/placer.cc:874] Variable_6/Adam_1: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.656240: I tensorflow/core/common_runtime/placer.cc:874] Variable_6/Adam_1/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.656258: I tensorflow/core/common_runtime/placer.cc:874] Variable_6/Adam: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.656277: I tensorflow/core/common_runtime/placer.cc:874] Variable_6/Adam/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.656297: I tensorflow/core/common_runtime/placer.cc:874] Variable_5/Adam_1: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.656316: I tensorflow/core/common_runtime/placer.cc:874] Variable_5/Adam_1/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.656335: I tensorflow/core/common_runtime/placer.cc:874] Variable_5/Adam: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.656354: I tensorflow/core/common_runtime/placer.cc:874] Variable_5/Adam/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.656373: I tensorflow/core/common_runtime/placer.cc:874] Variable_4/Adam_1: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.656392: I tensorflow/core/common_runtime/placer.cc:874] Variable_4/Adam_1/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.656410: I tensorflow/core/common_runtime/placer.cc:874] Variable_4/Adam: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.656428: I tensorflow/core/common_runtime/placer.cc:874] Variable_4/Adam/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.656447: I tensorflow/core/common_runtime/placer.cc:874] Variable_3/Adam_1: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.656467: I tensorflow/core/common_runtime/placer.cc:874] Variable_3/Adam_1/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.656485: I tensorflow/core/common_runtime/placer.cc:874] Variable_3/Adam: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.656503: I tensorflow/core/common_runtime/placer.cc:874] Variable_3/Adam/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.656522: I tensorflow/core/common_runtime/placer.cc:874] Variable_2/Adam_1: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.656541: I tensorflow/core/common_runtime/placer.cc:874] Variable_2/Adam_1/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.656566: I tensorflow/core/common_runtime/placer.cc:874] Variable_2/Adam: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.656586: I tensorflow/core/common_runtime/placer.cc:874] Variable_2/Adam/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.656606: I tensorflow/core/common_runtime/placer.cc:874] Variable_1/Adam_1: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.656624: I tensorflow/core/common_runtime/placer.cc:874] Variable_1/Adam_1/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.656643: I tensorflow/core/common_runtime/placer.cc:874] Variable_1/Adam: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.656678: I tensorflow/core/common_runtime/placer.cc:874] Variable_1/Adam/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.656702: I tensorflow/core/common_runtime/placer.cc:874] Variable/Adam_1: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.656721: I tensorflow/core/common_runtime/placer.cc:874] Variable/Adam_1/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.656740: I tensorflow/core/common_runtime/placer.cc:874] Variable/Adam: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.656758: I tensorflow/core/common_runtime/placer.cc:874] Variable/Adam/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.656777: I tensorflow/core/common_runtime/placer.cc:874] beta2_power: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.656796: I tensorflow/core/common_runtime/placer.cc:874] beta2_power/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.656815: I tensorflow/core/common_runtime/placer.cc:874] beta1_power: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.656833: I tensorflow/core/common_runtime/placer.cc:874] beta1_power/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.656851: I tensorflow/core/common_runtime/placer.cc:874] Variable_7: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.656869: I tensorflow/core/common_runtime/placer.cc:874] Variable_7/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.656888: I tensorflow/core/common_runtime/placer.cc:874] Variable_6: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.656907: I tensorflow/core/common_runtime/placer.cc:874] truncated_normal_3/TruncatedNormal: (TruncatedNormal)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.656927: I tensorflow/core/common_runtime/placer.cc:874] truncated_normal_3/mul: (Mul)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.656947: I tensorflow/core/common_runtime/placer.cc:874] truncated_normal_3: (Add)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.656966: I tensorflow/core/common_runtime/placer.cc:874] Variable_6/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.656989: I tensorflow/core/common_runtime/placer.cc:874] Variable_5: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657010: I tensorflow/core/common_runtime/placer.cc:874] Variable_5/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657029: I tensorflow/core/common_runtime/placer.cc:874] Variable_4: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657049: I tensorflow/core/common_runtime/placer.cc:874] truncated_normal_2/TruncatedNormal: (TruncatedNormal)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657069: I tensorflow/core/common_runtime/placer.cc:874] truncated_normal_2/mul: (Mul)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657089: I tensorflow/core/common_runtime/placer.cc:874] truncated_normal_2: (Add)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657108: I tensorflow/core/common_runtime/placer.cc:874] Variable_4/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657126: I tensorflow/core/common_runtime/placer.cc:874] Variable_3: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657144: I tensorflow/core/common_runtime/placer.cc:874] Variable_3/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657162: I tensorflow/core/common_runtime/placer.cc:874] Variable_2: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657182: I tensorflow/core/common_runtime/placer.cc:874] truncated_normal_1/TruncatedNormal: (TruncatedNormal)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657210: I tensorflow/core/common_runtime/placer.cc:874] truncated_normal_1/mul: (Mul)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657233: I tensorflow/core/common_runtime/placer.cc:874] truncated_normal_1: (Add)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657253: I tensorflow/core/common_runtime/placer.cc:874] Variable_2/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657271: I tensorflow/core/common_runtime/placer.cc:874] Variable_1: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657289: I tensorflow/core/common_runtime/placer.cc:874] Variable_1/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657308: I tensorflow/core/common_runtime/placer.cc:874] Variable: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657328: I tensorflow/core/common_runtime/placer.cc:874] truncated_normal/TruncatedNormal: (TruncatedNormal)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657347: I tensorflow/core/common_runtime/placer.cc:874] truncated_normal/mul: (Mul)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657367: I tensorflow/core/common_runtime/placer.cc:874] truncated_normal: (Add)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657386: I tensorflow/core/common_runtime/placer.cc:874] Variable/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657405: I tensorflow/core/common_runtime/placer.cc:874] init: (NoOp)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657425: I tensorflow/core/common_runtime/placer.cc:874] Variable_7/Adam_1/Initializer/zeros: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657444: I tensorflow/core/common_runtime/placer.cc:874] Variable_7/Adam/Initializer/zeros: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657463: I tensorflow/core/common_runtime/placer.cc:874] Variable_6/Adam_1/Initializer/zeros: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657481: I tensorflow/core/common_runtime/placer.cc:874] Variable_6/Adam/Initializer/zeros: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657499: I tensorflow/core/common_runtime/placer.cc:874] Variable_5/Adam_1/Initializer/zeros: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657517: I tensorflow/core/common_runtime/placer.cc:874] Variable_5/Adam/Initializer/zeros: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657536: I tensorflow/core/common_runtime/placer.cc:874] Variable_4/Adam_1/Initializer/zeros: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657561: I tensorflow/core/common_runtime/placer.cc:874] Variable_4/Adam/Initializer/zeros: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657580: I tensorflow/core/common_runtime/placer.cc:874] Variable_3/Adam_1/Initializer/zeros: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657599: I tensorflow/core/common_runtime/placer.cc:874] Variable_3/Adam/Initializer/zeros: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657617: I tensorflow/core/common_runtime/placer.cc:874] Variable_2/Adam_1/Initializer/zeros: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657636: I tensorflow/core/common_runtime/placer.cc:874] Variable_2/Adam/Initializer/zeros: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657654: I tensorflow/core/common_runtime/placer.cc:874] Variable_1/Adam_1/Initializer/zeros: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657672: I tensorflow/core/common_runtime/placer.cc:874] Variable_1/Adam/Initializer/zeros: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657691: I tensorflow/core/common_runtime/placer.cc:874] Variable/Adam_1/Initializer/zeros: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657717: I tensorflow/core/common_runtime/placer.cc:874] Variable/Adam/Initializer/zeros: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657738: I tensorflow/core/common_runtime/placer.cc:874] beta2_power/initial_value: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657756: I tensorflow/core/common_runtime/placer.cc:874] beta1_power/initial_value: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657776: I tensorflow/core/common_runtime/placer.cc:874] Const_3: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657796: I tensorflow/core/common_runtime/placer.cc:874] truncated_normal_3/stddev: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657816: I tensorflow/core/common_runtime/placer.cc:874] truncated_normal_3/mean: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657836: I tensorflow/core/common_runtime/placer.cc:874] truncated_normal_3/shape: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657856: I tensorflow/core/common_runtime/placer.cc:874] Const_2: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657875: I tensorflow/core/common_runtime/placer.cc:874] truncated_normal_2/stddev: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657895: I tensorflow/core/common_runtime/placer.cc:874] truncated_normal_2/mean: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657915: I tensorflow/core/common_runtime/placer.cc:874] truncated_normal_2/shape: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657935: I tensorflow/core/common_runtime/placer.cc:874] Const_1: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657954: I tensorflow/core/common_runtime/placer.cc:874] truncated_normal_1/stddev: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657974: I tensorflow/core/common_runtime/placer.cc:874] truncated_normal_1/mean: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.657997: I tensorflow/core/common_runtime/placer.cc:874] truncated_normal_1/shape: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.658020: I tensorflow/core/common_runtime/placer.cc:874] Const: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.658041: I tensorflow/core/common_runtime/placer.cc:874] truncated_normal/stddev: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.658060: I tensorflow/core/common_runtime/placer.cc:874] truncated_normal/mean: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.658080: I tensorflow/core/common_runtime/placer.cc:874] truncated_normal/shape: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.953766: I tensorflow/core/common_runtime/placer.cc:874] dropout/random_uniform/sub: (Sub)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.953903: I tensorflow/core/common_runtime/placer.cc:874] Variable_7: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.953934: I tensorflow/core/common_runtime/placer.cc:874] Variable_7/read: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.953955: I tensorflow/core/common_runtime/placer.cc:874] Variable_6: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.953975: I tensorflow/core/common_runtime/placer.cc:874] Variable_6/read: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.953993: I tensorflow/core/common_runtime/placer.cc:874] Variable_5: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.954013: I tensorflow/core/common_runtime/placer.cc:874] Variable_5/read: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.954032: I tensorflow/core/common_runtime/placer.cc:874] Variable_4: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.954078: I tensorflow/core/common_runtime/placer.cc:874] Variable_4/read: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.954101: I tensorflow/core/common_runtime/placer.cc:874] Variable_3: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.954121: I tensorflow/core/common_runtime/placer.cc:874] Variable_3/read: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.954139: I tensorflow/core/common_runtime/placer.cc:874] Variable_2: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.954158: I tensorflow/core/common_runtime/placer.cc:874] Variable_2/read: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.954176: I tensorflow/core/common_runtime/placer.cc:874] Variable_1: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.954195: I tensorflow/core/common_runtime/placer.cc:874] Variable_1/read: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.954213: I tensorflow/core/common_runtime/placer.cc:874] Variable: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.954232: I tensorflow/core/common_runtime/placer.cc:874] Variable/read: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.954253: I tensorflow/core/common_runtime/placer.cc:874] ArgMax_1: (ArgMax)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.954274: I tensorflow/core/common_runtime/placer.cc:874] Reshape: (Reshape)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.954295: I tensorflow/core/common_runtime/placer.cc:874] Conv2D: (Conv2D)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.954315: I tensorflow/core/common_runtime/placer.cc:874] add: (Add)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.954336: I tensorflow/core/common_runtime/placer.cc:874] Relu: (Relu)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.954356: I tensorflow/core/common_runtime/placer.cc:874] MaxPool: (MaxPool)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.954376: I tensorflow/core/common_runtime/placer.cc:874] Conv2D_1: (Conv2D)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.954396: I tensorflow/core/common_runtime/placer.cc:874] add_1: (Add)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.954417: I tensorflow/core/common_runtime/placer.cc:874] Relu_1: (Relu)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.954437: I tensorflow/core/common_runtime/placer.cc:874] MaxPool_1: (MaxPool)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.954457: I tensorflow/core/common_runtime/placer.cc:874] Reshape_1: (Reshape)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.954477: I tensorflow/core/common_runtime/placer.cc:874] MatMul: (MatMul)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.954497: I tensorflow/core/common_runtime/placer.cc:874] add_2: (Add)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.954517: I tensorflow/core/common_runtime/placer.cc:874] Relu_2: (Relu)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.954538: I tensorflow/core/common_runtime/placer.cc:874] dropout/div: (RealDiv)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.954566: I tensorflow/core/common_runtime/placer.cc:874] dropout/Shape: (Shape)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.954588: I tensorflow/core/common_runtime/placer.cc:874] dropout/random_uniform/RandomUniform: (RandomUniform)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.954609: I tensorflow/core/common_runtime/placer.cc:874] dropout/random_uniform/mul: (Mul)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.954630: I tensorflow/core/common_runtime/placer.cc:874] dropout/random_uniform: (Add)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.954650: I tensorflow/core/common_runtime/placer.cc:874] dropout/add: (Add)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.954683: I tensorflow/core/common_runtime/placer.cc:874] dropout/Floor: (Floor)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.954707: I tensorflow/core/common_runtime/placer.cc:874] dropout/mul: (Mul)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.954727: I tensorflow/core/common_runtime/placer.cc:874] MatMul_1: (MatMul)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.954748: I tensorflow/core/common_runtime/placer.cc:874] add_3: (Add)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.954768: I tensorflow/core/common_runtime/placer.cc:874] ArgMax: (ArgMax)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.954789: I tensorflow/core/common_runtime/placer.cc:874] Equal: (Equal)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.954809: I tensorflow/core/common_runtime/placer.cc:874] Cast: (Cast)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.954830: I tensorflow/core/common_runtime/placer.cc:874] Mean_1: (Mean)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.954849: I tensorflow/core/common_runtime/placer.cc:874] _arg_Placeholder_0_0: (_Arg)/job:localhost/replica:0/task:0/device:CPU:0
+2018-06-14 11:11:37.954868: I tensorflow/core/common_runtime/placer.cc:874] _arg_Placeholder_1_0_1: (_Arg)/job:localhost/replica:0/task:0/device:CPU:0
+2018-06-14 11:11:37.954886: I tensorflow/core/common_runtime/placer.cc:874] _arg_Placeholder_2_0_2: (_Arg)/job:localhost/replica:0/task:0/device:CPU:0
+2018-06-14 11:11:37.954904: I tensorflow/core/common_runtime/placer.cc:874] _retval_Mean_1_0_0: (_Retval)/job:localhost/replica:0/task:0/device:CPU:0
+2018-06-14 11:11:37.954924: I tensorflow/core/common_runtime/placer.cc:874] Const_5: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.954945: I tensorflow/core/common_runtime/placer.cc:874] ArgMax_1/dimension: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.954965: I tensorflow/core/common_runtime/placer.cc:874] ArgMax/dimension: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.954986: I tensorflow/core/common_runtime/placer.cc:874] dropout/random_uniform/max: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.955012: I tensorflow/core/common_runtime/placer.cc:874] dropout/random_uniform/min: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.955036: I tensorflow/core/common_runtime/placer.cc:874] Reshape_1/shape: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:37.955057: I tensorflow/core/common_runtime/placer.cc:874] Reshape/shape: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.344520: I tensorflow/core/common_runtime/placer.cc:874] Variable_7/Adam_1: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.344685: I tensorflow/core/common_runtime/placer.cc:874] Variable_7/Adam: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.344727: I tensorflow/core/common_runtime/placer.cc:874] Variable_6/Adam_1: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.344757: I tensorflow/core/common_runtime/placer.cc:874] Variable_6/Adam: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.344787: I tensorflow/core/common_runtime/placer.cc:874] Variable_5/Adam_1: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.344816: I tensorflow/core/common_runtime/placer.cc:874] Variable_5/Adam: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.344845: I tensorflow/core/common_runtime/placer.cc:874] Variable_4/Adam_1: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.344875: I tensorflow/core/common_runtime/placer.cc:874] Variable_4/Adam: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.344904: I tensorflow/core/common_runtime/placer.cc:874] Variable_3/Adam_1: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.344975: I tensorflow/core/common_runtime/placer.cc:874] Variable_3/Adam: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.345010: I tensorflow/core/common_runtime/placer.cc:874] Variable_2/Adam_1: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.345040: I tensorflow/core/common_runtime/placer.cc:874] Variable_2/Adam: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.345069: I tensorflow/core/common_runtime/placer.cc:874] Variable_1/Adam_1: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.345098: I tensorflow/core/common_runtime/placer.cc:874] Variable_1/Adam: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.345127: I tensorflow/core/common_runtime/placer.cc:874] Variable/Adam_1: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.345156: I tensorflow/core/common_runtime/placer.cc:874] Variable/Adam: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.345186: I tensorflow/core/common_runtime/placer.cc:874] beta2_power: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.345221: I tensorflow/core/common_runtime/placer.cc:874] beta2_power/read: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.345252: I tensorflow/core/common_runtime/placer.cc:874] beta1_power: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.345282: I tensorflow/core/common_runtime/placer.cc:874] beta1_power/read: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.345318: I tensorflow/core/common_runtime/placer.cc:874] gradients/Mean_grad/Prod_1: (Prod)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.345352: I tensorflow/core/common_runtime/placer.cc:874] gradients/Mean_grad/Maximum: (Maximum)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.345386: I tensorflow/core/common_runtime/placer.cc:874] gradients/Fill: (Fill)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.345419: I tensorflow/core/common_runtime/placer.cc:874] gradients/Mean_grad/Reshape: (Reshape)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.345452: I tensorflow/core/common_runtime/placer.cc:874] softmax_cross_entropy_with_logits/Sub_1: (Sub)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.345484: I tensorflow/core/common_runtime/placer.cc:874] softmax_cross_entropy_with_logits/Slice_1/begin: (Pack)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.345517: I tensorflow/core/common_runtime/placer.cc:874] softmax_cross_entropy_with_logits/Sub: (Sub)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.345559: I tensorflow/core/common_runtime/placer.cc:874] softmax_cross_entropy_with_logits/Slice/begin: (Pack)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.345594: I tensorflow/core/common_runtime/placer.cc:874] softmax_cross_entropy_with_logits/Sub_2: (Sub)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.345627: I tensorflow/core/common_runtime/placer.cc:874] softmax_cross_entropy_with_logits/Slice_2/size: (Pack)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.345661: I tensorflow/core/common_runtime/placer.cc:874] dropout/random_uniform/sub: (Sub)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.345695: I tensorflow/core/common_runtime/placer.cc:874] gradients/dropout/div_grad/Shape_1: (Shape)/job:localhost/replica:0/task:0/device:CPU:0
+2018-06-14 11:11:39.345725: I tensorflow/core/common_runtime/placer.cc:874] Variable_7: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.345756: I tensorflow/core/common_runtime/placer.cc:874] Variable_7/read: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.345786: I tensorflow/core/common_runtime/placer.cc:874] Variable_6: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.345817: I tensorflow/core/common_runtime/placer.cc:874] Variable_6/read: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.345877: I tensorflow/core/common_runtime/placer.cc:874] Variable_5: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.345912: I tensorflow/core/common_runtime/placer.cc:874] Variable_5/read: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.345942: I tensorflow/core/common_runtime/placer.cc:874] Variable_4: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.345973: I tensorflow/core/common_runtime/placer.cc:874] Variable_4/read: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.346003: I tensorflow/core/common_runtime/placer.cc:874] Variable_3: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.346034: I tensorflow/core/common_runtime/placer.cc:874] Variable_3/read: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.346064: I tensorflow/core/common_runtime/placer.cc:874] Variable_2: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.346095: I tensorflow/core/common_runtime/placer.cc:874] Variable_2/read: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.346125: I tensorflow/core/common_runtime/placer.cc:874] Variable_1: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.346155: I tensorflow/core/common_runtime/placer.cc:874] Variable_1/read: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.346185: I tensorflow/core/common_runtime/placer.cc:874] Variable: (VariableV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.346215: I tensorflow/core/common_runtime/placer.cc:874] Variable/read: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.346248: I tensorflow/core/common_runtime/placer.cc:874] softmax_cross_entropy_with_logits/Shape_2: (Shape)/job:localhost/replica:0/task:0/device:CPU:0
+2018-06-14 11:11:39.346289: I tensorflow/core/common_runtime/placer.cc:874] softmax_cross_entropy_with_logits/Slice_1: (Slice)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.346325: I tensorflow/core/common_runtime/placer.cc:874] softmax_cross_entropy_with_logits/concat_1: (ConcatV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.346359: I tensorflow/core/common_runtime/placer.cc:874] softmax_cross_entropy_with_logits/Reshape_1: (Reshape)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.346391: I tensorflow/core/common_runtime/placer.cc:874] Reshape: (Reshape)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.346424: I tensorflow/core/common_runtime/placer.cc:874] gradients/Conv2D_grad/ShapeN: (ShapeN)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.346456: I tensorflow/core/common_runtime/placer.cc:874] Conv2D: (Conv2D)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.346489: I tensorflow/core/common_runtime/placer.cc:874] gradients/add_grad/Shape: (Shape)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.346522: I tensorflow/core/common_runtime/placer.cc:874] gradients/add_grad/BroadcastGradientArgs: (BroadcastGradientArgs)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.346801: I tensorflow/core/common_runtime/placer.cc:874] add: (Add)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.346847: I tensorflow/core/common_runtime/placer.cc:874] Relu: (Relu)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.346880: I tensorflow/core/common_runtime/placer.cc:874] MaxPool: (MaxPool)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.346913: I tensorflow/core/common_runtime/placer.cc:874] gradients/Conv2D_1_grad/ShapeN: (ShapeN)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.346946: I tensorflow/core/common_runtime/placer.cc:874] Conv2D_1: (Conv2D)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.346978: I tensorflow/core/common_runtime/placer.cc:874] gradients/add_1_grad/Shape: (Shape)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.347038: I tensorflow/core/common_runtime/placer.cc:874] gradients/add_1_grad/BroadcastGradientArgs: (BroadcastGradientArgs)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.347068: I tensorflow/core/common_runtime/placer.cc:874] add_1: (Add)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.347095: I tensorflow/core/common_runtime/placer.cc:874] Relu_1: (Relu)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.347121: I tensorflow/core/common_runtime/placer.cc:874] MaxPool_1: (MaxPool)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.347148: I tensorflow/core/common_runtime/placer.cc:874] gradients/Reshape_1_grad/Shape: (Shape)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.347174: I tensorflow/core/common_runtime/placer.cc:874] Reshape_1: (Reshape)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.347200: I tensorflow/core/common_runtime/placer.cc:874] MatMul: (MatMul)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.347226: I tensorflow/core/common_runtime/placer.cc:874] gradients/add_2_grad/Shape: (Shape)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.347253: I tensorflow/core/common_runtime/placer.cc:874] gradients/add_2_grad/BroadcastGradientArgs: (BroadcastGradientArgs)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.347279: I tensorflow/core/common_runtime/placer.cc:874] add_2: (Add)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.347306: I tensorflow/core/common_runtime/placer.cc:874] Relu_2: (Relu)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.347332: I tensorflow/core/common_runtime/placer.cc:874] gradients/dropout/div_grad/Neg: (Neg)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.347359: I tensorflow/core/common_runtime/placer.cc:874] gradients/dropout/div_grad/RealDiv_1: (RealDiv)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.347385: I tensorflow/core/common_runtime/placer.cc:874] gradients/dropout/div_grad/RealDiv_2: (RealDiv)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.347411: I tensorflow/core/common_runtime/placer.cc:874] gradients/dropout/div_grad/Shape: (Shape)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.347438: I tensorflow/core/common_runtime/placer.cc:874] gradients/dropout/div_grad/BroadcastGradientArgs: (BroadcastGradientArgs)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.347464: I tensorflow/core/common_runtime/placer.cc:874] dropout/div: (RealDiv)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.347491: I tensorflow/core/common_runtime/placer.cc:874] gradients/dropout/mul_grad/Shape: (Shape)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.347517: I tensorflow/core/common_runtime/placer.cc:874] dropout/Shape: (Shape)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.347542: I tensorflow/core/common_runtime/placer.cc:874] dropout/random_uniform/RandomUniform: (RandomUniform)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.347578: I tensorflow/core/common_runtime/placer.cc:874] dropout/random_uniform/mul: (Mul)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.347605: I tensorflow/core/common_runtime/placer.cc:874] dropout/random_uniform: (Add)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.347632: I tensorflow/core/common_runtime/placer.cc:874] dropout/add: (Add)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.347658: I tensorflow/core/common_runtime/placer.cc:874] dropout/Floor: (Floor)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.347685: I tensorflow/core/common_runtime/placer.cc:874] gradients/dropout/mul_grad/Shape_1: (Shape)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.347711: I tensorflow/core/common_runtime/placer.cc:874] gradients/dropout/mul_grad/BroadcastGradientArgs: (BroadcastGradientArgs)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.347749: I tensorflow/core/common_runtime/placer.cc:874] dropout/mul: (Mul)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.347778: I tensorflow/core/common_runtime/placer.cc:874] MatMul_1: (MatMul)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.347805: I tensorflow/core/common_runtime/placer.cc:874] gradients/add_3_grad/Shape: (Shape)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.347831: I tensorflow/core/common_runtime/placer.cc:874] gradients/add_3_grad/BroadcastGradientArgs: (BroadcastGradientArgs)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.347857: I tensorflow/core/common_runtime/placer.cc:874] add_3: (Add)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.347884: I tensorflow/core/common_runtime/placer.cc:874] gradients/softmax_cross_entropy_with_logits/Reshape_grad/Shape: (Shape)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.347910: I tensorflow/core/common_runtime/placer.cc:874] softmax_cross_entropy_with_logits/Shape_1: (Shape)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.347936: I tensorflow/core/common_runtime/placer.cc:874] softmax_cross_entropy_with_logits/Slice: (Slice)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.347963: I tensorflow/core/common_runtime/placer.cc:874] softmax_cross_entropy_with_logits/concat: (ConcatV2)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.347989: I tensorflow/core/common_runtime/placer.cc:874] softmax_cross_entropy_with_logits/Reshape: (Reshape)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.348023: I tensorflow/core/common_runtime/placer.cc:874] gradients/softmax_cross_entropy_with_logits_grad/LogSoftmax: (LogSoftmax)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.348053: I tensorflow/core/common_runtime/placer.cc:874] gradients/softmax_cross_entropy_with_logits_grad/Neg: (Neg)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.348080: I tensorflow/core/common_runtime/placer.cc:874] softmax_cross_entropy_with_logits: (SoftmaxCrossEntropyWithLogits)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.348107: I tensorflow/core/common_runtime/placer.cc:874] gradients/softmax_cross_entropy_with_logits/Reshape_2_grad/Shape: (Shape)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.348133: I tensorflow/core/common_runtime/placer.cc:874] softmax_cross_entropy_with_logits/Shape: (Shape)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.348159: I tensorflow/core/common_runtime/placer.cc:874] softmax_cross_entropy_with_logits/Slice_2: (Slice)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.348186: I tensorflow/core/common_runtime/placer.cc:874] softmax_cross_entropy_with_logits/Reshape_2: (Reshape)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.348212: I tensorflow/core/common_runtime/placer.cc:874] gradients/Mean_grad/Shape_1: (Shape)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.348239: I tensorflow/core/common_runtime/placer.cc:874] gradients/Mean_grad/Prod: (Prod)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.348265: I tensorflow/core/common_runtime/placer.cc:874] gradients/Mean_grad/floordiv: (FloorDiv)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.348292: I tensorflow/core/common_runtime/placer.cc:874] gradients/Mean_grad/Cast: (Cast)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.348318: I tensorflow/core/common_runtime/placer.cc:874] gradients/Mean_grad/Shape: (Shape)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.348344: I tensorflow/core/common_runtime/placer.cc:874] gradients/Mean_grad/Tile: (Tile)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.348370: I tensorflow/core/common_runtime/placer.cc:874] gradients/Mean_grad/truediv: (RealDiv)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.348397: I tensorflow/core/common_runtime/placer.cc:874] gradients/softmax_cross_entropy_with_logits/Reshape_2_grad/Reshape: (Reshape)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.348435: I tensorflow/core/common_runtime/placer.cc:874] gradients/softmax_cross_entropy_with_logits_grad/ExpandDims_1: (ExpandDims)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.348465: I tensorflow/core/common_runtime/placer.cc:874] gradients/softmax_cross_entropy_with_logits_grad/mul_1: (Mul)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.348492: I tensorflow/core/common_runtime/placer.cc:874] gradients/softmax_cross_entropy_with_logits_grad/ExpandDims: (ExpandDims)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.348519: I tensorflow/core/common_runtime/placer.cc:874] gradients/softmax_cross_entropy_with_logits_grad/mul: (Mul)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.348552: I tensorflow/core/common_runtime/placer.cc:874] gradients/softmax_cross_entropy_with_logits_grad/tuple/group_deps: (NoOp)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.348580: I tensorflow/core/common_runtime/placer.cc:874] gradients/softmax_cross_entropy_with_logits_grad/tuple/control_dependency: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.348607: I tensorflow/core/common_runtime/placer.cc:874] gradients/softmax_cross_entropy_with_logits/Reshape_grad/Reshape: (Reshape)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.348633: I tensorflow/core/common_runtime/placer.cc:874] gradients/add_3_grad/Sum_1: (Sum)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.348660: I tensorflow/core/common_runtime/placer.cc:874] gradients/add_3_grad/Reshape_1: (Reshape)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.348686: I tensorflow/core/common_runtime/placer.cc:874] gradients/add_3_grad/Sum: (Sum)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.348713: I tensorflow/core/common_runtime/placer.cc:874] gradients/add_3_grad/Reshape: (Reshape)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.348739: I tensorflow/core/common_runtime/placer.cc:874] gradients/add_3_grad/tuple/group_deps: (NoOp)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.348765: I tensorflow/core/common_runtime/placer.cc:874] gradients/add_3_grad/tuple/control_dependency_1: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.348790: I tensorflow/core/common_runtime/placer.cc:874] Adam/update_Variable_7/ApplyAdam: (ApplyAdam)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.348814: I tensorflow/core/common_runtime/placer.cc:874] gradients/add_3_grad/tuple/control_dependency: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.348840: I tensorflow/core/common_runtime/placer.cc:874] gradients/MatMul_1_grad/MatMul_1: (MatMul)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.348867: I tensorflow/core/common_runtime/placer.cc:874] gradients/MatMul_1_grad/MatMul: (MatMul)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.348893: I tensorflow/core/common_runtime/placer.cc:874] gradients/MatMul_1_grad/tuple/group_deps: (NoOp)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.348919: I tensorflow/core/common_runtime/placer.cc:874] gradients/MatMul_1_grad/tuple/control_dependency_1: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.348943: I tensorflow/core/common_runtime/placer.cc:874] Adam/update_Variable_6/ApplyAdam: (ApplyAdam)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.348967: I tensorflow/core/common_runtime/placer.cc:874] gradients/MatMul_1_grad/tuple/control_dependency: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.348993: I tensorflow/core/common_runtime/placer.cc:874] gradients/dropout/mul_grad/mul_1: (Mul)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.349019: I tensorflow/core/common_runtime/placer.cc:874] gradients/dropout/mul_grad/Sum_1: (Sum)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.349057: I tensorflow/core/common_runtime/placer.cc:874] gradients/dropout/mul_grad/Reshape_1: (Reshape)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.349086: I tensorflow/core/common_runtime/placer.cc:874] gradients/dropout/mul_grad/mul: (Mul)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.349113: I tensorflow/core/common_runtime/placer.cc:874] gradients/dropout/mul_grad/Sum: (Sum)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.349144: I tensorflow/core/common_runtime/placer.cc:874] gradients/dropout/mul_grad/Reshape: (Reshape)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.349173: I tensorflow/core/common_runtime/placer.cc:874] gradients/dropout/mul_grad/tuple/group_deps: (NoOp)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.349200: I tensorflow/core/common_runtime/placer.cc:874] gradients/dropout/mul_grad/tuple/control_dependency: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.349225: I tensorflow/core/common_runtime/placer.cc:874] gradients/dropout/div_grad/mul: (Mul)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.349252: I tensorflow/core/common_runtime/placer.cc:874] gradients/dropout/div_grad/Sum_1: (Sum)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.349278: I tensorflow/core/common_runtime/placer.cc:874] gradients/dropout/div_grad/Reshape_1: (Reshape)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.349304: I tensorflow/core/common_runtime/placer.cc:874] gradients/dropout/div_grad/RealDiv: (RealDiv)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.349330: I tensorflow/core/common_runtime/placer.cc:874] gradients/dropout/div_grad/Sum: (Sum)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.349357: I tensorflow/core/common_runtime/placer.cc:874] gradients/dropout/div_grad/Reshape: (Reshape)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.349383: I tensorflow/core/common_runtime/placer.cc:874] gradients/dropout/div_grad/tuple/group_deps: (NoOp)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.349409: I tensorflow/core/common_runtime/placer.cc:874] gradients/dropout/div_grad/tuple/control_dependency: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.349434: I tensorflow/core/common_runtime/placer.cc:874] gradients/Relu_2_grad/ReluGrad: (ReluGrad)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.349461: I tensorflow/core/common_runtime/placer.cc:874] gradients/add_2_grad/Sum_1: (Sum)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.349487: I tensorflow/core/common_runtime/placer.cc:874] gradients/add_2_grad/Reshape_1: (Reshape)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.349514: I tensorflow/core/common_runtime/placer.cc:874] gradients/add_2_grad/Sum: (Sum)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.349540: I tensorflow/core/common_runtime/placer.cc:874] gradients/add_2_grad/Reshape: (Reshape)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.349578: I tensorflow/core/common_runtime/placer.cc:874] gradients/add_2_grad/tuple/group_deps: (NoOp)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.349605: I tensorflow/core/common_runtime/placer.cc:874] gradients/add_2_grad/tuple/control_dependency_1: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.349830: I tensorflow/core/common_runtime/placer.cc:874] Adam/update_Variable_5/ApplyAdam: (ApplyAdam)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.349863: I tensorflow/core/common_runtime/placer.cc:874] gradients/add_2_grad/tuple/control_dependency: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.349891: I tensorflow/core/common_runtime/placer.cc:874] gradients/MatMul_grad/MatMul_1: (MatMul)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.349917: I tensorflow/core/common_runtime/placer.cc:874] gradients/MatMul_grad/MatMul: (MatMul)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.349957: I tensorflow/core/common_runtime/placer.cc:874] gradients/MatMul_grad/tuple/group_deps: (NoOp)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.349985: I tensorflow/core/common_runtime/placer.cc:874] gradients/MatMul_grad/tuple/control_dependency_1: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.350010: I tensorflow/core/common_runtime/placer.cc:874] Adam/update_Variable_4/ApplyAdam: (ApplyAdam)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.350034: I tensorflow/core/common_runtime/placer.cc:874] gradients/MatMul_grad/tuple/control_dependency: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.350060: I tensorflow/core/common_runtime/placer.cc:874] gradients/Reshape_1_grad/Reshape: (Reshape)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.350086: I tensorflow/core/common_runtime/placer.cc:874] gradients/MaxPool_1_grad/MaxPoolGrad: (MaxPoolGrad)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.350113: I tensorflow/core/common_runtime/placer.cc:874] gradients/Relu_1_grad/ReluGrad: (ReluGrad)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.350139: I tensorflow/core/common_runtime/placer.cc:874] gradients/add_1_grad/Sum_1: (Sum)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.350165: I tensorflow/core/common_runtime/placer.cc:874] gradients/add_1_grad/Reshape_1: (Reshape)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.350192: I tensorflow/core/common_runtime/placer.cc:874] gradients/add_1_grad/Sum: (Sum)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.350218: I tensorflow/core/common_runtime/placer.cc:874] gradients/add_1_grad/Reshape: (Reshape)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.350244: I tensorflow/core/common_runtime/placer.cc:874] gradients/add_1_grad/tuple/group_deps: (NoOp)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.350270: I tensorflow/core/common_runtime/placer.cc:874] gradients/add_1_grad/tuple/control_dependency_1: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.350294: I tensorflow/core/common_runtime/placer.cc:874] Adam/update_Variable_3/ApplyAdam: (ApplyAdam)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.350319: I tensorflow/core/common_runtime/placer.cc:874] gradients/add_1_grad/tuple/control_dependency: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.350344: I tensorflow/core/common_runtime/placer.cc:874] gradients/Conv2D_1_grad/Conv2DBackpropFilter: (Conv2DBackpropFilter)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.350371: I tensorflow/core/common_runtime/placer.cc:874] gradients/Conv2D_1_grad/Conv2DBackpropInput: (Conv2DBackpropInput)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.350398: I tensorflow/core/common_runtime/placer.cc:874] gradients/Conv2D_1_grad/tuple/group_deps: (NoOp)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.350423: I tensorflow/core/common_runtime/placer.cc:874] gradients/Conv2D_1_grad/tuple/control_dependency_1: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.350448: I tensorflow/core/common_runtime/placer.cc:874] Adam/update_Variable_2/ApplyAdam: (ApplyAdam)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.350472: I tensorflow/core/common_runtime/placer.cc:874] gradients/Conv2D_1_grad/tuple/control_dependency: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.350498: I tensorflow/core/common_runtime/placer.cc:874] gradients/MaxPool_grad/MaxPoolGrad: (MaxPoolGrad)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.350532: I tensorflow/core/common_runtime/placer.cc:874] gradients/Relu_grad/ReluGrad: (ReluGrad)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.350570: I tensorflow/core/common_runtime/placer.cc:874] gradients/add_grad/Sum_1: (Sum)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.350609: I tensorflow/core/common_runtime/placer.cc:874] gradients/add_grad/Reshape_1: (Reshape)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.350639: I tensorflow/core/common_runtime/placer.cc:874] gradients/add_grad/Sum: (Sum)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.350665: I tensorflow/core/common_runtime/placer.cc:874] gradients/add_grad/Reshape: (Reshape)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.350692: I tensorflow/core/common_runtime/placer.cc:874] gradients/add_grad/tuple/group_deps: (NoOp)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.350717: I tensorflow/core/common_runtime/placer.cc:874] gradients/add_grad/tuple/control_dependency_1: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.350742: I tensorflow/core/common_runtime/placer.cc:874] Adam/update_Variable_1/ApplyAdam: (ApplyAdam)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.350767: I tensorflow/core/common_runtime/placer.cc:874] gradients/add_grad/tuple/control_dependency: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.350793: I tensorflow/core/common_runtime/placer.cc:874] gradients/Conv2D_grad/Conv2DBackpropFilter: (Conv2DBackpropFilter)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.350819: I tensorflow/core/common_runtime/placer.cc:874] gradients/Conv2D_grad/Conv2DBackpropInput: (Conv2DBackpropInput)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.350845: I tensorflow/core/common_runtime/placer.cc:874] gradients/Conv2D_grad/tuple/group_deps: (NoOp)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.350870: I tensorflow/core/common_runtime/placer.cc:874] gradients/Conv2D_grad/tuple/control_dependency_1: (Identity)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.350895: I tensorflow/core/common_runtime/placer.cc:874] Adam/update_Variable/ApplyAdam: (ApplyAdam)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.350920: I tensorflow/core/common_runtime/placer.cc:874] Adam/mul_1: (Mul)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.350944: I tensorflow/core/common_runtime/placer.cc:874] Adam/Assign_1: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.350969: I tensorflow/core/common_runtime/placer.cc:874] Adam/mul: (Mul)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.350993: I tensorflow/core/common_runtime/placer.cc:874] Adam/Assign: (Assign)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.351019: I tensorflow/core/common_runtime/placer.cc:874] Adam: (NoOp)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.351276: I tensorflow/core/common_runtime/placer.cc:874] _arg_Placeholder_0_0: (_Arg)/job:localhost/replica:0/task:0/device:CPU:0
+2018-06-14 11:11:39.351305: I tensorflow/core/common_runtime/placer.cc:874] _arg_Placeholder_1_0_1: (_Arg)/job:localhost/replica:0/task:0/device:CPU:0
+2018-06-14 11:11:39.351329: I tensorflow/core/common_runtime/placer.cc:874] _arg_Placeholder_2_0_2: (_Arg)/job:localhost/replica:0/task:0/device:CPU:0
+2018-06-14 11:11:39.351357: I tensorflow/core/common_runtime/placer.cc:874] Adam/epsilon: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.351385: I tensorflow/core/common_runtime/placer.cc:874] Adam/beta2: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.351412: I tensorflow/core/common_runtime/placer.cc:874] Adam/beta1: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.351438: I tensorflow/core/common_runtime/placer.cc:874] Adam/learning_rate: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.351465: I tensorflow/core/common_runtime/placer.cc:874] gradients/Conv2D_grad/Const: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.351491: I tensorflow/core/common_runtime/placer.cc:874] gradients/add_grad/Shape_1: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.351531: I tensorflow/core/common_runtime/placer.cc:874] gradients/Conv2D_1_grad/Const: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.351568: I tensorflow/core/common_runtime/placer.cc:874] gradients/add_1_grad/Shape_1: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.351596: I tensorflow/core/common_runtime/placer.cc:874] gradients/add_2_grad/Shape_1: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.351623: I tensorflow/core/common_runtime/placer.cc:874] gradients/add_3_grad/Shape_1: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.351649: I tensorflow/core/common_runtime/placer.cc:874] gradients/softmax_cross_entropy_with_logits_grad/ExpandDims_1/dim: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.351676: I tensorflow/core/common_runtime/placer.cc:874] gradients/softmax_cross_entropy_with_logits_grad/ExpandDims/dim: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.351703: I tensorflow/core/common_runtime/placer.cc:874] gradients/Mean_grad/Maximum/y: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.351729: I tensorflow/core/common_runtime/placer.cc:874] gradients/Mean_grad/Const_1: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.351755: I tensorflow/core/common_runtime/placer.cc:874] gradients/Mean_grad/Const: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.351781: I tensorflow/core/common_runtime/placer.cc:874] gradients/Mean_grad/Shape_2: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.351808: I tensorflow/core/common_runtime/placer.cc:874] gradients/Mean_grad/Reshape/shape: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.351834: I tensorflow/core/common_runtime/placer.cc:874] gradients/grad_ys_0: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.351860: I tensorflow/core/common_runtime/placer.cc:874] gradients/Shape: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.351886: I tensorflow/core/common_runtime/placer.cc:874] softmax_cross_entropy_with_logits/Slice_2/begin: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.351913: I tensorflow/core/common_runtime/placer.cc:874] softmax_cross_entropy_with_logits/Sub_2/y: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.351939: I tensorflow/core/common_runtime/placer.cc:874] softmax_cross_entropy_with_logits/concat_1/axis: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.351966: I tensorflow/core/common_runtime/placer.cc:874] softmax_cross_entropy_with_logits/concat_1/values_0: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.351992: I tensorflow/core/common_runtime/placer.cc:874] softmax_cross_entropy_with_logits/Slice_1/size: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.352019: I tensorflow/core/common_runtime/placer.cc:874] softmax_cross_entropy_with_logits/Sub_1/y: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.352051: I tensorflow/core/common_runtime/placer.cc:874] softmax_cross_entropy_with_logits/Rank_2: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.352081: I tensorflow/core/common_runtime/placer.cc:874] softmax_cross_entropy_with_logits/concat/axis: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.352108: I tensorflow/core/common_runtime/placer.cc:874] softmax_cross_entropy_with_logits/concat/values_0: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.352135: I tensorflow/core/common_runtime/placer.cc:874] softmax_cross_entropy_with_logits/Slice/size: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.352162: I tensorflow/core/common_runtime/placer.cc:874] softmax_cross_entropy_with_logits/Sub/y: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.352200: I tensorflow/core/common_runtime/placer.cc:874] softmax_cross_entropy_with_logits/Rank_1: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.352230: I tensorflow/core/common_runtime/placer.cc:874] softmax_cross_entropy_with_logits/Rank: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.352256: I tensorflow/core/common_runtime/placer.cc:874] dropout/random_uniform/max: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.352283: I tensorflow/core/common_runtime/placer.cc:874] dropout/random_uniform/min: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.352309: I tensorflow/core/common_runtime/placer.cc:874] Reshape_1/shape: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+2018-06-14 11:11:39.352336: I tensorflow/core/common_runtime/placer.cc:874] Reshape/shape: (Const)/job:localhost/replica:0/task:0/device:GPU:0
+*******Device Info Seen By TensorFlow*******
+[name: "/device:CPU:0"
+device_type: "CPU"
+memory_limit: 268435456
+locality {
+}
+incarnation: 16852961212418032051
+, name: "/device:GPU:0"
+device_type: "GPU"
+memory_limit: 15869870080
+locality {
+  bus_id: 2
+}
+incarnation: 298460475989933402
+physical_device_desc: "device: 0, name: Tesla P100-PCIE-16GB, pci bus id: 0000:81:00.0, compute capability: 6.0"
+]
+********************************************
+Extracting ./train-images-idx3-ubyte.gz
+Extracting ./train-labels-idx1-ubyte.gz
+Extracting ./t10k-images-idx3-ubyte.gz
+Extracting ./t10k-labels-idx1-ubyte.gz
+Device mapping:
+/job:localhost/replica:0/task:0/device:GPU:0 -> device: 0, name: Tesla P100-PCIE-16GB, pci bus id: 0000:81:00.0, compute capability: 6.0
+Variable_7/Adam_1: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_7/Adam_1/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_7/Adam: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_7/Adam/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_6/Adam_1: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_6/Adam_1/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_6/Adam: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_6/Adam/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_5/Adam_1: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_5/Adam_1/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_5/Adam: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_5/Adam/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_4/Adam_1: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_4/Adam_1/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_4/Adam: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_4/Adam/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_3/Adam_1: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_3/Adam_1/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_3/Adam: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_3/Adam/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_2/Adam_1: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_2/Adam_1/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_2/Adam: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_2/Adam/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_1/Adam_1: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_1/Adam_1/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_1/Adam: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_1/Adam/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable/Adam_1: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable/Adam_1/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable/Adam: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable/Adam/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+beta2_power: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+beta2_power/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+beta1_power: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+beta1_power/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_7: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_7/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_6: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+truncated_normal_3/TruncatedNormal: (TruncatedNormal): /job:localhost/replica:0/task:0/device:GPU:0
+truncated_normal_3/mul: (Mul): /job:localhost/replica:0/task:0/device:GPU:0
+truncated_normal_3: (Add): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_6/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_5: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_5/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_4: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+truncated_normal_2/TruncatedNormal: (TruncatedNormal): /job:localhost/replica:0/task:0/device:GPU:0
+truncated_normal_2/mul: (Mul): /job:localhost/replica:0/task:0/device:GPU:0
+truncated_normal_2: (Add): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_4/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_3: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_3/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_2: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+truncated_normal_1/TruncatedNormal: (TruncatedNormal): /job:localhost/replica:0/task:0/device:GPU:0
+truncated_normal_1/mul: (Mul): /job:localhost/replica:0/task:0/device:GPU:0
+truncated_normal_1: (Add): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_2/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_1: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_1/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Variable: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+truncated_normal/TruncatedNormal: (TruncatedNormal): /job:localhost/replica:0/task:0/device:GPU:0
+truncated_normal/mul: (Mul): /job:localhost/replica:0/task:0/device:GPU:0
+truncated_normal: (Add): /job:localhost/replica:0/task:0/device:GPU:0
+Variable/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+init: (NoOp): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_7/Adam_1/Initializer/zeros: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_7/Adam/Initializer/zeros: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_6/Adam_1/Initializer/zeros: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_6/Adam/Initializer/zeros: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_5/Adam_1/Initializer/zeros: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_5/Adam/Initializer/zeros: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_4/Adam_1/Initializer/zeros: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_4/Adam/Initializer/zeros: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_3/Adam_1/Initializer/zeros: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_3/Adam/Initializer/zeros: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_2/Adam_1/Initializer/zeros: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_2/Adam/Initializer/zeros: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_1/Adam_1/Initializer/zeros: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_1/Adam/Initializer/zeros: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable/Adam_1/Initializer/zeros: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Variable/Adam/Initializer/zeros: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+beta2_power/initial_value: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+beta1_power/initial_value: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Const_3: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+truncated_normal_3/stddev: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+truncated_normal_3/mean: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+truncated_normal_3/shape: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Const_2: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+truncated_normal_2/stddev: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+truncated_normal_2/mean: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+truncated_normal_2/shape: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Const_1: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+truncated_normal_1/stddev: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+truncated_normal_1/mean: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+truncated_normal_1/shape: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Const: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+truncated_normal/stddev: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+truncated_normal/mean: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+truncated_normal/shape: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+dropout/random_uniform/sub: (Sub): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_7: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_7/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_6: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_6/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_5: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_5/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_4: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_4/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_3: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_3/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_2: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_2/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_1: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_1/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+ArgMax_1: (ArgMax): /job:localhost/replica:0/task:0/device:GPU:0
+Reshape: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+Conv2D: (Conv2D): /job:localhost/replica:0/task:0/device:GPU:0
+add: (Add): /job:localhost/replica:0/task:0/device:GPU:0
+Relu: (Relu): /job:localhost/replica:0/task:0/device:GPU:0
+MaxPool: (MaxPool): /job:localhost/replica:0/task:0/device:GPU:0
+Conv2D_1: (Conv2D): /job:localhost/replica:0/task:0/device:GPU:0
+add_1: (Add): /job:localhost/replica:0/task:0/device:GPU:0
+Relu_1: (Relu): /job:localhost/replica:0/task:0/device:GPU:0
+MaxPool_1: (MaxPool): /job:localhost/replica:0/task:0/device:GPU:0
+Reshape_1: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+MatMul: (MatMul): /job:localhost/replica:0/task:0/device:GPU:0
+add_2: (Add): /job:localhost/replica:0/task:0/device:GPU:0
+Relu_2: (Relu): /job:localhost/replica:0/task:0/device:GPU:0
+dropout/div: (RealDiv): /job:localhost/replica:0/task:0/device:GPU:0
+dropout/Shape: (Shape): /job:localhost/replica:0/task:0/device:GPU:0
+dropout/random_uniform/RandomUniform: (RandomUniform): /job:localhost/replica:0/task:0/device:GPU:0
+dropout/random_uniform/mul: (Mul): /job:localhost/replica:0/task:0/device:GPU:0
+dropout/random_uniform: (Add): /job:localhost/replica:0/task:0/device:GPU:0
+dropout/add: (Add): /job:localhost/replica:0/task:0/device:GPU:0
+dropout/Floor: (Floor): /job:localhost/replica:0/task:0/device:GPU:0
+dropout/mul: (Mul): /job:localhost/replica:0/task:0/device:GPU:0
+MatMul_1: (MatMul): /job:localhost/replica:0/task:0/device:GPU:0
+add_3: (Add): /job:localhost/replica:0/task:0/device:GPU:0
+ArgMax: (ArgMax): /job:localhost/replica:0/task:0/device:GPU:0
+Equal: (Equal): /job:localhost/replica:0/task:0/device:GPU:0
+Cast: (Cast): /job:localhost/replica:0/task:0/device:GPU:0
+Mean_1: (Mean): /job:localhost/replica:0/task:0/device:GPU:0
+_arg_Placeholder_0_0: (_Arg): /job:localhost/replica:0/task:0/device:CPU:0
+_arg_Placeholder_1_0_1: (_Arg): /job:localhost/replica:0/task:0/device:CPU:0
+_arg_Placeholder_2_0_2: (_Arg): /job:localhost/replica:0/task:0/device:CPU:0
+_retval_Mean_1_0_0: (_Retval): /job:localhost/replica:0/task:0/device:CPU:0
+Const_5: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+ArgMax_1/dimension: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+ArgMax/dimension: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+dropout/random_uniform/max: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+dropout/random_uniform/min: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Reshape_1/shape: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Reshape/shape: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+step 0, training accuracy 0.04
+Variable_7/Adam_1: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_7/Adam: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_6/Adam_1: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_6/Adam: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_5/Adam_1: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_5/Adam: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_4/Adam_1: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_4/Adam: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_3/Adam_1: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_3/Adam: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_2/Adam_1: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_2/Adam: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_1/Adam_1: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_1/Adam: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable/Adam_1: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable/Adam: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+beta2_power: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+beta2_power/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+beta1_power: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+beta1_power/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Mean_grad/Prod_1: (Prod): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Mean_grad/Maximum: (Maximum): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Fill: (Fill): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Mean_grad/Reshape: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits/Sub_1: (Sub): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits/Slice_1/begin: (Pack): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits/Sub: (Sub): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits/Slice/begin: (Pack): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits/Sub_2: (Sub): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits/Slice_2/size: (Pack): /job:localhost/replica:0/task:0/device:GPU:0
+dropout/random_uniform/sub: (Sub): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/div_grad/Shape_1: (Shape): /job:localhost/replica:0/task:0/device:CPU:0
+Variable_7: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_7/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_6: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_6/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_5: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_5/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_4: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_4/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_3: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_3/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_2: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_2/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_1: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable_1/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Variable: (VariableV2): /job:localhost/replica:0/task:0/device:GPU:0
+Variable/read: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits/Shape_2: (Shape): /job:localhost/replica:0/task:0/device:CPU:0
+softmax_cross_entropy_with_logits/Slice_1: (Slice): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits/concat_1: (ConcatV2): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits/Reshape_1: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+Reshape: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Conv2D_grad/ShapeN: (ShapeN): /job:localhost/replica:0/task:0/device:GPU:0
+Conv2D: (Conv2D): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_grad/Shape: (Shape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_grad/BroadcastGradientArgs: (BroadcastGradientArgs): /job:localhost/replica:0/task:0/device:GPU:0
+add: (Add): /job:localhost/replica:0/task:0/device:GPU:0
+Relu: (Relu): /job:localhost/replica:0/task:0/device:GPU:0
+MaxPool: (MaxPool): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Conv2D_1_grad/ShapeN: (ShapeN): /job:localhost/replica:0/task:0/device:GPU:0
+Conv2D_1: (Conv2D): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_1_grad/Shape: (Shape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_1_grad/BroadcastGradientArgs: (BroadcastGradientArgs): /job:localhost/replica:0/task:0/device:GPU:0
+add_1: (Add): /job:localhost/replica:0/task:0/device:GPU:0
+Relu_1: (Relu): /job:localhost/replica:0/task:0/device:GPU:0
+MaxPool_1: (MaxPool): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Reshape_1_grad/Shape: (Shape): /job:localhost/replica:0/task:0/device:GPU:0
+Reshape_1: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+MatMul: (MatMul): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_2_grad/Shape: (Shape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_2_grad/BroadcastGradientArgs: (BroadcastGradientArgs): /job:localhost/replica:0/task:0/device:GPU:0
+add_2: (Add): /job:localhost/replica:0/task:0/device:GPU:0
+Relu_2: (Relu): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/div_grad/Neg: (Neg): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/div_grad/RealDiv_1: (RealDiv): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/div_grad/RealDiv_2: (RealDiv): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/div_grad/Shape: (Shape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/div_grad/BroadcastGradientArgs: (BroadcastGradientArgs): /job:localhost/replica:0/task:0/device:GPU:0
+dropout/div: (RealDiv): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/mul_grad/Shape: (Shape): /job:localhost/replica:0/task:0/device:GPU:0
+dropout/Shape: (Shape): /job:localhost/replica:0/task:0/device:GPU:0
+dropout/random_uniform/RandomUniform: (RandomUniform): /job:localhost/replica:0/task:0/device:GPU:0
+dropout/random_uniform/mul: (Mul): /job:localhost/replica:0/task:0/device:GPU:0
+dropout/random_uniform: (Add): /job:localhost/replica:0/task:0/device:GPU:0
+dropout/add: (Add): /job:localhost/replica:0/task:0/device:GPU:0
+dropout/Floor: (Floor): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/mul_grad/Shape_1: (Shape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/mul_grad/BroadcastGradientArgs: (BroadcastGradientArgs): /job:localhost/replica:0/task:0/device:GPU:0
+dropout/mul: (Mul): /job:localhost/replica:0/task:0/device:GPU:0
+MatMul_1: (MatMul): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_3_grad/Shape: (Shape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_3_grad/BroadcastGradientArgs: (BroadcastGradientArgs): /job:localhost/replica:0/task:0/device:GPU:0
+add_3: (Add): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/softmax_cross_entropy_with_logits/Reshape_grad/Shape: (Shape): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits/Shape_1: (Shape): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits/Slice: (Slice): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits/concat: (ConcatV2): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits/Reshape: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/softmax_cross_entropy_with_logits_grad/LogSoftmax: (LogSoftmax): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/softmax_cross_entropy_with_logits_grad/Neg: (Neg): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits: (SoftmaxCrossEntropyWithLogits): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/softmax_cross_entropy_with_logits/Reshape_2_grad/Shape: (Shape): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits/Shape: (Shape): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits/Slice_2: (Slice): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits/Reshape_2: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Mean_grad/Shape_1: (Shape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Mean_grad/Prod: (Prod): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Mean_grad/floordiv: (FloorDiv): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Mean_grad/Cast: (Cast): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Mean_grad/Shape: (Shape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Mean_grad/Tile: (Tile): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Mean_grad/truediv: (RealDiv): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/softmax_cross_entropy_with_logits/Reshape_2_grad/Reshape: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/softmax_cross_entropy_with_logits_grad/ExpandDims_1: (ExpandDims): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/softmax_cross_entropy_with_logits_grad/mul_1: (Mul): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/softmax_cross_entropy_with_logits_grad/ExpandDims: (ExpandDims): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/softmax_cross_entropy_with_logits_grad/mul: (Mul): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/softmax_cross_entropy_with_logits_grad/tuple/group_deps: (NoOp): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/softmax_cross_entropy_with_logits_grad/tuple/control_dependency: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/softmax_cross_entropy_with_logits/Reshape_grad/Reshape: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_3_grad/Sum_1: (Sum): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_3_grad/Reshape_1: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_3_grad/Sum: (Sum): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_3_grad/Reshape: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_3_grad/tuple/group_deps: (NoOp): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_3_grad/tuple/control_dependency_1: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Adam/update_Variable_7/ApplyAdam: (ApplyAdam): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_3_grad/tuple/control_dependency: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/MatMul_1_grad/MatMul_1: (MatMul): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/MatMul_1_grad/MatMul: (MatMul): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/MatMul_1_grad/tuple/group_deps: (NoOp): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/MatMul_1_grad/tuple/control_dependency_1: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Adam/update_Variable_6/ApplyAdam: (ApplyAdam): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/MatMul_1_grad/tuple/control_dependency: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/mul_grad/mul_1: (Mul): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/mul_grad/Sum_1: (Sum): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/mul_grad/Reshape_1: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/mul_grad/mul: (Mul): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/mul_grad/Sum: (Sum): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/mul_grad/Reshape: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/mul_grad/tuple/group_deps: (NoOp): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/mul_grad/tuple/control_dependency: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/div_grad/mul: (Mul): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/div_grad/Sum_1: (Sum): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/div_grad/Reshape_1: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/div_grad/RealDiv: (RealDiv): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/div_grad/Sum: (Sum): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/div_grad/Reshape: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/div_grad/tuple/group_deps: (NoOp): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/dropout/div_grad/tuple/control_dependency: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Relu_2_grad/ReluGrad: (ReluGrad): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_2_grad/Sum_1: (Sum): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_2_grad/Reshape_1: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_2_grad/Sum: (Sum): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_2_grad/Reshape: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_2_grad/tuple/group_deps: (NoOp): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_2_grad/tuple/control_dependency_1: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Adam/update_Variable_5/ApplyAdam: (ApplyAdam): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_2_grad/tuple/control_dependency: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/MatMul_grad/MatMul_1: (MatMul): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/MatMul_grad/MatMul: (MatMul): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/MatMul_grad/tuple/group_deps: (NoOp): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/MatMul_grad/tuple/control_dependency_1: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Adam/update_Variable_4/ApplyAdam: (ApplyAdam): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/MatMul_grad/tuple/control_dependency: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Reshape_1_grad/Reshape: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/MaxPool_1_grad/MaxPoolGrad: (MaxPoolGrad): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Relu_1_grad/ReluGrad: (ReluGrad): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_1_grad/Sum_1: (Sum): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_1_grad/Reshape_1: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_1_grad/Sum: (Sum): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_1_grad/Reshape: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_1_grad/tuple/group_deps: (NoOp): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_1_grad/tuple/control_dependency_1: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Adam/update_Variable_3/ApplyAdam: (ApplyAdam): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_1_grad/tuple/control_dependency: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Conv2D_1_grad/Conv2DBackpropFilter: (Conv2DBackpropFilter): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Conv2D_1_grad/Conv2DBackpropInput: (Conv2DBackpropInput): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Conv2D_1_grad/tuple/group_deps: (NoOp): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Conv2D_1_grad/tuple/control_dependency_1: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Adam/update_Variable_2/ApplyAdam: (ApplyAdam): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Conv2D_1_grad/tuple/control_dependency: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/MaxPool_grad/MaxPoolGrad: (MaxPoolGrad): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Relu_grad/ReluGrad: (ReluGrad): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_grad/Sum_1: (Sum): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_grad/Reshape_1: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_grad/Sum: (Sum): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_grad/Reshape: (Reshape): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_grad/tuple/group_deps: (NoOp): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_grad/tuple/control_dependency_1: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Adam/update_Variable_1/ApplyAdam: (ApplyAdam): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_grad/tuple/control_dependency: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Conv2D_grad/Conv2DBackpropFilter: (Conv2DBackpropFilter): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Conv2D_grad/Conv2DBackpropInput: (Conv2DBackpropInput): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Conv2D_grad/tuple/group_deps: (NoOp): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Conv2D_grad/tuple/control_dependency_1: (Identity): /job:localhost/replica:0/task:0/device:GPU:0
+Adam/update_Variable/ApplyAdam: (ApplyAdam): /job:localhost/replica:0/task:0/device:GPU:0
+Adam/mul_1: (Mul): /job:localhost/replica:0/task:0/device:GPU:0
+Adam/Assign_1: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Adam/mul: (Mul): /job:localhost/replica:0/task:0/device:GPU:0
+Adam/Assign: (Assign): /job:localhost/replica:0/task:0/device:GPU:0
+Adam: (NoOp): /job:localhost/replica:0/task:0/device:GPU:0
+_arg_Placeholder_0_0: (_Arg): /job:localhost/replica:0/task:0/device:CPU:0
+_arg_Placeholder_1_0_1: (_Arg): /job:localhost/replica:0/task:0/device:CPU:0
+_arg_Placeholder_2_0_2: (_Arg): /job:localhost/replica:0/task:0/device:CPU:0
+Adam/epsilon: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Adam/beta2: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Adam/beta1: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Adam/learning_rate: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Conv2D_grad/Const: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_grad/Shape_1: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Conv2D_1_grad/Const: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_1_grad/Shape_1: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_2_grad/Shape_1: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/add_3_grad/Shape_1: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/softmax_cross_entropy_with_logits_grad/ExpandDims_1/dim: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/softmax_cross_entropy_with_logits_grad/ExpandDims/dim: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Mean_grad/Maximum/y: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Mean_grad/Const_1: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Mean_grad/Const: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Mean_grad/Shape_2: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Mean_grad/Reshape/shape: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/grad_ys_0: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+gradients/Shape: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits/Slice_2/begin: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits/Sub_2/y: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits/concat_1/axis: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits/concat_1/values_0: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits/Slice_1/size: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits/Sub_1/y: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits/Rank_2: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits/concat/axis: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits/concat/values_0: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits/Slice/size: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits/Sub/y: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits/Rank_1: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+softmax_cross_entropy_with_logits/Rank: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+dropout/random_uniform/max: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+dropout/random_uniform/min: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Reshape_1/shape: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+Reshape/shape: (Const): /job:localhost/replica:0/task:0/device:GPU:0
+step 1000, training accuracy 0.98
+step 2000, training accuracy 0.98
+step 3000, training accuracy 1
+step 4000, training accuracy 0.96
+step 5000, training accuracy 1
+step 6000, training accuracy 0.98
+step 7000, training accuracy 1
+step 8000, training accuracy 1
+step 9000, training accuracy 0.98
+step 10000, training accuracy 1
+step 11000, training accuracy 1
+step 12000, training accuracy 1
+step 13000, training accuracy 1
+step 14000, training accuracy 0.98
+step 15000, training accuracy 1
+step 16000, training accuracy 1
+step 17000, training accuracy 0.98
+step 18000, training accuracy 1
+step 19000, training accuracy 1
+test accuracy 0.9918
+Mean Time Per Step : 0.00524773302078
+Mean Speed : 9527.9237343 Images/Sec
+speed uncertainty : 6.08281984969
+Speed Jitter : 807.784674179
+
+real	2m0.028s
+user	2m41.428s
+sys	0m29.091s
++ date
+Thu Jun 14 11:13:29 EDT 2018

@@ -1,24 +1,28 @@
 #!/bin/bash
-#SBATCH --job-name=tf_CNN_MNIST
+#SBATCH --job-name=tf_CNN_MNIST_nogpu
 ##SBATCH --partition=GPU-shared
 ##SBATCH --nodes=1
 ##SBATCH --gres=gpu:p100:1
-#SBATCH --time=02:15:00
+#SBATCH --time=03:00:00
 
 set -x
 date 
 
 echo "Set up environment"
-set +x; module show tensorflow/1.1.0_nogpu; set -x
-source /opt/packages/TensorFlow/TensorFlow_1.1.0/TensorFlowNoGPUEnv/bin/activate
+set +x; module load tensorflow/1.7_py2_nogpu; set -x
+source activate
 
 echo "Log some information"
 set +x; module list; set -x
+lscpu | grep -i 'model name'
 scontrol show jobid=$SLURM_JOB_ID
 env
 which python
 
+export LD_LIBRARY_PATH=/usr/local/cuda/extras/CUPTI/lib64:$LD_LIBRARY_PATH
+
 echo "Run"
+echo "batch_size=$batch_size"
 date
-time python CNN_MNIST.py
+time python CNN_MNIST_CPU_ONLY.py $batch_size
 date
