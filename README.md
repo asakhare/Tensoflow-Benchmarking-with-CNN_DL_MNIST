@@ -82,7 +82,7 @@ This script scans all the output files and stores the important outputs metrices
 |9|	2673.974139|	0.01869876	|	4.147340431	|	386.9301569	|k80	|	1	|	$SCRATCH
 
 
-	This script should be kept in the directory above the results directory. This script automatically scans through every file stored in results directory and fetches the above values from the file. An output file in the results directory is created which follows the following name format.
+This script should be kept in the directory above the results directory. This script automatically scans through every file stored in results directory and fetches the above values from the file. An output file in the results directory is created which follows the following name format.
 <today’s date>:TF_PERFORMANCE_RESULTS.csv
 e.g. 2018-06-04:TF_PERFORMANCE_RESULTS.csv
 Note: Since the submitted jobs take time to finish, the output files will be available in the results directory only after a job is completed. Hence before running this file make sure that all the jobs are completed to get the best results. Also, since this file uses Pandas module, make sure that Pandas is installed or run the file in AI_ENV. Commands to run the file in AI_ENV are given below.
