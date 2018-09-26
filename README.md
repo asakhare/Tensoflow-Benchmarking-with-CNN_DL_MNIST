@@ -35,4 +35,6 @@ More details for executing the benchmarking suite are in the README file at http
 
 This directory includes code which implements Deep MNSIT model in a distributed mode. In Distributed Tensorflow, the model employs multiple GPU nodes and distributes the computation across the hardware present on these nodes. Currently as a proof of concept, a code which uses only single GPUs across the nodes is implemented successfully. Going forward we can implement a model to employ Multiple Nodes with Multiple GPUs for training the deep neural network.
 (Code modified from: https://github.com/tensorflow/tensorflow/blob/master/tensorflow/tools/dist_test/python/mnist_replica.py)
-Note - This benchmarking suite is still under development and currently the code to execute Deep MNIST on Multiple Nodes with Single GPUs is working. 
+Note - This benchmarking suite is still under development and currently the code to execute Deep MNIST on Multiple Nodes with Single GPUs is working.
+
+Note - 3. Deep_MNIST folder contains the original deep MNIST code.
