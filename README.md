@@ -29,7 +29,8 @@ This directory includes a benchmarking suite with Deep MNIST model, which can be
   <img src="Benchmarking_Framework.png" title="Benchmarking_Framework">
 </p>
 
-More details for executing the benchmarking suite are in the README file at https://github.com/pscedu/Bridges_DL_benchmarks/tree/master/Deep_MNIST_SingleNode
+More details for executing the benchmarking suite are in the README file at 
+https://github.com/asakhare/Tensoflow-Benchmarking-with-CNN_DL_MNIST/tree/master/Deep_MNIST_SingleNode
 
 **2. Deep_MNIST_Distributed_MultiNode**
 
