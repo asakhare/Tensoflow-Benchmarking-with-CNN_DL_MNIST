@@ -1,0 +1,315 @@
++ date
+Fri Jul 20 18:29:42 EDT 2018
++ echo 'Original Input Command'
+Original Input Command
++ echo
+
++ echo 'Set up environment'
+Set up environment
++ set +x
++ source activate
+++ deactivate nondestructive
+++ unset -f pydoc
+++ '[' -z '' ']'
+++ '[' -z '' ']'
+++ '[' -n /bin/bash ']'
+++ hash -r
+++ '[' -z '' ']'
+++ unset VIRTUAL_ENV
+++ '[' '!' nondestructive = nondestructive ']'
+++ VIRTUAL_ENV=/opt/packages/TensorFlow/gnu/tf1.7_py2_gpu
+++ export VIRTUAL_ENV
+++ _OLD_VIRTUAL_PATH=/opt/packages/TensorFlow/gnu/tf1.7_py2_gpu/bin:/opt/packages/python/2_7_14_gcc5_np1_13/bin:/opt/packages/gcc/5.3.0/bin:/opt/packages/cuda/9.0/bin:/home/anirban/bin:/usr/lib64/qt-3.3/bin:/opt/intel/advisor_2017.1.3.510716/bin64:/opt/intel/vtune_amplifier_xe_2017.3.0.510739/bin64:/opt/intel/inspector_2017.1.3.510645/bin64:/opt/intel/itac/2017.3.030/intel64/bin:/opt/intel//itac/2017.3.030/intel64/bin:/opt/intel//clck/2017.2.019/bin/intel64:/opt/intel/compilers_and_libraries_2017.4.196/linux/bin/intel64:/opt/intel/compilers_and_libraries_2017.4.196/linux/mpi/intel64/bin:/opt/intel/debugger_2017/gdb/intel64_mic/bin:/opt/packages/slurm/default/bin:/opt/packages/allocations:/opt/packages/interact/bin:/usr/lib64/ccache:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/local/slash2/psc/sbin:/usr/local/slash2/psc/bin:/opt/puppetlabs/puppet/bin:/opt/packages/slash2/psc/sbin:/opt/intel/parallel_studio_xe_2017.4.056/bin:/opt/puppetlabs/bin:/home/asakhare/.local/bin:/home/asakhare/bin
+++ PATH=/opt/packages/TensorFlow/gnu/tf1.7_py2_gpu/bin:/opt/packages/TensorFlow/gnu/tf1.7_py2_gpu/bin:/opt/packages/python/2_7_14_gcc5_np1_13/bin:/opt/packages/gcc/5.3.0/bin:/opt/packages/cuda/9.0/bin:/home/anirban/bin:/usr/lib64/qt-3.3/bin:/opt/intel/advisor_2017.1.3.510716/bin64:/opt/intel/vtune_amplifier_xe_2017.3.0.510739/bin64:/opt/intel/inspector_2017.1.3.510645/bin64:/opt/intel/itac/2017.3.030/intel64/bin:/opt/intel//itac/2017.3.030/intel64/bin:/opt/intel//clck/2017.2.019/bin/intel64:/opt/intel/compilers_and_libraries_2017.4.196/linux/bin/intel64:/opt/intel/compilers_and_libraries_2017.4.196/linux/mpi/intel64/bin:/opt/intel/debugger_2017/gdb/intel64_mic/bin:/opt/packages/slurm/default/bin:/opt/packages/allocations:/opt/packages/interact/bin:/usr/lib64/ccache:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/local/slash2/psc/sbin:/usr/local/slash2/psc/bin:/opt/puppetlabs/puppet/bin:/opt/packages/slash2/psc/sbin:/opt/intel/parallel_studio_xe_2017.4.056/bin:/opt/puppetlabs/bin:/home/asakhare/.local/bin:/home/asakhare/bin
+++ export PATH
+++ '[' -z '' ']'
+++ '[' -z '' ']'
+++ _OLD_VIRTUAL_PS1=
+++ '[' x '!=' x ']'
++++ basename /opt/packages/TensorFlow/gnu/tf1.7_py2_gpu
+++ PS1='(tf1.7_py2_gpu) '
+++ export PS1
+++ alias pydoc
+++ '[' -n /bin/bash ']'
+++ hash -r
++ echo 'Log some information'
+Log some information
++ set +x
+Currently Loaded Modulefiles:
+  1) psc_path/1.1                5) gcc/5.3.0
+  2) slurm/default               6) python/2.7.14_gcc5_np1.13
+  3) intel/17.4                  7) tensorflow/1.7_py2_gpu
+  4) cuda/9.0
++ scontrol show jobid=3599044
+JobId=3599044 JobName=deep_mnist_distributed
+   UserId=asakhare(64487) GroupId=cc5fp8p(23114) MCS_label=N/A
+   Priority=2981 Nice=0 Account=cc5fp8p QOS=maxgpu
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:00:02 TimeLimit=01:00:00 TimeMin=N/A
+   SubmitTime=2018-07-18T17:06:20 EligibleTime=2018-07-18T17:06:20
+   StartTime=2018-07-20T18:29:40 EndTime=2018-07-20T19:29:41 Deadline=N/A
+   PreemptTime=None SuspendTime=None SecsPreSuspend=0
+   LastSchedEval=2018-07-20T18:29:40
+   Partition=GPU AllocNode:Sid=br018:24162
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=gpu[035,038]
+   BatchHost=gpu035
+   NumNodes=2 NumCPUs=64 NumTasks=2 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   TRES=cpu=64,mem=246400M,node=2,billing/gpu=64,gres/gpu=4,gres/gpu:p100=4
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=1 MinMemoryNode=123200M MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   Gres=gpu:p100:2 Reservation=(null)
+   OverSubscribe=NO Contiguous=0 Licenses=(null) Network=(null)
+   Command=/pylon5/cc5fp8p/asakhare/DistTF/job_deep_mnist_dist.slurm
+   WorkDir=/pylon5/cc5fp8p/asakhare/DistTF
+   StdErr=/pylon5/cc5fp8p/asakhare/DistTF/slurm-3599044.out
+   StdIn=/dev/null
+   StdOut=/pylon5/cc5fp8p/asakhare/DistTF/slurm-3599044.out
+   Power=
+
++ env
+SLURM_CHECKPOINT_IMAGE_DIR=/var/slurm/checkpoint
+SLURM_NODELIST=gpu[035,038]
+AUTOJUMP_ERROR_PATH=/home/asakhare/.local/share/autojump/errors.log
+CPLUS_INCLUDE_PATH=/opt/intel//clck/2017.2.019/include
+MKLROOT=/opt/intel/compilers_and_libraries_2017.4.196/linux/mkl
+SLURM_JOB_NAME=deep_mnist_distributed
+MANPATH=/opt/packages/gcc/5.3.0/share/man:/opt/intel//itac/2017.3.030/man:/opt/intel/man/common:/opt/intel/compilers_and_libraries_2017.4.196/linux/mpi/man:/opt/intel/documentation_2017/en/debugger//gdb-ia/man/:/opt/intel/documentation_2017/en/debugger//gdb-mic/man/:/opt/intel/documentation_2017/en/debugger//gdb-igfx/man/:/opt/packages/slurm/default/share/man:/usr/local/man:/usr/share/man:/opt/packages/slash2/psc/man:
+MPS_INTEL_LIBITTNOTIFY64=libmps.so
+MPS_STAT_DIR_POSTFIX=_%D-%T
+XDG_SESSION_ID=6162
+SLURMD_NODENAME=gpu035
+SLURM_TOPOLOGY_ADDR=OPAF[1-6].OPAL11.gpu035
+HOSTNAME=gpu035
+VT_MPI=impi4
+SLURM_PRIO_PROCESS=0
+SLURM_NODE_ALIASES=(null)
+AUTOJUMP_SOURCED=1
+INTEL_LICENSE_FILE=/opt/intel/licenses:/opt/intel/licenses:/root/intel/licenses:/opt/intel/licenses:/opt/intel/compilers_and_libraries_2017.4.196/linux/licenses:/opt/intel/licenses:/opt/intel//clck/2017.2.019/licenses:/opt/intel/licenses:/Users/Shared/Library/Application Support/Intel/Licenses
+IPPROOT=/opt/intel/compilers_and_libraries_2017.4.196/linux/ipp
+SHELL=/usr/psc/shells/bash
+TERM=xterm
+CLCK_ROOT=/opt/intel//clck/2017.2.019
+MKL_THREADING_LAYER=GNU
+SLURM_JOB_QOS=maxgpu
+HISTSIZE=1000
+MPS_LD_PRELOAD=libmps.so
+PROJECT=/pylon2/cc5fp8p/asakhare
+TMPDIR=/tmp
+SLURM_TOPOLOGY_ADDR_PATTERN=switch.switch.node
+SSH_CLIENT=128.182.154.103 61420 22
+GLOBUS_LOCATION=/usr
+GDBSERVER_MIC=/opt/intel/debugger_2017/gdb/targets/mic/bin/gdbserver
+LIBRARY_PATH=/opt/intel//clck/2017.2.019/lib/intel64:/opt/intel/compilers_and_libraries_2017.4.196/linux/ipp/lib/intel64:/opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64_lin:/opt/intel/compilers_and_libraries_2017.4.196/linux/mkl/lib/intel64_lin:/opt/intel/compilers_and_libraries_2017.4.196/linux/tbb/lib/intel64/gcc4.7:/opt/intel/compilers_and_libraries_2017.4.196/linux/daal/lib/intel64_lin:/opt/intel/compilers_and_libraries_2017.4.196/linux/daal/../tbb/lib/intel64_lin/gcc4.4
+QTDIR=/usr/lib64/qt-3.3
+SLURM_JOB_GPUS=0,1
+ADVISOR_2017_DIR=/opt/intel/advisor_2017.1.3.510716
+QTINC=/usr/lib64/qt-3.3/include
+SSH_TTY=/dev/pts/62
+MIC_LD_LIBRARY_PATH=/opt/intel/compilers_and_libraries_2017.4.196/linux/mpi/mic/lib:/opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/mic:/opt/intel/compilers_and_libraries_2017.4.196/linux/ipp/lib/mic:/opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64_lin_mic:/opt/intel/compilers_and_libraries_2017.4.196/linux/mkl/lib/intel64_lin_mic:/opt/intel/compilers_and_libraries_2017.4.196/linux/tbb/lib/mic
+VTUNE_AMPLIFIER_XE_2017_DIR=/opt/intel/vtune_amplifier_xe_2017.3.0.510739
+QT_GRAPHICSSYSTEM_CHECKED=1
+SLURM_NNODES=2
+USER=asakhare
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:
+LD_LIBRARY_PATH=/opt/packages/mkl-dnn/external/mklml_lnx_2018.0.1.20171227/lib:/opt/packages/python/2_7_14_gcc5_np1_13/lib:/opt/packages/gcc/5.3.0/lib64:/opt/packages/gcc/5.3.0/lib:/opt/packages/cuda/9.0/lib64:/opt/intel/itac/2017.3.030/mic/slib:/opt/intel/itac/2017.3.030/intel64/slib:/opt/intel//itac/2017.3.030/mic/slib:/opt/intel//itac/2017.3.030/intel64/slib:/opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64:/opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64_lin:/opt/intel/compilers_and_libraries_2017.4.196/linux/mpi/intel64/lib:/opt/intel/compilers_and_libraries_2017.4.196/linux/mpi/mic/lib:/opt/intel/compilers_and_libraries_2017.4.196/linux/ipp/lib/intel64:/opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64_lin:/opt/intel/compilers_and_libraries_2017.4.196/linux/mkl/lib/intel64_lin:/opt/intel/compilers_and_libraries_2017.4.196/linux/tbb/lib/intel64/gcc4.7:/opt/intel/debugger_2017/iga/lib:/opt/intel/debugger_2017/libipt/intel64/lib:/opt/intel/compilers_and_libraries_2017.4.196/linux/daal/lib/intel64_lin:/opt/intel/compilers_and_libraries_2017.4.196/linux/daal/../tbb/lib/intel64_lin/gcc4.4
+SUDO_PROMPT=Password for %u@PSC.EDU 
+MPS_STAT_ENABLE_IDLE_VAL=1
+MIC_LIBRARY_PATH=/opt/intel/compilers_and_libraries_2017.4.196/linux/mpi/mic/lib:/opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/mic:/opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64_lin_mic:/opt/intel/compilers_and_libraries_2017.4.196/linux/mkl/lib/intel64_lin_mic:/opt/intel/compilers_and_libraries_2017.4.196/linux/tbb/lib/mic
+SLURM_JOBID=3599044
+CPATH=/opt/intel/compilers_and_libraries_2017.4.196/linux/ipp/include:/opt/intel/compilers_and_libraries_2017.4.196/linux/mkl/include:/opt/intel/compilers_and_libraries_2017.4.196/linux/tbb/include:/opt/intel/compilers_and_libraries_2017.4.196/linux/daal/include
+TMOUT=604800
+VIRTUAL_ENV=/opt/packages/TensorFlow/gnu/tf1.7_py2_gpu
+LOCAL=/local/3599044
+MPS_STAT_LEVEL=5
+NLSPATH=/opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/locale/%l_%t/%N:/opt/intel/compilers_and_libraries_2017.4.196/linux/mkl/lib/intel64_lin/locale/%l_%t/%N:/opt/intel/debugger_2017/gdb/intel64_mic/share/locale/%l_%t/%N:/opt/intel/debugger_2017/gdb/intel64/share/locale/%l_%t/%N
+SLURM_TASKS_PER_NODE=32(x2)
+PATH=/opt/packages/TensorFlow/gnu/tf1.7_py2_gpu/bin:/opt/packages/TensorFlow/gnu/tf1.7_py2_gpu/bin:/opt/packages/python/2_7_14_gcc5_np1_13/bin:/opt/packages/gcc/5.3.0/bin:/opt/packages/cuda/9.0/bin:/home/anirban/bin:/usr/lib64/qt-3.3/bin:/opt/intel/advisor_2017.1.3.510716/bin64:/opt/intel/vtune_amplifier_xe_2017.3.0.510739/bin64:/opt/intel/inspector_2017.1.3.510645/bin64:/opt/intel/itac/2017.3.030/intel64/bin:/opt/intel//itac/2017.3.030/intel64/bin:/opt/intel//clck/2017.2.019/bin/intel64:/opt/intel/compilers_and_libraries_2017.4.196/linux/bin/intel64:/opt/intel/compilers_and_libraries_2017.4.196/linux/mpi/intel64/bin:/opt/intel/debugger_2017/gdb/intel64_mic/bin:/opt/packages/slurm/default/bin:/opt/packages/allocations:/opt/packages/interact/bin:/usr/lib64/ccache:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/local/slash2/psc/sbin:/usr/local/slash2/psc/bin:/opt/puppetlabs/puppet/bin:/opt/packages/slash2/psc/sbin:/opt/intel/parallel_studio_xe_2017.4.056/bin:/opt/puppetlabs/bin:/home/asakhare/.local/bin:/home/asakhare/bin
+MAIL=/var/spool/mail/asakhare
+VT_ADD_LIBS=-ldwarf -lelf -lvtunwind -lm -lpthread
+SLURM_WORKING_CLUSTER=bridges:br003.pvt.bridges.psc.edu:6814:8192
+SLURM_JOB_ID=3599044
+MPS_KMP_FORKJOIN_FRAMES_MODE=3
+TBBROOT=/opt/intel/compilers_and_libraries_2017.4.196/linux/tbb
+SLURM_JOB_USER=asakhare
+PWD=/pylon5/cc5fp8p/asakhare/DistTF
+TF_ENV=/opt/packages/TensorFlow/gnu/tf1.7_py2_gpu
+CUDA_VISIBLE_DEVICES=0,1
+MYPROXY_SERVER_PORT=7512
+_LMFILES_=/opt/modulefiles/psc_path/1.1:/opt/modulefiles/slurm/default:/opt/modulefiles/intel/17.4:/opt/modulefiles/cuda/9.0:/opt/modulefiles/gcc/5.3.0:/opt/modulefiles/python/2.7.14_gcc5_np1.13:/opt/modulefiles/tensorflow/1.7_py2_gpu
+LANG=en_US.UTF-8
+GDB_CROSS=/opt/intel/debugger_2017/gdb/intel64_mic/bin/gdb-mic
+MODULEPATH=:/opt/modulefiles
+SLURM_JOB_UID=64487
+LOADEDMODULES=psc_path/1.1:slurm/default:intel/17.4:cuda/9.0:gcc/5.3.0:python/2.7.14_gcc5_np1.13:tensorflow/1.7_py2_gpu
+VT_LIB_DIR=/opt/intel//itac/2017.3.030/intel64/lib
+RAMDISK=/dev/shm/3599044
+SLURM_NODEID=0
+PS1=(tf1.7_py2_gpu) 
+SLURM_SUBMIT_DIR=/pylon5/cc5fp8p/asakhare/DistTF
+MYPROXY_SERVER=myproxy.xsede.org,myproxy.psc.xsede.org
+MPS_STAT_ENABLE_IDLE=I_MPI_PVAR_IDLE
+SLURM_TASK_PID=29355
+VT_ROOT=/opt/intel//itac/2017.3.030
+SLURM_CPUS_ON_NODE=32
+DAALROOT=/opt/intel/compilers_and_libraries_2017.4.196/linux/daal
+MPS_TOOL_ROOT=/opt/intel/itac/2017.3.030
+SLURM_PROCID=0
+ENVIRONMENT=BATCH
+KRB5CCNAME=FILE:/tmp/krb5cc_64487_OCLjo9Bnv5
+HISTCONTROL=ignoredups
+MPM_LAUNCHER=/opt/intel/debugger_2017/mpm/mic/bin/start_mpm.sh
+SLURM_JOB_NODELIST=gpu[035,038]
+INTEL_PYTHONHOME=/opt/intel/debugger_2017/python/intel64/
+HOME=/home/asakhare
+SHLVL=2
+SLURM_LOCALID=0
+GLOBUS_TCP_PORT_RANGE=50000,51000
+SLURM_JOB_GID=23114
+SLURM_JOB_CPUS_PER_NODE=32(x2)
+SLURM_CLUSTER_NAME=bridges
+PYTHON_ROOT=/opt/packages/python/2_7_14_gcc5_np1_13
+SLURM_GTIDS=0
+SLURM_SUBMIT_HOST=br018.pvt.bridges.psc.edu
+VT_ARCH=intel64
+VT_SLIB_DIR=/opt/intel//itac/2017.3.030/intel64/slib
+SLURM_JOB_PARTITION=GPU
+LOGNAME=asakhare
+PYTHONPATH=/opt/intel/advisor_2017.1.3.510716/pythonapi
+CVS_RSH=ssh
+GLOBUS_TCP_SOURCE_RANGE=50000,51000
+QTLIB=/usr/lib64/qt-3.3/lib
+GPU_DEVICE_ORDINAL=0,1
+SLURM_JOB_ACCOUNT=cc5fp8p
+SSH_CONNECTION=128.182.154.103 61420 128.182.108.81 22
+CLASSPATH=/opt/intel/compilers_and_libraries_2017.4.196/linux/mpi/intel64/lib/mpi.jar:/opt/intel/compilers_and_libraries_2017.4.196/linux/daal/lib/daal.jar
+SLURM_JOB_NUM_NODES=2
+MODULESHOME=/usr/share/Modules
+MPS_STAT_MESSAGES=1
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+INSPECTOR_2017_DIR=/opt/intel/inspector_2017.1.3.510645
+INFOPATH=/opt/intel/documentation_2017/en/debugger//gdb-ia/info/:/opt/intel/documentation_2017/en/debugger//gdb-mic/info/:/opt/intel/documentation_2017/en/debugger//gdb-igfx/info/
+XDG_RUNTIME_DIR=/run/user/64487
+SLURM_MEM_PER_NODE=123200
+SCRATCH=/pylon5/cc5fp8p/asakhare
+I_MPI_ROOT=/opt/intel/compilers_and_libraries_2017.4.196/linux/mpi
+BASH_FUNC_module()=() {  eval `/usr/bin/modulecmd bash $*`
+}
+_=/usr/bin/env
++ which python
+/opt/packages/TensorFlow/gnu/tf1.7_py2_gpu/bin/python
++ export LD_LIBRARY_PATH=/usr/local/cuda/extras/CUPTI/lib64:/opt/packages/mkl-dnn/external/mklml_lnx_2018.0.1.20171227/lib:/opt/packages/python/2_7_14_gcc5_np1_13/lib:/opt/packages/gcc/5.3.0/lib64:/opt/packages/gcc/5.3.0/lib:/opt/packages/cuda/9.0/lib64:/opt/intel/itac/2017.3.030/mic/slib:/opt/intel/itac/2017.3.030/intel64/slib:/opt/intel//itac/2017.3.030/mic/slib:/opt/intel//itac/2017.3.030/intel64/slib:/opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64:/opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64_lin:/opt/intel/compilers_and_libraries_2017.4.196/linux/mpi/intel64/lib:/opt/intel/compilers_and_libraries_2017.4.196/linux/mpi/mic/lib:/opt/intel/compilers_and_libraries_2017.4.196/linux/ipp/lib/intel64:/opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64_lin:/opt/intel/compilers_and_libraries_2017.4.196/linux/mkl/lib/intel64_lin:/opt/intel/compilers_and_libraries_2017.4.196/linux/tbb/lib/intel64/gcc4.7:/opt/intel/debugger_2017/iga/lib:/opt/intel/debugger_2017/libipt/intel64/lib:/opt/intel/compilers_and_libraries_2017.4.196/linux/daal/lib/intel64_lin:/opt/intel/compilers_and_libraries_2017.4.196/linux/daal/../tbb/lib/intel64_lin/gcc4.4
++ LD_LIBRARY_PATH=/usr/local/cuda/extras/CUPTI/lib64:/opt/packages/mkl-dnn/external/mklml_lnx_2018.0.1.20171227/lib:/opt/packages/python/2_7_14_gcc5_np1_13/lib:/opt/packages/gcc/5.3.0/lib64:/opt/packages/gcc/5.3.0/lib:/opt/packages/cuda/9.0/lib64:/opt/intel/itac/2017.3.030/mic/slib:/opt/intel/itac/2017.3.030/intel64/slib:/opt/intel//itac/2017.3.030/mic/slib:/opt/intel//itac/2017.3.030/intel64/slib:/opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64:/opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64_lin:/opt/intel/compilers_and_libraries_2017.4.196/linux/mpi/intel64/lib:/opt/intel/compilers_and_libraries_2017.4.196/linux/mpi/mic/lib:/opt/intel/compilers_and_libraries_2017.4.196/linux/ipp/lib/intel64:/opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64_lin:/opt/intel/compilers_and_libraries_2017.4.196/linux/mkl/lib/intel64_lin:/opt/intel/compilers_and_libraries_2017.4.196/linux/tbb/lib/intel64/gcc4.7:/opt/intel/debugger_2017/iga/lib:/opt/intel/debugger_2017/libipt/intel64/lib:/opt/intel/compilers_and_libraries_2017.4.196/linux/daal/lib/intel64_lin:/opt/intel/compilers_and_libraries_2017.4.196/linux/daal/../tbb/lib/intel64_lin/gcc4.4
++ batch_size=64
++ echo Run
+Run
++ echo batch_size=64
+batch_size=64
++ date
+Fri Jul 20 18:29:42 EDT 2018
++ python deep_mnist_dist.py 64
+2018-07-20 18:29:47.256911: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1344] Found device 0 with properties: 
+name: Tesla P100-PCIE-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.3285
+pciBusID: 0000:81:00.0
+totalMemory: 15.89GiB freeMemory: 15.60GiB
+2018-07-20 18:29:47.535445: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1344] Found device 1 with properties: 
+name: Tesla P100-PCIE-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.3285
+pciBusID: 0000:87:00.0
+totalMemory: 15.89GiB freeMemory: 15.60GiB
+2018-07-20 18:29:47.536928: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1423] Adding visible gpu devices: 0, 1
+2018-07-20 18:29:48.127242: I tensorflow/core/common_runtime/gpu/gpu_device.cc:911] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-07-20 18:29:48.127352: I tensorflow/core/common_runtime/gpu/gpu_device.cc:917]      0 1 
+2018-07-20 18:29:48.127377: I tensorflow/core/common_runtime/gpu/gpu_device.cc:930] 0:   N Y 
+2018-07-20 18:29:48.127393: I tensorflow/core/common_runtime/gpu/gpu_device.cc:930] 1:   Y N 
+2018-07-20 18:29:48.128095: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Created TensorFlow device (/device:GPU:0 with 15128 MB memory) -> physical GPU (device: 0, name: Tesla P100-PCIE-16GB, pci bus id: 0000:81:00.0, compute capability: 6.0)
+2018-07-20 18:29:48.274953: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Created TensorFlow device (/device:GPU:1 with 15128 MB memory) -> physical GPU (device: 1, name: Tesla P100-PCIE-16GB, pci bus id: 0000:87:00.0, compute capability: 6.0)
+2018-07-20 18:29:48.456095: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1423] Adding visible gpu devices: 0, 1
+2018-07-20 18:29:48.456327: I tensorflow/core/common_runtime/gpu/gpu_device.cc:911] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-07-20 18:29:48.456351: I tensorflow/core/common_runtime/gpu/gpu_device.cc:917]      0 1 
+2018-07-20 18:29:48.456367: I tensorflow/core/common_runtime/gpu/gpu_device.cc:930] 0:   N Y 
+2018-07-20 18:29:48.456385: I tensorflow/core/common_runtime/gpu/gpu_device.cc:930] 1:   Y N 
+2018-07-20 18:29:48.456682: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Created TensorFlow device (/device:GPU:0 with 15128 MB memory) -> physical GPU (device: 0, name: Tesla P100-PCIE-16GB, pci bus id: 0000:81:00.0, compute capability: 6.0)
+2018-07-20 18:29:48.456800: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Created TensorFlow device (/device:GPU:1 with 15128 MB memory) -> physical GPU (device: 1, name: Tesla P100-PCIE-16GB, pci bus id: 0000:87:00.0, compute capability: 6.0)
+WARNING:tensorflow:From deep_mnist_dist.py:159: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See tf.nn.softmax_cross_entropy_with_logits_v2.
+
+Input Batch Size = 64
+*******Device Info Seen By TensorFlow*******
+[name: "/device:CPU:0"
+device_type: "CPU"
+memory_limit: 268435456
+locality {
+}
+incarnation: 2624729903235424785
+, name: "/device:GPU:0"
+device_type: "GPU"
+memory_limit: 15863893197
+locality {
+  bus_id: 2
+  numa_node: 1
+  links {
+    link {
+      device_id: 1
+      type: "StreamExecutor"
+      strength: 1
+    }
+  }
+}
+incarnation: 1165150127856268649
+physical_device_desc: "device: 0, name: Tesla P100-PCIE-16GB, pci bus id: 0000:81:00.0, compute capability: 6.0"
+, name: "/device:GPU:1"
+device_type: "GPU"
+memory_limit: 15863768679
+locality {
+  bus_id: 2
+  numa_node: 1
+  links {
+    link {
+      type: "StreamExecutor"
+      strength: 1
+    }
+  }
+}
+incarnation: 4164001828461987520
+physical_device_desc: "device: 1, name: Tesla P100-PCIE-16GB, pci bus id: 0000:87:00.0, compute capability: 6.0"
+]
+********************************************
+node count=2
+SLURM_JOB_NODELIST=gpu[035,038]
+['035.pvt.bridges.psc.edu:2222', '038.pvt.bridges.psc.edu:2222']
+Nodelist::
+['035.pvt.bridges.psc.edu:2222', '038.pvt.bridges.psc.edu:2222']
+Cluster Spec :: 
+{'ps': ['035.pvt.bridges.psc.edu:2222'], 'worker': ['038.pvt.bridges.psc.edu:2222']}
+Cluster Created :: 
+Number of workers = 1
+2 GPUs are detected : [u'/device:GPU:0', u'/device:GPU:1']
+Number of GPUs = 2
+Number of batch splits = 2
+Type of Grads : 
+[[(<tf.Tensor 'scope_task_0_gpu_0/gradients/scope_task_0_gpu_0/conv1/Conv2D_grad/tuple/control_dependency_1:0' shape=(5, 5, 1, 32) dtype=float32>, <tf.Variable 'scope_task_0_gpu_0/conv1/Variable:0' shape=(5, 5, 1, 32) dtype=float32_ref>), (<tf.Tensor 'scope_task_0_gpu_0/gradients/scope_task_0_gpu_0/conv1/add_grad/tuple/control_dependency_1:0' shape=(32,) dtype=float32>, <tf.Variable 'scope_task_0_gpu_0/conv1/Variable_1:0' shape=(32,) dtype=float32_ref>), (<tf.Tensor 'scope_task_0_gpu_0/gradients/scope_task_0_gpu_0/conv2/Conv2D_grad/tuple/control_dependency_1:0' shape=(5, 5, 32, 64) dtype=float32>, <tf.Variable 'scope_task_0_gpu_0/conv2/Variable:0' shape=(5, 5, 32, 64) dtype=float32_ref>), (<tf.Tensor 'scope_task_0_gpu_0/gradients/scope_task_0_gpu_0/conv2/add_grad/tuple/control_dependency_1:0' shape=(64,) dtype=float32>, <tf.Variable 'scope_task_0_gpu_0/conv2/Variable_1:0' shape=(64,) dtype=float32_ref>), (<tf.Tensor 'scope_task_0_gpu_0/gradients/scope_task_0_gpu_0/dense1/MatMul_grad/tuple/control_dependency_1:0' shape=(3136, 1024) dtype=float32>, <tf.Variable 'scope_task_0_gpu_0/dense1/Variable:0' shape=(3136, 1024) dtype=float32_ref>), (<tf.Tensor 'scope_task_0_gpu_0/gradients/scope_task_0_gpu_0/dense1/add_grad/tuple/control_dependency_1:0' shape=(1024,) dtype=float32>, <tf.Variable 'scope_task_0_gpu_0/dense1/Variable_1:0' shape=(1024,) dtype=float32_ref>), (<tf.Tensor 'scope_task_0_gpu_0/gradients/scope_task_0_gpu_0/dense2/MatMul_grad/tuple/control_dependency_1:0' shape=(1024, 10) dtype=float32>, <tf.Variable 'scope_task_0_gpu_0/dense2/Variable:0' shape=(1024, 10) dtype=float32_ref>), (<tf.Tensor 'scope_task_0_gpu_0/gradients/scope_task_0_gpu_0/dense2/add_grad/tuple/control_dependency_1:0' shape=(10,) dtype=float32>, <tf.Variable 'scope_task_0_gpu_0/dense2/Variable_1:0' shape=(10,) dtype=float32_ref>)], [(None, <tf.Variable 'scope_task_0_gpu_0/conv1/Variable:0' shape=(5, 5, 1, 32) dtype=float32_ref>), (None, <tf.Variable 'scope_task_0_gpu_0/conv1/Variable_1:0' shape=(32,) dtype=float32_ref>), (None, <tf.Variable 'scope_task_0_gpu_0/conv2/Variable:0' shape=(5, 5, 32, 64) dtype=float32_ref>), (None, <tf.Variable 'scope_task_0_gpu_0/conv2/Variable_1:0' shape=(64,) dtype=float32_ref>), (None, <tf.Variable 'scope_task_0_gpu_0/dense1/Variable:0' shape=(3136, 1024) dtype=float32_ref>), (None, <tf.Variable 'scope_task_0_gpu_0/dense1/Variable_1:0' shape=(1024,) dtype=float32_ref>), (None, <tf.Variable 'scope_task_0_gpu_0/dense2/Variable:0' shape=(1024, 10) dtype=float32_ref>), (None, <tf.Variable 'scope_task_0_gpu_0/dense2/Variable_1:0' shape=(10,) dtype=float32_ref>), (<tf.Tensor 'scope_task_0_gpu_1/gradients/scope_task_0_gpu_1/conv1/Conv2D_grad/tuple/control_dependency_1:0' shape=(5, 5, 1, 32) dtype=float32>, <tf.Variable 'scope_task_0_gpu_1/conv1/Variable:0' shape=(5, 5, 1, 32) dtype=float32_ref>), (<tf.Tensor 'scope_task_0_gpu_1/gradients/scope_task_0_gpu_1/conv1/add_grad/tuple/control_dependency_1:0' shape=(32,) dtype=float32>, <tf.Variable 'scope_task_0_gpu_1/conv1/Variable_1:0' shape=(32,) dtype=float32_ref>), (<tf.Tensor 'scope_task_0_gpu_1/gradients/scope_task_0_gpu_1/conv2/Conv2D_grad/tuple/control_dependency_1:0' shape=(5, 5, 32, 64) dtype=float32>, <tf.Variable 'scope_task_0_gpu_1/conv2/Variable:0' shape=(5, 5, 32, 64) dtype=float32_ref>), (<tf.Tensor 'scope_task_0_gpu_1/gradients/scope_task_0_gpu_1/conv2/add_grad/tuple/control_dependency_1:0' shape=(64,) dtype=float32>, <tf.Variable 'scope_task_0_gpu_1/conv2/Variable_1:0' shape=(64,) dtype=float32_ref>), (<tf.Tensor 'scope_task_0_gpu_1/gradients/scope_task_0_gpu_1/dense1/MatMul_grad/tuple/control_dependency_1:0' shape=(3136, 1024) dtype=float32>, <tf.Variable 'scope_task_0_gpu_1/dense1/Variable:0' shape=(3136, 1024) dtype=float32_ref>), (<tf.Tensor 'scope_task_0_gpu_1/gradients/scope_task_0_gpu_1/dense1/add_grad/tuple/control_dependency_1:0' shape=(1024,) dtype=float32>, <tf.Variable 'scope_task_0_gpu_1/dense1/Variable_1:0' shape=(1024,) dtype=float32_ref>), (<tf.Tensor 'scope_task_0_gpu_1/gradients/scope_task_0_gpu_1/dense2/MatMul_grad/tuple/control_dependency_1:0' shape=(1024, 10) dtype=float32>, <tf.Variable 'scope_task_0_gpu_1/dense2/Variable:0' shape=(1024, 10) dtype=float32_ref>), (<tf.Tensor 'scope_task_0_gpu_1/gradients/scope_task_0_gpu_1/dense2/add_grad/tuple/control_dependency_1:0' shape=(10,) dtype=float32>, <tf.Variable 'scope_task_0_gpu_1/dense2/Variable_1:0' shape=(10,) dtype=float32_ref>)]]
+Traceback (most recent call last):
+  File "deep_mnist_dist.py", line 166, in <module>
+    grad = average_gradients(grads)
+  File "deep_mnist_dist.py", line 112, in average_gradients
+    expanded_g = tf.expand_dims(g, 0)
+  File "/opt/packages/TensorFlow/gnu/tf1.7_py2_gpu/lib/python2.7/site-packages/tensorflow/python/ops/array_ops.py", line 201, in expand_dims
+    return gen_array_ops.expand_dims(input, axis, name)
+  File "/opt/packages/TensorFlow/gnu/tf1.7_py2_gpu/lib/python2.7/site-packages/tensorflow/python/ops/gen_array_ops.py", line 1814, in expand_dims
+    "ExpandDims", input=input, dim=axis, name=name)
+  File "/opt/packages/TensorFlow/gnu/tf1.7_py2_gpu/lib/python2.7/site-packages/tensorflow/python/framework/op_def_library.py", line 528, in _apply_op_helper
+    (input_name, err))
+ValueError: Tried to convert 'input' to a tensor and failed. Error: None values not supported.
+
+real	0m7.675s
+user	0m2.878s
+sys	0m2.274s
++ date
+Fri Jul 20 18:29:50 EDT 2018

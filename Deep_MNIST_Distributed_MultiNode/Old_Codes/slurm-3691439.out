@@ -1,0 +1,251 @@
+SLURM_CHECKPOINT_IMAGE_DIR=/var/slurm/checkpoint
+SLURM_NODELIST=gpu[018-019]
+CPLUS_INCLUDE_PATH=/opt/intel//clck/2017.2.019/include
+MKLROOT=/opt/intel/compilers_and_libraries_2017.4.196/linux/mkl
+SLURM_JOB_NAME=dist_tf_benchmark.slurm
+MANPATH=/opt/intel//itac/2017.3.030/man:/opt/intel/man/common:/opt/intel/compilers_and_libraries_2017.4.196/linux/mpi/man:/opt/intel/documentation_2017/en/debugger//gdb-ia/man/:/opt/intel/documentation_2017/en/debugger//gdb-mic/man/:/opt/intel/documentation_2017/en/debugger//gdb-igfx/man/:/opt/packages/slurm/default/share/man:/usr/local/man:/usr/share/man:/opt/packages/slash2/psc/man:
+MPS_INTEL_LIBITTNOTIFY64=libmps.so
+MPS_STAT_DIR_POSTFIX=_%D-%T
+XDG_SESSION_ID=38541
+SLURMD_NODENAME=gpu018
+SLURM_TOPOLOGY_ADDR=OPAF[1-6].OPAL11.gpu018
+SLURM_NTASKS_PER_NODE=1
+HOSTNAME=gpu018
+VT_MPI=impi4
+SLURM_PRIO_PROCESS=0
+SLURM_NODE_ALIASES=(null)
+INTEL_LICENSE_FILE=/opt/intel/licenses:/opt/intel/licenses:/root/intel/licenses:/opt/intel/licenses:/opt/intel/compilers_and_libraries_2017.4.196/linux/licenses:/opt/intel/licenses:/opt/intel//clck/2017.2.019/licenses:/opt/intel/licenses:/Users/Shared/Library/Application Support/Intel/Licenses
+IPPROOT=/opt/intel/compilers_and_libraries_2017.4.196/linux/ipp
+SHELL=/usr/psc/shells/bash
+TERM=xterm
+CLCK_ROOT=/opt/intel//clck/2017.2.019
+SLURM_JOB_QOS=maxgpu
+HISTSIZE=1000
+MPS_LD_PRELOAD=libmps.so
+PROJECT=/pylon2/cc5fp8p/asakhare
+TMPDIR=/tmp
+SLURM_TOPOLOGY_ADDR_PATTERN=switch.switch.node
+SSH_CLIENT=128.182.154.103 49241 22
+GLOBUS_LOCATION=/usr
+GDBSERVER_MIC=/opt/intel/debugger_2017/gdb/targets/mic/bin/gdbserver
+LIBRARY_PATH=/opt/intel//clck/2017.2.019/lib/intel64:/opt/intel/compilers_and_libraries_2017.4.196/linux/ipp/lib/intel64:/opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64_lin:/opt/intel/compilers_and_libraries_2017.4.196/linux/mkl/lib/intel64_lin:/opt/intel/compilers_and_libraries_2017.4.196/linux/tbb/lib/intel64/gcc4.7:/opt/intel/compilers_and_libraries_2017.4.196/linux/daal/lib/intel64_lin:/opt/intel/compilers_and_libraries_2017.4.196/linux/daal/../tbb/lib/intel64_lin/gcc4.4
+QTDIR=/usr/lib64/qt-3.3
+SLURM_JOB_GPUS=0,1
+ADVISOR_2017_DIR=/opt/intel/advisor_2017.1.3.510716
+QTINC=/usr/lib64/qt-3.3/include
+SSH_TTY=/dev/pts/90
+MIC_LD_LIBRARY_PATH=/opt/intel/compilers_and_libraries_2017.4.196/linux/mpi/mic/lib:/opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/mic:/opt/intel/compilers_and_libraries_2017.4.196/linux/ipp/lib/mic:/opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64_lin_mic:/opt/intel/compilers_and_libraries_2017.4.196/linux/mkl/lib/intel64_lin_mic:/opt/intel/compilers_and_libraries_2017.4.196/linux/tbb/lib/mic
+VTUNE_AMPLIFIER_XE_2017_DIR=/opt/intel/vtune_amplifier_xe_2017.3.0.510739
+QT_GRAPHICSSYSTEM_CHECKED=1
+SLURM_NNODES=2
+USER=asakhare
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:
+LD_LIBRARY_PATH=/opt/intel/itac/2017.3.030/mic/slib:/opt/intel/itac/2017.3.030/intel64/slib:/opt/intel//itac/2017.3.030/mic/slib:/opt/intel//itac/2017.3.030/intel64/slib:/opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64:/opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64_lin:/opt/intel/compilers_and_libraries_2017.4.196/linux/mpi/intel64/lib:/opt/intel/compilers_and_libraries_2017.4.196/linux/mpi/mic/lib:/opt/intel/compilers_and_libraries_2017.4.196/linux/ipp/lib/intel64:/opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64_lin:/opt/intel/compilers_and_libraries_2017.4.196/linux/mkl/lib/intel64_lin:/opt/intel/compilers_and_libraries_2017.4.196/linux/tbb/lib/intel64/gcc4.7:/opt/intel/debugger_2017/iga/lib:/opt/intel/debugger_2017/libipt/intel64/lib:/opt/intel/compilers_and_libraries_2017.4.196/linux/daal/lib/intel64_lin:/opt/intel/compilers_and_libraries_2017.4.196/linux/daal/../tbb/lib/intel64_lin/gcc4.4
+SUDO_PROMPT=Password for %u@PSC.EDU 
+MPS_STAT_ENABLE_IDLE_VAL=1
+MIC_LIBRARY_PATH=/opt/intel/compilers_and_libraries_2017.4.196/linux/mpi/mic/lib:/opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/mic:/opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64_lin_mic:/opt/intel/compilers_and_libraries_2017.4.196/linux/mkl/lib/intel64_lin_mic:/opt/intel/compilers_and_libraries_2017.4.196/linux/tbb/lib/mic
+SLURM_JOBID=3691439
+CPATH=/opt/intel/compilers_and_libraries_2017.4.196/linux/ipp/include:/opt/intel/compilers_and_libraries_2017.4.196/linux/mkl/include:/opt/intel/compilers_and_libraries_2017.4.196/linux/tbb/include:/opt/intel/compilers_and_libraries_2017.4.196/linux/daal/include
+TMOUT=604800
+SLURM_NTASKS=2
+LOCAL=/local/3691439
+MPS_STAT_LEVEL=5
+NLSPATH=/opt/intel/compilers_and_libraries_2017.4.196/linux/compiler/lib/intel64/locale/%l_%t/%N:/opt/intel/compilers_and_libraries_2017.4.196/linux/mkl/lib/intel64_lin/locale/%l_%t/%N:/opt/intel/debugger_2017/gdb/intel64_mic/share/locale/%l_%t/%N:/opt/intel/debugger_2017/gdb/intel64/share/locale/%l_%t/%N
+SLURM_TASKS_PER_NODE=1(x2)
+PATH=/pylon5/cc5fp8p/asakhare/bazel/bin:/pylon5/cc5fp8p/asakhare/bazel/bin:/pylon5/cc5fp8p/asakhare/bazel/bin:/pylon5/cc5fp8p/asakhare/bazel/bin:/home/anirban/bin:/usr/lib64/qt-3.3/bin:/opt/intel/advisor_2017.1.3.510716/bin64:/opt/intel/vtune_amplifier_xe_2017.3.0.510739/bin64:/opt/intel/inspector_2017.1.3.510645/bin64:/opt/intel/itac/2017.3.030/intel64/bin:/opt/intel//itac/2017.3.030/intel64/bin:/opt/intel//clck/2017.2.019/bin/intel64:/opt/intel/compilers_and_libraries_2017.4.196/linux/bin/intel64:/opt/intel/compilers_and_libraries_2017.4.196/linux/mpi/intel64/bin:/opt/intel/debugger_2017/gdb/intel64_mic/bin:/opt/packages/slurm/default/bin:/opt/packages/allocations:/opt/packages/interact/bin:/usr/lib64/ccache:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/local/slash2/psc/sbin:/usr/local/slash2/psc/bin:/opt/puppetlabs/puppet/bin:/opt/packages/slash2/psc/sbin:/opt/intel/parallel_studio_xe_2017.4.056/bin:/opt/puppetlabs/bin:/home/asakhare/.local/bin:/home/asakhare/bin
+MAIL=/var/spool/mail/asakhare
+VT_ADD_LIBS=-ldwarf -lelf -lvtunwind -lm -lpthread
+SLURM_WORKING_CLUSTER=bridges:br003.pvt.bridges.psc.edu:6814:8192
+SLURM_JOB_ID=3691439
+_=/usr/bin/env
+MPS_KMP_FORKJOIN_FRAMES_MODE=3
+TBBROOT=/opt/intel/compilers_and_libraries_2017.4.196/linux/tbb
+SLURM_JOB_USER=asakhare
+PWD=/pylon5/cc5fp8p/asakhare/DistTF
+CUDA_VISIBLE_DEVICES=0,1
+MYPROXY_SERVER_PORT=7512
+_LMFILES_=/opt/modulefiles/psc_path/1.1:/opt/modulefiles/slurm/default:/opt/modulefiles/intel/17.4
+LANG=en_US.UTF-8
+GDB_CROSS=/opt/intel/debugger_2017/gdb/intel64_mic/bin/gdb-mic
+MODULEPATH=:/opt/modulefiles
+SLURM_JOB_UID=64487
+LOADEDMODULES=psc_path/1.1:slurm/default:intel/17.4
+VT_LIB_DIR=/opt/intel//itac/2017.3.030/intel64/lib
+RAMDISK=/dev/shm/3691439
+SLURM_NODEID=0
+SLURM_SUBMIT_DIR=/pylon5/cc5fp8p/asakhare/DistTF
+MYPROXY_SERVER=myproxy.xsede.org,myproxy.psc.xsede.org
+MPS_STAT_ENABLE_IDLE=I_MPI_PVAR_IDLE
+SLURM_TASK_PID=31354
+SLURM_NPROCS=2
+VT_ROOT=/opt/intel//itac/2017.3.030
+SLURM_CPUS_ON_NODE=32
+DAALROOT=/opt/intel/compilers_and_libraries_2017.4.196/linux/daal
+MPS_TOOL_ROOT=/opt/intel/itac/2017.3.030
+SLURM_PROCID=0
+ENVIRONMENT=BATCH
+KRB5CCNAME=FILE:/tmp/krb5cc_64487_veQmG9JpFj
+HISTCONTROL=ignoredups
+MPM_LAUNCHER=/opt/intel/debugger_2017/mpm/mic/bin/start_mpm.sh
+SLURM_JOB_NODELIST=gpu[018-019]
+INTEL_PYTHONHOME=/opt/intel/debugger_2017/python/intel64/
+HOME=/home/asakhare
+SHLVL=2
+SLURM_LOCALID=0
+GLOBUS_TCP_PORT_RANGE=50000,51000
+SLURM_JOB_GID=23114
+SLURM_JOB_CPUS_PER_NODE=32(x2)
+SLURM_CLUSTER_NAME=bridges
+SLURM_GTIDS=0
+SLURM_SUBMIT_HOST=br005.pvt.bridges.psc.edu
+VT_ARCH=intel64
+VT_SLIB_DIR=/opt/intel//itac/2017.3.030/intel64/slib
+SLURM_JOB_PARTITION=GPU
+LOGNAME=asakhare
+PYTHONPATH=/opt/intel/advisor_2017.1.3.510716/pythonapi
+CVS_RSH=ssh
+GLOBUS_TCP_SOURCE_RANGE=50000,51000
+QTLIB=/usr/lib64/qt-3.3/lib
+GPU_DEVICE_ORDINAL=0,1
+SLURM_JOB_ACCOUNT=cc5fp8p
+SSH_CONNECTION=128.182.154.103 49241 128.182.108.56 22
+CLASSPATH=/opt/intel/compilers_and_libraries_2017.4.196/linux/mpi/intel64/lib/mpi.jar:/opt/intel/compilers_and_libraries_2017.4.196/linux/daal/lib/daal.jar
+SLURM_JOB_NUM_NODES=2
+MODULESHOME=/usr/share/Modules
+MPS_STAT_MESSAGES=1
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+INSPECTOR_2017_DIR=/opt/intel/inspector_2017.1.3.510645
+INFOPATH=/opt/intel/documentation_2017/en/debugger//gdb-ia/info/:/opt/intel/documentation_2017/en/debugger//gdb-mic/info/:/opt/intel/documentation_2017/en/debugger//gdb-igfx/info/
+XDG_RUNTIME_DIR=/run/user/64487
+SLURM_MEM_PER_NODE=123200
+SCRATCH=/pylon5/cc5fp8p/asakhare
+I_MPI_ROOT=/opt/intel/compilers_and_libraries_2017.4.196/linux/mpi
+BASH_FUNC_module()=() {  eval `/usr/bin/modulecmd bash $*`
+}
+
+**********************Environment Variables**********************
+*****************************************************************
+0
+Executing PS on  Node : 0 on host : gpu018.pvt.bridges.psc.edu 
+**********************Environment Variables**********************
+*****************************************************************
+1
+Executing Worker on Node : 1 on host : gpu019.pvt.bridges.psc.edu 
+2018-07-30 18:05:24.857507: E tensorflow/stream_executor/cuda/cuda_driver.cc:406] failed call to cuInit: CUDA_ERROR_NO_DEVICE
+2018-07-30 18:05:24.857575: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:158] retrieving CUDA diagnostic information for host: gpu018.pvt.bridges.psc.edu
+2018-07-30 18:05:24.857584: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:165] hostname: gpu018.pvt.bridges.psc.edu
+2018-07-30 18:05:24.857632: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:189] libcuda reported version is: 384.81.0
+2018-07-30 18:05:24.858479: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:193] kernel reported version is: 384.81.0
+2018-07-30 18:05:24.858489: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:300] kernel version seems to match DSO: 384.81.0
+2018-07-30 18:05:24.860857: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:215] Initialize GrpcChannelCache for job ps -> {0 -> localhost:2222}
+2018-07-30 18:05:24.860874: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:215] Initialize GrpcChannelCache for job worker -> {0 -> gpu019.pvt.bridges.psc.edu:2222}
+2018-07-30 18:05:24.862975: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:333] Started server with target: grpc://localhost:2222
+2018-07-30 18:05:25.594197: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1344] Found device 0 with properties: 
+name: Tesla P100-PCIE-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.3285
+pciBusID: 0000:81:00.0
+totalMemory: 15.89GiB freeMemory: 15.60GiB
+2018-07-30 18:05:25.928659: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1344] Found device 1 with properties: 
+name: Tesla P100-PCIE-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.3285
+pciBusID: 0000:87:00.0
+totalMemory: 15.89GiB freeMemory: 15.60GiB
+2018-07-30 18:05:25.930162: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1423] Adding visible gpu devices: 0, 1
+2018-07-30 18:05:26.546506: I tensorflow/core/common_runtime/gpu/gpu_device.cc:911] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-07-30 18:05:26.546556: I tensorflow/core/common_runtime/gpu/gpu_device.cc:917]      0 1 
+2018-07-30 18:05:26.546564: I tensorflow/core/common_runtime/gpu/gpu_device.cc:930] 0:   N Y 
+2018-07-30 18:05:26.546569: I tensorflow/core/common_runtime/gpu/gpu_device.cc:930] 1:   Y N 
+2018-07-30 18:05:26.547339: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Created TensorFlow device (/device:GPU:0 with 15128 MB memory) -> physical GPU (device: 0, name: Tesla P100-PCIE-16GB, pci bus id: 0000:81:00.0, compute capability: 6.0)
+2018-07-30 18:05:26.839738: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Created TensorFlow device (/device:GPU:1 with 15128 MB memory) -> physical GPU (device: 1, name: Tesla P100-PCIE-16GB, pci bus id: 0000:87:00.0, compute capability: 6.0)
+2018-07-30 18:05:27.142121: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1423] Adding visible gpu devices: 0, 1
+2018-07-30 18:05:27.142261: I tensorflow/core/common_runtime/gpu/gpu_device.cc:911] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-07-30 18:05:27.142272: I tensorflow/core/common_runtime/gpu/gpu_device.cc:917]      0 1 
+2018-07-30 18:05:27.142279: I tensorflow/core/common_runtime/gpu/gpu_device.cc:930] 0:   N Y 
+2018-07-30 18:05:27.142284: I tensorflow/core/common_runtime/gpu/gpu_device.cc:930] 1:   Y N 
+2018-07-30 18:05:27.142600: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Created TensorFlow device (/device:GPU:0 with 15128 MB memory) -> physical GPU (device: 0, name: Tesla P100-PCIE-16GB, pci bus id: 0000:81:00.0, compute capability: 6.0)
+2018-07-30 18:05:27.142711: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Created TensorFlow device (/device:GPU:1 with 15128 MB memory) -> physical GPU (device: 1, name: Tesla P100-PCIE-16GB, pci bus id: 0000:87:00.0, compute capability: 6.0)
+2018-07-30 18:05:27.145407: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1423] Adding visible gpu devices: 0, 1
+2018-07-30 18:05:27.145466: I tensorflow/core/common_runtime/gpu/gpu_device.cc:911] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-07-30 18:05:27.145476: I tensorflow/core/common_runtime/gpu/gpu_device.cc:917]      0 1 
+2018-07-30 18:05:27.145482: I tensorflow/core/common_runtime/gpu/gpu_device.cc:930] 0:   N Y 
+2018-07-30 18:05:27.145487: I tensorflow/core/common_runtime/gpu/gpu_device.cc:930] 1:   Y N 
+2018-07-30 18:05:27.145720: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Created TensorFlow device (/device:GPU:0 with 15128 MB memory) -> physical GPU (device: 0, name: Tesla P100-PCIE-16GB, pci bus id: 0000:81:00.0, compute capability: 6.0)
+2018-07-30 18:05:27.145796: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Created TensorFlow device (/device:GPU:1 with 15128 MB memory) -> physical GPU (device: 1, name: Tesla P100-PCIE-16GB, pci bus id: 0000:87:00.0, compute capability: 6.0)
+2018-07-30 18:05:27.148060: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1423] Adding visible gpu devices: 0, 1
+2018-07-30 18:05:27.148116: I tensorflow/core/common_runtime/gpu/gpu_device.cc:911] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-07-30 18:05:27.148126: I tensorflow/core/common_runtime/gpu/gpu_device.cc:917]      0 1 
+2018-07-30 18:05:27.148133: I tensorflow/core/common_runtime/gpu/gpu_device.cc:930] 0:   N Y 
+2018-07-30 18:05:27.148138: I tensorflow/core/common_runtime/gpu/gpu_device.cc:930] 1:   Y N 
+2018-07-30 18:05:27.148373: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Created TensorFlow device (/job:worker/replica:0/task:0/device:GPU:0 with 15128 MB memory) -> physical GPU (device: 0, name: Tesla P100-PCIE-16GB, pci bus id: 0000:81:00.0, compute capability: 6.0)
+2018-07-30 18:05:27.148442: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Created TensorFlow device (/job:worker/replica:0/task:0/device:GPU:1 with 15128 MB memory) -> physical GPU (device: 1, name: Tesla P100-PCIE-16GB, pci bus id: 0000:87:00.0, compute capability: 6.0)
+2018-07-30 18:05:27.150329: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:215] Initialize GrpcChannelCache for job ps -> {0 -> gpu018.pvt.bridges.psc.edu:2222}
+2018-07-30 18:05:27.150346: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:215] Initialize GrpcChannelCache for job worker -> {0 -> localhost:2222}
+2018-07-30 18:05:27.152247: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:333] Started server with target: grpc://localhost:2222
+2018-07-30 18:05:29.598517: I tensorflow/core/distributed_runtime/master_session.cc:1024] Start master session 9c20b948d8856d25 with config: 
+Traceback (most recent call last):
+  File "distributed_deep_mnist.py", line 220, in <module>
+    train()
+  File "distributed_deep_mnist.py", line 170, in train
+    sess = tf.train.MonitoredTrainingSession(master=server.target, is_chief=is_chief, hooks=[sync_replicas_hook])
+  File "/opt/packages/TensorFlow/gnu/tf1.7_py2_gpu/lib/python2.7/site-packages/tensorflow/python/training/monitored_session.py", line 353, in MonitoredTrainingSession
+    stop_grace_period_secs=stop_grace_period_secs)
+  File "/opt/packages/TensorFlow/gnu/tf1.7_py2_gpu/lib/python2.7/site-packages/tensorflow/python/training/monitored_session.py", line 795, in __init__
+    stop_grace_period_secs=stop_grace_period_secs)
+  File "/opt/packages/TensorFlow/gnu/tf1.7_py2_gpu/lib/python2.7/site-packages/tensorflow/python/training/monitored_session.py", line 518, in __init__
+    self._sess = _RecoverableSession(self._coordinated_creator)
+  File "/opt/packages/TensorFlow/gnu/tf1.7_py2_gpu/lib/python2.7/site-packages/tensorflow/python/training/monitored_session.py", line 981, in __init__
+    _WrappedSession.__init__(self, self._create_session())
+  File "/opt/packages/TensorFlow/gnu/tf1.7_py2_gpu/lib/python2.7/site-packages/tensorflow/python/training/monitored_session.py", line 986, in _create_session
+    return self._sess_creator.create_session()
+  File "/opt/packages/TensorFlow/gnu/tf1.7_py2_gpu/lib/python2.7/site-packages/tensorflow/python/training/monitored_session.py", line 675, in create_session
+    self.tf_sess = self._session_creator.create_session()
+  File "/opt/packages/TensorFlow/gnu/tf1.7_py2_gpu/lib/python2.7/site-packages/tensorflow/python/training/monitored_session.py", line 488, in create_session
+    max_wait_secs=self._max_wait_secs
+  File "/opt/packages/TensorFlow/gnu/tf1.7_py2_gpu/lib/python2.7/site-packages/tensorflow/python/training/session_manager.py", line 402, in wait_for_session
+    sess)
+  File "/opt/packages/TensorFlow/gnu/tf1.7_py2_gpu/lib/python2.7/site-packages/tensorflow/python/training/session_manager.py", line 483, in _try_run_local_init_op
+    is_ready_for_local_init, msg = self._model_ready_for_local_init(sess)
+  File "/opt/packages/TensorFlow/gnu/tf1.7_py2_gpu/lib/python2.7/site-packages/tensorflow/python/training/session_manager.py", line 468, in _model_ready_for_local_init
+    "Model not ready for local init")
+  File "/opt/packages/TensorFlow/gnu/tf1.7_py2_gpu/lib/python2.7/site-packages/tensorflow/python/training/session_manager.py", line 512, in _ready
+    ready_value = sess.run(op)
+  File "/opt/packages/TensorFlow/gnu/tf1.7_py2_gpu/lib/python2.7/site-packages/tensorflow/python/client/session.py", line 905, in run
+    run_metadata_ptr)
+  File "/opt/packages/TensorFlow/gnu/tf1.7_py2_gpu/lib/python2.7/site-packages/tensorflow/python/client/session.py", line 1140, in _run
+    feed_dict_tensor, options, run_metadata)
+  File "/opt/packages/TensorFlow/gnu/tf1.7_py2_gpu/lib/python2.7/site-packages/tensorflow/python/client/session.py", line 1321, in _do_run
+    run_metadata)
+  File "/opt/packages/TensorFlow/gnu/tf1.7_py2_gpu/lib/python2.7/site-packages/tensorflow/python/client/session.py", line 1340, in _do_call
+    raise type(e)(node_def, op, message)
+tensorflow.python.framework.errors_impl.InvalidArgumentError: Cannot assign a device for operation 'dummy_queue_1_Close_1': Operation was explicitly assigned to /job:ps/task:0/device:GPU:1 but available devices are [ /job:ps/replica:0/task:0/device:CPU:0, /job:worker/replica:0/task:0/device:CPU:0, /job:worker/replica:0/task:0/device:GPU:0, /job:worker/replica:0/task:0/device:GPU:1 ]. Make sure the device specification refers to a valid device.
+	 [[Node: dummy_queue_1_Close_1 = QueueCloseV2[cancel_pending_enqueues=true, _device="/job:ps/task:0/device:GPU:1"](dummy_queue_1)]]
+
+Caused by op u'dummy_queue_1_Close_1', defined at:
+  File "distributed_deep_mnist.py", line 220, in <module>
+    train()
+  File "distributed_deep_mnist.py", line 166, in train
+    train_step = opt.minimize(cross_entropy, global_step=global_step)
+  File "/opt/packages/TensorFlow/gnu/tf1.7_py2_gpu/lib/python2.7/site-packages/tensorflow/python/training/optimizer.py", line 409, in minimize
+    name=name)
+  File "/opt/packages/TensorFlow/gnu/tf1.7_py2_gpu/lib/python2.7/site-packages/tensorflow/python/training/sync_replicas_optimizer.py", line 335, in apply_gradients
+    [sync_op])
+  File "/opt/packages/TensorFlow/gnu/tf1.7_py2_gpu/lib/python2.7/site-packages/tensorflow/python/training/queue_runner_impl.py", line 106, in __init__
+    queue_closed_exception_types=queue_closed_exception_types)
+  File "/opt/packages/TensorFlow/gnu/tf1.7_py2_gpu/lib/python2.7/site-packages/tensorflow/python/training/queue_runner_impl.py", line 156, in _init_from_args
+    self._cancel_op = self._queue.close(cancel_pending_enqueues=True)
+  File "/opt/packages/TensorFlow/gnu/tf1.7_py2_gpu/lib/python2.7/site-packages/tensorflow/python/ops/data_flow_ops.py", line 566, in close
+    name=name)
+  File "/opt/packages/TensorFlow/gnu/tf1.7_py2_gpu/lib/python2.7/site-packages/tensorflow/python/ops/gen_data_flow_ops.py", line 3285, in queue_close_v2
+    cancel_pending_enqueues=cancel_pending_enqueues, name=name)
+  File "/opt/packages/TensorFlow/gnu/tf1.7_py2_gpu/lib/python2.7/site-packages/tensorflow/python/framework/op_def_library.py", line 787, in _apply_op_helper
+    op_def=op_def)
+  File "/opt/packages/TensorFlow/gnu/tf1.7_py2_gpu/lib/python2.7/site-packages/tensorflow/python/framework/ops.py", line 3290, in create_op
+    op_def=op_def)
+  File "/opt/packages/TensorFlow/gnu/tf1.7_py2_gpu/lib/python2.7/site-packages/tensorflow/python/framework/ops.py", line 1654, in __init__
+    self._traceback = self._graph._extract_stack()  # pylint: disable=protected-access
+
+InvalidArgumentError (see above for traceback): Cannot assign a device for operation 'dummy_queue_1_Close_1': Operation was explicitly assigned to /job:ps/task:0/device:GPU:1 but available devices are [ /job:ps/replica:0/task:0/device:CPU:0, /job:worker/replica:0/task:0/device:CPU:0, /job:worker/replica:0/task:0/device:GPU:0, /job:worker/replica:0/task:0/device:GPU:1 ]. Make sure the device specification refers to a valid device.
+	 [[Node: dummy_queue_1_Close_1 = QueueCloseV2[cancel_pending_enqueues=true, _device="/job:ps/task:0/device:GPU:1"](dummy_queue_1)]]
+
+srun: error: gpu019: task 1: Exited with exit code 1
+srun: Job step aborted: Waiting up to 302 seconds for job step to finish.
+slurmstepd: error: *** JOB 3691439 ON gpu018 CANCELLED AT 2018-07-30T18:20:39 DUE TO TIME LIMIT ***
+slurmstepd: error: *** STEP 3691439.0 ON gpu018 CANCELLED AT 2018-07-30T18:20:39 DUE TO TIME LIMIT ***
