@@ -1,0 +1,1272 @@
+{
+    "traceEvents": [
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 0,
+            "args": {
+                "name": "Allocators"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 1,
+            "args": {
+                "name": "/job:localhost/replica:0/task:0/device:CPU:0 Compute"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 2,
+            "args": {
+                "name": "/job:localhost/replica:0/task:0/device:CPU:0 Tensors"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "NoOp",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699445052,
+            "dur": 775,
+            "args": {
+                "name": "_SOURCE",
+                "op": "NoOp"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699445854,
+            "dur": 30,
+            "args": {
+                "name": "truncated_normal/shape",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699445887,
+            "dur": 3,
+            "args": {
+                "name": "truncated_normal/mean",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699445892,
+            "dur": 3,
+            "args": {
+                "name": "truncated_normal/stddev",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699445896,
+            "dur": 5,
+            "args": {
+                "name": "Const",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699445902,
+            "dur": 3,
+            "args": {
+                "name": "truncated_normal_1/shape",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699445907,
+            "dur": 2,
+            "args": {
+                "name": "Const_1",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699445913,
+            "dur": 3,
+            "args": {
+                "name": "truncated_normal_2/shape",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699445917,
+            "dur": 2,
+            "args": {
+                "name": "Const_2",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699445921,
+            "dur": 5,
+            "args": {
+                "name": "truncated_normal_3/shape",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699445927,
+            "dur": 3,
+            "args": {
+                "name": "Const_3",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699445931,
+            "dur": 3,
+            "args": {
+                "name": "beta1_power/initial_value",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699445935,
+            "dur": 5,
+            "args": {
+                "name": "beta2_power/initial_value",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699445941,
+            "dur": 4,
+            "args": {
+                "name": "Variable/Adam/Initializer/zeros",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699445946,
+            "dur": 2,
+            "args": {
+                "name": "Variable_1/Adam/Initializer/zeros",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699445952,
+            "dur": 3,
+            "args": {
+                "name": "Variable_3/Adam/Initializer/zeros",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699445956,
+            "dur": 2,
+            "args": {
+                "name": "Variable_4/Adam/Initializer/zeros/shape_as_tensor",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699445960,
+            "dur": 5,
+            "args": {
+                "name": "Variable_4/Adam/Initializer/zeros/Const",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699445967,
+            "dur": 2,
+            "args": {
+                "name": "Variable_7/Adam/Initializer/zeros",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699445971,
+            "dur": 3,
+            "args": {
+                "name": "Variable_2/Adam/Initializer/zeros/_0__cf__0",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699445975,
+            "dur": 5,
+            "args": {
+                "name": "Variable_5/Adam/Initializer/zeros/_2__cf__2",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699445981,
+            "dur": 2,
+            "args": {
+                "name": "Variable_6/Adam/Initializer/zeros/_4__cf__4",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Fill",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699445985,
+            "dur": 1597,
+            "args": {
+                "name": "Variable_4/Adam/Initializer/zeros",
+                "op": "Fill",
+                "input0": "Variable_4/Adam/Initializer/zeros/shape_as_tensor",
+                "input1": "Variable_4/Adam/Initializer/zeros/Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "TruncatedNormal",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699447608,
+            "dur": 118,
+            "args": {
+                "name": "truncated_normal_3/TruncatedNormal",
+                "op": "TruncatedNormal",
+                "input0": "truncated_normal_3/shape"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Mul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699447729,
+            "dur": 40,
+            "args": {
+                "name": "truncated_normal_3/mul",
+                "op": "Mul",
+                "input0": "truncated_normal_3/TruncatedNormal",
+                "input1": "truncated_normal_3/stddev"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Add",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699447784,
+            "dur": 20,
+            "args": {
+                "name": "truncated_normal_3",
+                "op": "Add",
+                "input0": "truncated_normal_3/mul",
+                "input1": "truncated_normal_3/mean"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "TruncatedNormal",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699447807,
+            "dur": 4738,
+            "args": {
+                "name": "truncated_normal_2/TruncatedNormal",
+                "op": "TruncatedNormal",
+                "input0": "truncated_normal_2/shape"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Mul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699452554,
+            "dur": 284,
+            "args": {
+                "name": "truncated_normal_2/mul",
+                "op": "Mul",
+                "input0": "truncated_normal_2/TruncatedNormal",
+                "input1": "truncated_normal_2/stddev"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Add",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699452843,
+            "dur": 185,
+            "args": {
+                "name": "truncated_normal_2",
+                "op": "Add",
+                "input0": "truncated_normal_2/mul",
+                "input1": "truncated_normal_2/mean"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "TruncatedNormal",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699453035,
+            "dur": 135,
+            "args": {
+                "name": "truncated_normal_1/TruncatedNormal",
+                "op": "TruncatedNormal",
+                "input0": "truncated_normal_1/shape"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Mul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699453185,
+            "dur": 44,
+            "args": {
+                "name": "truncated_normal_1/mul",
+                "op": "Mul",
+                "input0": "truncated_normal_1/TruncatedNormal",
+                "input1": "truncated_normal_1/stddev"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Add",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699453232,
+            "dur": 15,
+            "args": {
+                "name": "truncated_normal_1",
+                "op": "Add",
+                "input0": "truncated_normal_1/mul",
+                "input1": "truncated_normal_1/mean"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "TruncatedNormal",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699453251,
+            "dur": 42,
+            "args": {
+                "name": "truncated_normal/TruncatedNormal",
+                "op": "TruncatedNormal",
+                "input0": "truncated_normal/shape"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Mul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699453296,
+            "dur": 5,
+            "args": {
+                "name": "truncated_normal/mul",
+                "op": "Mul",
+                "input0": "truncated_normal/TruncatedNormal",
+                "input1": "truncated_normal/stddev"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Add",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699453304,
+            "dur": 4,
+            "args": {
+                "name": "truncated_normal",
+                "op": "Add",
+                "input0": "truncated_normal/mul",
+                "input1": "truncated_normal/mean"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "VariableV2",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699453311,
+            "dur": 37,
+            "args": {
+                "name": "Variable_7/Adam_1",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Assign",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699453349,
+            "dur": 21,
+            "args": {
+                "name": "Variable_7/Adam_1/Assign",
+                "op": "Assign",
+                "input0": "Variable_7/Adam_1",
+                "input1": "Variable_7/Adam_1/Initializer/zeros"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "VariableV2",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699453373,
+            "dur": 9,
+            "args": {
+                "name": "Variable_7/Adam",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Assign",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699453384,
+            "dur": 4,
+            "args": {
+                "name": "Variable_7/Adam/Assign",
+                "op": "Assign",
+                "input0": "Variable_7/Adam",
+                "input1": "Variable_7/Adam/Initializer/zeros"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "VariableV2",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699453391,
+            "dur": 5,
+            "args": {
+                "name": "Variable_6/Adam_1",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Assign",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699453398,
+            "dur": 16,
+            "args": {
+                "name": "Variable_6/Adam_1/Assign",
+                "op": "Assign",
+                "input0": "Variable_6/Adam_1",
+                "input1": "Variable_6/Adam_1/Initializer/zeros"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "VariableV2",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699453421,
+            "dur": 5,
+            "args": {
+                "name": "Variable_6/Adam",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Assign",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699453427,
+            "dur": 24,
+            "args": {
+                "name": "Variable_6/Adam/Assign",
+                "op": "Assign",
+                "input0": "Variable_6/Adam",
+                "input1": "Variable_6/Adam/Initializer/zeros"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "VariableV2",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699453454,
+            "dur": 5,
+            "args": {
+                "name": "Variable_5/Adam_1",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Assign",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699453460,
+            "dur": 11,
+            "args": {
+                "name": "Variable_5/Adam_1/Assign",
+                "op": "Assign",
+                "input0": "Variable_5/Adam_1",
+                "input1": "Variable_5/Adam_1/Initializer/zeros"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "VariableV2",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699453474,
+            "dur": 4,
+            "args": {
+                "name": "Variable_5/Adam",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Assign",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699453479,
+            "dur": 3,
+            "args": {
+                "name": "Variable_5/Adam/Assign",
+                "op": "Assign",
+                "input0": "Variable_5/Adam",
+                "input1": "Variable_5/Adam/Initializer/zeros"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "VariableV2",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699453486,
+            "dur": 5,
+            "args": {
+                "name": "Variable_4/Adam_1",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Assign",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699453492,
+            "dur": 3976,
+            "args": {
+                "name": "Variable_4/Adam_1/Assign",
+                "op": "Assign",
+                "input0": "Variable_4/Adam_1",
+                "input1": "Variable_4/Adam_1/Initializer/zeros"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "VariableV2",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699457476,
+            "dur": 6,
+            "args": {
+                "name": "Variable_4/Adam",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Assign",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699457484,
+            "dur": 5363,
+            "args": {
+                "name": "Variable_4/Adam/Assign",
+                "op": "Assign",
+                "input0": "Variable_4/Adam",
+                "input1": "Variable_4/Adam/Initializer/zeros"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "VariableV2",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699462855,
+            "dur": 12,
+            "args": {
+                "name": "Variable_3/Adam_1",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Assign",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699462869,
+            "dur": 8,
+            "args": {
+                "name": "Variable_3/Adam_1/Assign",
+                "op": "Assign",
+                "input0": "Variable_3/Adam_1",
+                "input1": "Variable_3/Adam_1/Initializer/zeros"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "VariableV2",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699462879,
+            "dur": 9,
+            "args": {
+                "name": "Variable_3/Adam",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Assign",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699462889,
+            "dur": 3,
+            "args": {
+                "name": "Variable_3/Adam/Assign",
+                "op": "Assign",
+                "input0": "Variable_3/Adam",
+                "input1": "Variable_3/Adam/Initializer/zeros"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "VariableV2",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699462894,
+            "dur": 6,
+            "args": {
+                "name": "Variable_2/Adam_1",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Assign",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699462901,
+            "dur": 55,
+            "args": {
+                "name": "Variable_2/Adam_1/Assign",
+                "op": "Assign",
+                "input0": "Variable_2/Adam_1",
+                "input1": "Variable_2/Adam_1/Initializer/zeros"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "VariableV2",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699462963,
+            "dur": 5,
+            "args": {
+                "name": "Variable_2/Adam",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Assign",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699462970,
+            "dur": 39,
+            "args": {
+                "name": "Variable_2/Adam/Assign",
+                "op": "Assign",
+                "input0": "Variable_2/Adam",
+                "input1": "Variable_2/Adam/Initializer/zeros"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "VariableV2",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699463018,
+            "dur": 5,
+            "args": {
+                "name": "Variable_1/Adam_1",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Assign",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699463024,
+            "dur": 5,
+            "args": {
+                "name": "Variable_1/Adam_1/Assign",
+                "op": "Assign",
+                "input0": "Variable_1/Adam_1",
+                "input1": "Variable_1/Adam_1/Initializer/zeros"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "VariableV2",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699463032,
+            "dur": 4,
+            "args": {
+                "name": "Variable_1/Adam",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Assign",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699463037,
+            "dur": 5,
+            "args": {
+                "name": "Variable_1/Adam/Assign",
+                "op": "Assign",
+                "input0": "Variable_1/Adam",
+                "input1": "Variable_1/Adam/Initializer/zeros"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "VariableV2",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699463045,
+            "dur": 3,
+            "args": {
+                "name": "Variable/Adam_1",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Assign",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699463050,
+            "dur": 4,
+            "args": {
+                "name": "Variable/Adam_1/Assign",
+                "op": "Assign",
+                "input0": "Variable/Adam_1",
+                "input1": "Variable/Adam_1/Initializer/zeros"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "VariableV2",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699463060,
+            "dur": 5,
+            "args": {
+                "name": "Variable/Adam",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Assign",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699463066,
+            "dur": 4,
+            "args": {
+                "name": "Variable/Adam/Assign",
+                "op": "Assign",
+                "input0": "Variable/Adam",
+                "input1": "Variable/Adam/Initializer/zeros"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "VariableV2",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699463072,
+            "dur": 7,
+            "args": {
+                "name": "beta2_power",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Assign",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699463080,
+            "dur": 3,
+            "args": {
+                "name": "beta2_power/Assign",
+                "op": "Assign",
+                "input0": "beta2_power",
+                "input1": "beta2_power/initial_value"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "VariableV2",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699463086,
+            "dur": 4,
+            "args": {
+                "name": "beta1_power",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Assign",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699463091,
+            "dur": 3,
+            "args": {
+                "name": "beta1_power/Assign",
+                "op": "Assign",
+                "input0": "beta1_power",
+                "input1": "beta1_power/initial_value"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "VariableV2",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699463098,
+            "dur": 5,
+            "args": {
+                "name": "Variable_7",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Assign",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699463104,
+            "dur": 3,
+            "args": {
+                "name": "Variable_7/Assign",
+                "op": "Assign",
+                "input0": "Variable_7",
+                "input1": "Const_3"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "VariableV2",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699463109,
+            "dur": 5,
+            "args": {
+                "name": "Variable_6",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Assign",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699463115,
+            "dur": 15,
+            "args": {
+                "name": "Variable_6/Assign",
+                "op": "Assign",
+                "input0": "Variable_6",
+                "input1": "truncated_normal_3"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "VariableV2",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699463133,
+            "dur": 4,
+            "args": {
+                "name": "Variable_5",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Assign",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699463138,
+            "dur": 5,
+            "args": {
+                "name": "Variable_5/Assign",
+                "op": "Assign",
+                "input0": "Variable_5",
+                "input1": "Const_2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "VariableV2",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699463145,
+            "dur": 7,
+            "args": {
+                "name": "Variable_4",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Assign",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699463153,
+            "dur": 5605,
+            "args": {
+                "name": "Variable_4/Assign",
+                "op": "Assign",
+                "input0": "Variable_4",
+                "input1": "truncated_normal_2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "VariableV2",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699468766,
+            "dur": 9,
+            "args": {
+                "name": "Variable_3",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Assign",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699468777,
+            "dur": 10,
+            "args": {
+                "name": "Variable_3/Assign",
+                "op": "Assign",
+                "input0": "Variable_3",
+                "input1": "Const_1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "VariableV2",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699468789,
+            "dur": 4,
+            "args": {
+                "name": "Variable_2",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Assign",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699468795,
+            "dur": 42,
+            "args": {
+                "name": "Variable_2/Assign",
+                "op": "Assign",
+                "input0": "Variable_2",
+                "input1": "truncated_normal_1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "VariableV2",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699468842,
+            "dur": 7,
+            "args": {
+                "name": "Variable_1",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Assign",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699468851,
+            "dur": 4,
+            "args": {
+                "name": "Variable_1/Assign",
+                "op": "Assign",
+                "input0": "Variable_1",
+                "input1": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "VariableV2",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699468857,
+            "dur": 9,
+            "args": {
+                "name": "Variable",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Assign",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699468867,
+            "dur": 7,
+            "args": {
+                "name": "Variable/Assign",
+                "op": "Assign",
+                "input0": "Variable",
+                "input1": "truncated_normal"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "NoOp",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1532638699468876,
+            "dur": 4,
+            "args": {
+                "name": "init",
+                "op": "NoOp",
+                "input0": "^Variable/Assign",
+                "input1": "^Variable_1/Assign",
+                "input2": "^Variable_2/Assign",
+                "input3": "^Variable_3/Assign",
+                "input4": "^Variable_4/Assign",
+                "input5": "^Variable_5/Assign",
+                "input6": "^Variable_6/Assign",
+                "input7": "^Variable_7/Assign",
+                "input8": "^beta1_power/Assign",
+                "input9": "^beta2_power/Assign",
+                "input10": "^Variable/Adam/Assign",
+                "input11": "^Variable/Adam_1/Assign",
+                "input12": "^Variable_1/Adam/Assign",
+                "input13": "^Variable_1/Adam_1/Assign",
+                "input14": "^Variable_2/Adam/Assign",
+                "input15": "^Variable_2/Adam_1/Assign",
+                "input16": "^Variable_3/Adam/Assign",
+                "input17": "^Variable_3/Adam_1/Assign",
+                "input18": "^Variable_4/Adam/Assign",
+                "input19": "^Variable_4/Adam_1/Assign",
+                "input20": "^Variable_5/Adam/Assign",
+                "input21": "^Variable_5/Adam_1/Assign",
+                "input22": "^Variable_6/Adam/Assign",
+                "input23": "^Variable_6/Adam_1/Assign",
+                "input24": "^Variable_7/Adam/Assign",
+                "input25": "^Variable_7/Adam_1/Assign"
+            }
+        }
+    ]
+}
